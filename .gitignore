@@ -1,0 +1,10 @@
+# Scan data and bulk downloads are re-fetched, never committed
+data/
+*.zarr/
+*.tif
+*.tiff
+*.npz
+*.part
+.venv/
+__pycache__/
+.DS_Store
