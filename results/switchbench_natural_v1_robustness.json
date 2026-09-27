@@ -1,0 +1,1998 @@
+{
+ "label": "POST-HOC and DESCRIPTIVE: robustness checks around the frozen C1 result (P1). The frozen verdict (SUPPORTED) stands regardless of anything in this file.",
+ "generated_utc": "2026-09-27T22:14:44Z",
+ "precision_lower_bound": {
+  "value": 0.5519691377470266,
+  "source": "results/switchbench_natural_v1_blind_review_score.json precision.wilson95[0]"
+ },
+ "corrected_upper_bar": 0.6,
+ "frozen_reproduction": {
+  "pooled": {
+   "recall": 0.11267605633802817,
+   "boot95": [
+    0.07142010832769126,
+    0.15859751327761534
+   ],
+   "corrected_upper": 0.2873304002556431
+  },
+  "new": {
+   "recall": 0.12179487179487179,
+   "boot95": [
+    0.07236842105263158,
+    0.17791411042944785
+   ],
+   "corrected_upper": 0.3223261922861126
+  },
+  "matches_switchbench_v1_json": "see results/switchbench_natural_v1_blind_review_score.md"
+ },
+ "grid": [
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 0.5,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 15,
+   "n_events": 175,
+   "n_patches": 175,
+   "recall": 0.08571428571428572,
+   "wilson95": [
+    0.05263095143671734,
+    0.13659507615134578
+   ],
+   "boot95": [
+    0.045714285714285714,
+    0.12571428571428572
+   ],
+   "corrected_upper": 0.22775600503211818,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 0.5,
+   "subset": "new",
+   "frozen": false,
+   "hits": 12,
+   "n_events": 126,
+   "n_patches": 126,
+   "recall": 0.09523809523809523,
+   "wilson95": [
+    0.05532161543536931,
+    0.15910495581212467
+   ],
+   "boot95": [
+    0.047619047619047616,
+    0.15079365079365079
+   ],
+   "corrected_upper": 0.273192177753172,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 0.5,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 3,
+   "n_events": 49,
+   "n_patches": 49,
+   "recall": 0.061224489795918366,
+   "wilson95": [
+    0.02104014667296747,
+    0.16520487835726402
+   ],
+   "boot95": [
+    0.0,
+    0.1229591836734666
+   ],
+   "corrected_upper": 0.22276459907767546,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 18,
+   "n_events": 175,
+   "n_patches": 175,
+   "recall": 0.10285714285714286,
+   "wilson95": [
+    0.06605705581137536,
+    0.15671823960062997
+   ],
+   "boot95": [
+    0.06285714285714286,
+    0.14857142857142858
+   ],
+   "corrected_upper": 0.26916618776523055,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 13,
+   "n_events": 126,
+   "n_patches": 126,
+   "recall": 0.10317460317460317,
+   "wilson95": [
+    0.06129226990674777,
+    0.16853770190452083
+   ],
+   "boot95": [
+    0.05555555555555555,
+    0.15873015873015872
+   ],
+   "corrected_upper": 0.2875707134243916,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 5,
+   "n_events": 49,
+   "n_patches": 49,
+   "recall": 0.10204081632653061,
+   "wilson95": [
+    0.04437954674476266,
+    0.21756361549195893
+   ],
+   "boot95": [
+    0.02040816326530612,
+    0.20408163265306123
+   ],
+   "corrected_upper": 0.3697337744027892,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 2.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 22,
+   "n_events": 175,
+   "n_patches": 175,
+   "recall": 0.12571428571428572,
+   "wilson95": [
+    0.08450475362162202,
+    0.18300289888897292
+   ],
+   "boot95": [
+    0.08,
+    0.17714285714285713
+   ],
+   "corrected_upper": 0.320928916181621,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 2.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 17,
+   "n_events": 126,
+   "n_patches": 126,
+   "recall": 0.1349206349206349,
+   "wilson95": [
+    0.08597374729853512,
+    0.20546982676783193
+   ],
+   "boot95": [
+    0.07936507936507936,
+    0.1984126984126984
+   ],
+   "corrected_upper": 0.3594633917804895,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 2.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 5,
+   "n_events": 49,
+   "n_patches": 49,
+   "recall": 0.10204081632653061,
+   "wilson95": [
+    0.04437954674476266,
+    0.21756361549195893
+   ],
+   "boot95": [
+    0.02040816326530612,
+    0.20408163265306123
+   ],
+   "corrected_upper": 0.3697337744027892,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 0.5,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 21,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.09859154929577464,
+   "wilson95": [
+    0.06539180465703949,
+    0.14601361140133684
+   ],
+   "boot95": [
+    0.061611374407582936,
+    0.14018691588785046
+   ],
+   "corrected_upper": 0.2539760039121963,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 0.5,
+   "subset": "new",
+   "frozen": false,
+   "hits": 17,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.10897435897435898,
+   "wilson95": [
+    0.06915919829493856,
+    0.16758450449586026
+   ],
+   "boot95": [
+    0.061224489795918366,
+    0.16049382716049382
+   ],
+   "corrected_upper": 0.2907659435735515,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 0.5,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 4,
+   "n_events": 57,
+   "n_patches": 49,
+   "recall": 0.07017543859649122,
+   "wilson95": [
+    0.027626420229066015,
+    0.1670017009603369
+   ],
+   "boot95": [
+    0.01639344262295082,
+    0.14285714285714285
+   ],
+   "corrected_upper": 0.25881364208195246,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "subset": "pooled",
+   "frozen": true,
+   "hits": 24,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.11267605633802817,
+   "wilson95": [
+    0.0768963761734975,
+    0.16217902528633937
+   ],
+   "boot95": [
+    0.07142010832769126,
+    0.15859751327761534
+   ],
+   "corrected_upper": 0.2873304002556431,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "subset": "new",
+   "frozen": true,
+   "hits": 19,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.12179487179487179,
+   "wilson95": [
+    0.07937502422173531,
+    0.1823934751988734
+   ],
+   "boot95": [
+    0.07236842105263158,
+    0.17791411042944785
+   ],
+   "corrected_upper": 0.3223261922861126,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "subset": "v0_prefix",
+   "frozen": true,
+   "hits": 5,
+   "n_events": 57,
+   "n_patches": 49,
+   "recall": 0.08771929824561403,
+   "wilson95": [
+    0.03805167177792225,
+    0.18944877099558666
+   ],
+   "boot95": [
+    0.01818181818181818,
+    0.16981132075471697
+   ],
+   "corrected_upper": 0.3076464047389246,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 2.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 30,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.14084507042253522,
+   "wilson95": [
+    0.10047228580295067,
+    0.19394308645980715
+   ],
+   "boot95": [
+    0.09004739336492891,
+    0.1964490498034075
+   ],
+   "corrected_upper": 0.3559058584421113,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 2.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 25,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.16025641025641027,
+   "wilson95": [
+    0.11096813709904885,
+    0.22587475221098946
+   ],
+   "boot95": [
+    0.09721102150537635,
+    0.22932345792826
+   ],
+   "corrected_upper": 0.4154642755286826,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 2.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 5,
+   "n_events": 57,
+   "n_patches": 49,
+   "recall": 0.08771929824561403,
+   "wilson95": [
+    0.03805167177792225,
+    0.18944877099558666
+   ],
+   "boot95": [
+    0.01818181818181818,
+    0.16981132075471697
+   ],
+   "corrected_upper": 0.3076464047389246,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 0.5,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 35,
+   "n_events": 294,
+   "n_patches": 175,
+   "recall": 0.11904761904761904,
+   "wilson95": [
+    0.08685592677859254,
+    0.16106610232061358
+   ],
+   "boot95": [
+    0.07943564988266293,
+    0.15313765712290497
+   ],
+   "corrected_upper": 0.277438803459134,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 0.5,
+   "subset": "new",
+   "frozen": false,
+   "hits": 29,
+   "n_events": 229,
+   "n_patches": 126,
+   "recall": 0.12663755458515283,
+   "wilson95": [
+    0.0896389342389558,
+    0.17595577184951966
+   ],
+   "boot95": [
+    0.0763888888888889,
+    0.1724137931034483
+   ],
+   "corrected_upper": 0.31236129216787367,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 0.5,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 6,
+   "n_events": 65,
+   "n_patches": 49,
+   "recall": 0.09230769230769231,
+   "wilson95": [
+    0.042995089611340964,
+    0.1871200051596039
+   ],
+   "boot95": [
+    0.019230769230769232,
+    0.15518920734437966
+   ],
+   "corrected_upper": 0.2811555877522713,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 40,
+   "n_events": 294,
+   "n_patches": 175,
+   "recall": 0.1360544217687075,
+   "wilson95": [
+    0.101530207534473,
+    0.17996673097994714
+   ],
+   "boot95": [
+    0.09090909090909091,
+    0.17410328046142748
+   ],
+   "corrected_upper": 0.31542212880246373,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 32,
+   "n_events": 229,
+   "n_patches": 126,
+   "recall": 0.13973799126637554,
+   "wilson95": [
+    0.10075289270279383,
+    0.19061042018959476
+   ],
+   "boot95": [
+    0.08695652173913043,
+    0.18651391279403326
+   ],
+   "corrected_upper": 0.33790641548425593,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 8,
+   "n_events": 65,
+   "n_patches": 49,
+   "recall": 0.12307692307692308,
+   "wilson95": [
+    0.06370467509869226,
+    0.22451494082161527
+   ],
+   "boot95": [
+    0.03636363636363636,
+    0.2
+   ],
+   "corrected_upper": 0.3623390989147335,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 2.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 59,
+   "n_events": 294,
+   "n_patches": 175,
+   "recall": 0.20068027210884354,
+   "wilson95": [
+    0.15889226871346268,
+    0.2501893255787707
+   ],
+   "boot95": [
+    0.1111111111111111,
+    0.26052724240177905
+   ],
+   "corrected_upper": 0.47199603127300477,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 2.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 50,
+   "n_events": 229,
+   "n_patches": 126,
+   "recall": 0.2183406113537118,
+   "wilson95": [
+    0.16972113218668974,
+    0.27625382152917777
+   ],
+   "boot95": [
+    0.11319192802698988,
+    0.27849177645741835
+   ],
+   "corrected_upper": 0.5045422966837217,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 2.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 9,
+   "n_events": 65,
+   "n_patches": 49,
+   "recall": 0.13846153846153847,
+   "wilson95": [
+    0.07459090403153719,
+    0.24268097246345166
+   ],
+   "boot95": [
+    0.03636363636363636,
+    0.22728711162255458
+   ],
+   "corrected_upper": 0.41177503610124433,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 0.5,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 16,
+   "n_events": 175,
+   "n_patches": 175,
+   "recall": 0.09142857142857143,
+   "wilson95": [
+    0.05706151127298497,
+    0.14334760558972554
+   ],
+   "boot95": [
+    0.05142857142857143,
+    0.13142857142857142
+   ],
+   "corrected_upper": 0.23810855071539624,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 0.5,
+   "subset": "new",
+   "frozen": false,
+   "hits": 13,
+   "n_events": 126,
+   "n_patches": 126,
+   "recall": 0.10317460317460317,
+   "wilson95": [
+    0.06129226990674777,
+    0.16853770190452083
+   ],
+   "boot95": [
+    0.05555555555555555,
+    0.15873015873015872
+   ],
+   "corrected_upper": 0.2875707134243916,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 0.5,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 3,
+   "n_events": 49,
+   "n_patches": 49,
+   "recall": 0.061224489795918366,
+   "wilson95": [
+    0.02104014667296747,
+    0.16520487835726402
+   ],
+   "boot95": [
+    0.0,
+    0.1229591836734666
+   ],
+   "corrected_upper": 0.22276459907767546,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 19,
+   "n_events": 175,
+   "n_patches": 175,
+   "recall": 0.10857142857142857,
+   "wilson95": [
+    0.07061569758086053,
+    0.1633426871057922
+   ],
+   "boot95": [
+    0.06285714285714286,
+    0.15428571428571428
+   ],
+   "corrected_upper": 0.27951873344850864,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 14,
+   "n_events": 126,
+   "n_patches": 126,
+   "recall": 0.1111111111111111,
+   "wilson95": [
+    0.06734979672470168,
+    0.17788357565034152
+   ],
+   "boot95": [
+    0.06349206349206349,
+    0.16666666666666666
+   ],
+   "corrected_upper": 0.30194924909561116,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 5,
+   "n_events": 49,
+   "n_patches": 49,
+   "recall": 0.10204081632653061,
+   "wilson95": [
+    0.04437954674476266,
+    0.21756361549195893
+   ],
+   "boot95": [
+    0.02040816326530612,
+    0.20408163265306123
+   ],
+   "corrected_upper": 0.3697337744027892,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 2.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 23,
+   "n_events": 175,
+   "n_patches": 175,
+   "recall": 0.13142857142857142,
+   "wilson95": [
+    0.08919866868137247,
+    0.18949207310386987
+   ],
+   "boot95": [
+    0.08571428571428572,
+    0.18285714285714286
+   ],
+   "corrected_upper": 0.33128146186489915,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 2.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 18,
+   "n_events": 126,
+   "n_patches": 126,
+   "recall": 0.14285714285714285,
+   "wilson95": [
+    0.09231379654107666,
+    0.21453317808906505
+   ],
+   "boot95": [
+    0.0873015873015873,
+    0.20634920634920634
+   ],
+   "corrected_upper": 0.3738419274517091,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 2.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 5,
+   "n_events": 49,
+   "n_patches": 49,
+   "recall": 0.10204081632653061,
+   "wilson95": [
+    0.04437954674476266,
+    0.21756361549195893
+   ],
+   "boot95": [
+    0.02040816326530612,
+    0.20408163265306123
+   ],
+   "corrected_upper": 0.3697337744027892,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 0.5,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 22,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.10328638497652583,
+   "wilson95": [
+    0.06920264735768633,
+    0.15142609716784353
+   ],
+   "boot95": [
+    0.06510874246339363,
+    0.14623742138364773
+   ],
+   "corrected_upper": 0.26493767745882546,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 0.5,
+   "subset": "new",
+   "frozen": false,
+   "hits": 18,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.11538461538461539,
+   "wilson95": [
+    0.07424445619253985,
+    0.1750116449131639
+   ],
+   "boot95": [
+    0.06756756756756757,
+    0.16875202922077923
+   ],
+   "corrected_upper": 0.30572729103944957,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 0.5,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 4,
+   "n_events": 57,
+   "n_patches": 49,
+   "recall": 0.07017543859649122,
+   "wilson95": [
+    0.027626420229066015,
+    0.1670017009603369
+   ],
+   "boot95": [
+    0.01639344262295082,
+    0.14285714285714285
+   ],
+   "corrected_upper": 0.25881364208195246,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "subset": "pooled",
+   "frozen": true,
+   "hits": 25,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.11737089201877934,
+   "wilson95": [
+    0.08077672149795292,
+    0.16752200842903742
+   ],
+   "boot95": [
+    0.07476286790347328,
+    0.16433748119786673
+   ],
+   "corrected_upper": 0.2977294742757599,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "subset": "new",
+   "frozen": true,
+   "hits": 20,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.1282051282051282,
+   "wilson95": [
+    0.08454799299726479,
+    0.18973290473824883
+   ],
+   "boot95": [
+    0.07692307692307693,
+    0.18471882907250672
+   ],
+   "corrected_upper": 0.33465427039358375,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "subset": "v0_prefix",
+   "frozen": true,
+   "hits": 5,
+   "n_events": 57,
+   "n_patches": 49,
+   "recall": 0.08771929824561403,
+   "wilson95": [
+    0.03805167177792225,
+    0.18944877099558666
+   ],
+   "boot95": [
+    0.01818181818181818,
+    0.16981132075471697
+   ],
+   "corrected_upper": 0.3076464047389246,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 2.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 31,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.14553990610328638,
+   "wilson95": [
+    0.10446432339143151,
+    0.19917437733847976
+   ],
+   "boot95": [
+    0.09389304577464788,
+    0.2037914691943128
+   ],
+   "corrected_upper": 0.36920808657188475,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 2.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 26,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.16666666666666666,
+   "wilson95": [
+    0.11635026688777168,
+    0.23300502073717155
+   ],
+   "boot95": [
+    0.10189470289446102,
+    0.23567769118170664
+   ],
+   "corrected_upper": 0.426976211285422,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 2.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 5,
+   "n_events": 57,
+   "n_patches": 49,
+   "recall": 0.08771929824561403,
+   "wilson95": [
+    0.03805167177792225,
+    0.18944877099558666
+   ],
+   "boot95": [
+    0.01818181818181818,
+    0.16981132075471697
+   ],
+   "corrected_upper": 0.3076464047389246,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 0.5,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 36,
+   "n_events": 294,
+   "n_patches": 175,
+   "recall": 0.12244897959183673,
+   "wilson95": [
+    0.08977341781669253,
+    0.16486359316555638
+   ],
+   "boot95": [
+    0.08251430514516206,
+    0.15833539603960395
+   ],
+   "corrected_upper": 0.28685552363648775,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 0.5,
+   "subset": "new",
+   "frozen": false,
+   "hits": 30,
+   "n_events": 229,
+   "n_patches": 126,
+   "recall": 0.13100436681222707,
+   "wilson95": [
+    0.09332855714344457,
+    0.18085568454633533
+   ],
+   "boot95": [
+    0.08274661719773024,
+    0.17749639249639246
+   ],
+   "corrected_upper": 0.3215694145887935,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 0.5,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 6,
+   "n_events": 65,
+   "n_patches": 49,
+   "recall": 0.09230769230769231,
+   "wilson95": [
+    0.042995089611340964,
+    0.1871200051596039
+   ],
+   "boot95": [
+    0.019230769230769232,
+    0.15518920734437966
+   ],
+   "corrected_upper": 0.2811555877522713,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 41,
+   "n_events": 294,
+   "n_patches": 175,
+   "recall": 0.13945578231292516,
+   "wilson95": [
+    0.10448973619135185,
+    0.18372218420611106
+   ],
+   "boot95": [
+    0.09501672706997491,
+    0.1794091689724261
+   ],
+   "corrected_upper": 0.32503478311255013,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 33,
+   "n_events": 229,
+   "n_patches": 126,
+   "recall": 0.14410480349344978,
+   "wilson95": [
+    0.10448645039444944,
+    0.1954663980992436
+   ],
+   "boot95": [
+    0.09258040935672514,
+    0.19381459948320406
+   ],
+   "corrected_upper": 0.3511330366663206,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 8,
+   "n_events": 65,
+   "n_patches": 49,
+   "recall": 0.12307692307692308,
+   "wilson95": [
+    0.06370467509869226,
+    0.22451494082161527
+   ],
+   "boot95": [
+    0.03636363636363636,
+    0.2
+   ],
+   "corrected_upper": 0.3623390989147335,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 2.0,
+   "subset": "pooled",
+   "frozen": false,
+   "hits": 60,
+   "n_events": 294,
+   "n_patches": 175,
+   "recall": 0.20408163265306123,
+   "wilson95": [
+    0.16196829557775974,
+    0.2538282805975165
+   ],
+   "boot95": [
+    0.11555128205128205,
+    0.262798824843984
+   ],
+   "corrected_upper": 0.47611144694910007,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 2.0,
+   "subset": "new",
+   "frozen": false,
+   "hits": 51,
+   "n_events": 229,
+   "n_patches": 126,
+   "recall": 0.22270742358078602,
+   "wilson95": [
+    0.1736454244952323,
+    0.28091906482193957
+   ],
+   "boot95": [
+    0.11842105263157894,
+    0.28149749636877913
+   ],
+   "corrected_upper": 0.5099877459050844,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 2.0,
+   "subset": "v0_prefix",
+   "frozen": false,
+   "hits": 9,
+   "n_events": 65,
+   "n_patches": 49,
+   "recall": 0.13846153846153847,
+   "wilson95": [
+    0.07459090403153719,
+    0.24268097246345166
+   ],
+   "boot95": [
+    0.03636363636363636,
+    0.22728711162255458
+   ],
+   "corrected_upper": 0.41177503610124433,
+   "c1_would_hold": true
+  }
+ ],
+ "all_grid_points_hold": true,
+ "batches": [
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260420",
+   "n_patches_in_batch": 89,
+   "hits": 6,
+   "n_events": 61,
+   "n_patches": 61,
+   "recall": 0.09836065573770492,
+   "wilson95": [
+    0.04586457581547049,
+    0.19844607216825946
+   ],
+   "boot95": [
+    0.03278688524590164,
+    0.18032786885245902
+   ],
+   "corrected_upper": 0.32669918754607113,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260421",
+   "n_patches_in_batch": 113,
+   "hits": 9,
+   "n_events": 85,
+   "n_patches": 85,
+   "recall": 0.10588235294117647,
+   "wilson95": [
+    0.05671240711980652,
+    0.18913518600421056
+   ],
+   "boot95": [
+    0.047058823529411764,
+    0.17647058823529413
+   ],
+   "corrected_upper": 0.31971096963064716,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260427",
+   "n_patches_in_batch": 9,
+   "hits": 0,
+   "n_events": 7,
+   "n_patches": 7,
+   "recall": 0.0,
+   "wilson95": [
+    5.551115123125783e-17,
+    0.35433043506668743
+   ],
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "corrected_upper": 0.0,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260428",
+   "n_patches_in_batch": 23,
+   "hits": 2,
+   "n_events": 19,
+   "n_patches": 19,
+   "recall": 0.10526315789473684,
+   "wilson95": [
+    0.02935856029887013,
+    0.31394082711109006
+   ],
+   "boot95": [
+    0.0,
+    0.2631578947368421
+   ],
+   "corrected_upper": 0.4767619722562282,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "legacy",
+   "n_patches_in_batch": 3,
+   "hits": 1,
+   "n_events": 3,
+   "n_patches": 3,
+   "recall": 0.3333333333333333,
+   "wilson95": [
+    0.06149194472039621,
+    0.7923403991979522
+   ],
+   "boot95": [
+    0.0,
+    1.0
+   ],
+   "corrected_upper": 1.8116954945736672,
+   "c1_would_hold": false
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260420",
+   "n_patches_in_batch": 89,
+   "hits": 8,
+   "n_events": 75,
+   "n_patches": 61,
+   "recall": 0.10666666666666667,
+   "wilson95": [
+    0.055049127621743174,
+    0.19661362846473074
+   ],
+   "boot95": [
+    0.041666666666666664,
+    0.17567567567567569
+   ],
+   "corrected_upper": 0.31827083012780644,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260421",
+   "n_patches_in_batch": 113,
+   "hits": 13,
+   "n_events": 100,
+   "n_patches": 85,
+   "recall": 0.13,
+   "wilson95": [
+    0.07757167427240512,
+    0.20980351440076428
+   ],
+   "boot95": [
+    0.061855670103092786,
+    0.21
+   ],
+   "corrected_upper": 0.3804560538604701,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260427",
+   "n_patches_in_batch": 9,
+   "hits": 0,
+   "n_events": 8,
+   "n_patches": 7,
+   "recall": 0.0,
+   "wilson95": [
+    0.0,
+    0.32440756488388023
+   ],
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "corrected_upper": 0.0,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260428",
+   "n_patches_in_batch": 23,
+   "hits": 2,
+   "n_events": 21,
+   "n_patches": 19,
+   "recall": 0.09523809523809523,
+   "wilson95": [
+    0.02651876743807452,
+    0.2891413907391826
+   ],
+   "boot95": [
+    0.0,
+    0.25
+   ],
+   "corrected_upper": 0.4529238736434168,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "legacy",
+   "n_patches_in_batch": 3,
+   "hits": 1,
+   "n_events": 9,
+   "n_patches": 3,
+   "recall": 0.1111111111111111,
+   "wilson95": [
+    0.019890887638544907,
+    0.434999705576656
+   ],
+   "boot95": [
+    0.0,
+    0.3333333333333333
+   ],
+   "corrected_upper": 0.6038984981912223,
+   "c1_would_hold": false
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260420",
+   "n_patches_in_batch": 89,
+   "hits": 8,
+   "n_events": 75,
+   "n_patches": 61,
+   "recall": 0.10666666666666667,
+   "wilson95": [
+    0.055049127621743174,
+    0.19661362846473074
+   ],
+   "boot95": [
+    0.041666666666666664,
+    0.17567567567567569
+   ],
+   "corrected_upper": 0.31827083012780644,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260421",
+   "n_patches_in_batch": 113,
+   "hits": 13,
+   "n_events": 100,
+   "n_patches": 85,
+   "recall": 0.13,
+   "wilson95": [
+    0.07757167427240512,
+    0.20980351440076428
+   ],
+   "boot95": [
+    0.061855670103092786,
+    0.21
+   ],
+   "corrected_upper": 0.3804560538604701,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260427",
+   "n_patches_in_batch": 9,
+   "hits": 0,
+   "n_events": 8,
+   "n_patches": 7,
+   "recall": 0.0,
+   "wilson95": [
+    0.0,
+    0.32440756488388023
+   ],
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "corrected_upper": 0.0,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260428",
+   "n_patches_in_batch": 23,
+   "hits": 2,
+   "n_events": 21,
+   "n_patches": 19,
+   "recall": 0.09523809523809523,
+   "wilson95": [
+    0.02651876743807452,
+    0.2891413907391826
+   ],
+   "boot95": [
+    0.0,
+    0.25
+   ],
+   "corrected_upper": 0.4529238736434168,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (coherent-normal-step)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "legacy",
+   "n_patches_in_batch": 3,
+   "hits": 17,
+   "n_events": 90,
+   "n_patches": 3,
+   "recall": 0.18888888888888888,
+   "wilson95": [
+    0.12141259844132833,
+    0.28183623524314166
+   ],
+   "boot95": [
+    0.1506849315068493,
+    0.5
+   ],
+   "corrected_upper": 0.9058477472868336,
+   "c1_would_hold": false
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260420",
+   "n_patches_in_batch": 89,
+   "hits": 7,
+   "n_events": 61,
+   "n_patches": 61,
+   "recall": 0.11475409836065574,
+   "wilson95": [
+    0.05671202660732208,
+    0.21844308472401078
+   ],
+   "boot95": [
+    0.03278688524590164,
+    0.19672131147540983
+   ],
+   "corrected_upper": 0.356399113686623,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260421",
+   "n_patches_in_batch": 113,
+   "hits": 9,
+   "n_events": 85,
+   "n_patches": 85,
+   "recall": 0.10588235294117647,
+   "wilson95": [
+    0.05671240711980652,
+    0.18913518600421056
+   ],
+   "boot95": [
+    0.047058823529411764,
+    0.17647058823529413
+   ],
+   "corrected_upper": 0.31971096963064716,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260427",
+   "n_patches_in_batch": 9,
+   "hits": 0,
+   "n_events": 7,
+   "n_patches": 7,
+   "recall": 0.0,
+   "wilson95": [
+    5.551115123125783e-17,
+    0.35433043506668743
+   ],
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "corrected_upper": 0.0,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "20260428",
+   "n_patches_in_batch": 23,
+   "hits": 2,
+   "n_events": 19,
+   "n_patches": 19,
+   "recall": 0.10526315789473684,
+   "wilson95": [
+    0.02935856029887013,
+    0.31394082711109006
+   ],
+   "boot95": [
+    0.0,
+    0.2631578947368421
+   ],
+   "corrected_upper": 0.4767619722562282,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 1,
+   "radius": 1.0,
+   "batch": "legacy",
+   "n_patches_in_batch": 3,
+   "hits": 1,
+   "n_events": 3,
+   "n_patches": 3,
+   "recall": 0.3333333333333333,
+   "wilson95": [
+    0.06149194472039621,
+    0.7923403991979522
+   ],
+   "boot95": [
+    0.0,
+    1.0
+   ],
+   "corrected_upper": 1.8116954945736672,
+   "c1_would_hold": false
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260420",
+   "n_patches_in_batch": 89,
+   "hits": 9,
+   "n_events": 75,
+   "n_patches": 61,
+   "recall": 0.12,
+   "wilson95": [
+    0.06443371823944515,
+    0.2125964020474873
+   ],
+   "boot95": [
+    0.05194805194805195,
+    0.19230769230769232
+   ],
+   "corrected_upper": 0.3484029797257053,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260421",
+   "n_patches_in_batch": 113,
+   "hits": 13,
+   "n_events": 100,
+   "n_patches": 85,
+   "recall": 0.13,
+   "wilson95": [
+    0.07757167427240512,
+    0.20980351440076428
+   ],
+   "boot95": [
+    0.061855670103092786,
+    0.21
+   ],
+   "corrected_upper": 0.3804560538604701,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260427",
+   "n_patches_in_batch": 9,
+   "hits": 0,
+   "n_events": 8,
+   "n_patches": 7,
+   "recall": 0.0,
+   "wilson95": [
+    0.0,
+    0.32440756488388023
+   ],
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "corrected_upper": 0.0,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "20260428",
+   "n_patches_in_batch": 23,
+   "hits": 2,
+   "n_events": 21,
+   "n_patches": 19,
+   "recall": 0.09523809523809523,
+   "wilson95": [
+    0.02651876743807452,
+    0.2891413907391826
+   ],
+   "boot95": [
+    0.0,
+    0.25
+   ],
+   "corrected_upper": 0.4529238736434168,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": 3,
+   "radius": 1.0,
+   "batch": "legacy",
+   "n_patches_in_batch": 3,
+   "hits": 1,
+   "n_events": 9,
+   "n_patches": 3,
+   "recall": 0.1111111111111111,
+   "wilson95": [
+    0.019890887638544907,
+    0.434999705576656
+   ],
+   "boot95": [
+    0.0,
+    0.3333333333333333
+   ],
+   "corrected_upper": 0.6038984981912223,
+   "c1_would_hold": false
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260420",
+   "n_patches_in_batch": 89,
+   "hits": 9,
+   "n_events": 75,
+   "n_patches": 61,
+   "recall": 0.12,
+   "wilson95": [
+    0.06443371823944515,
+    0.2125964020474873
+   ],
+   "boot95": [
+    0.05194805194805195,
+    0.19230769230769232
+   ],
+   "corrected_upper": 0.3484029797257053,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260421",
+   "n_patches_in_batch": 113,
+   "hits": 13,
+   "n_events": 100,
+   "n_patches": 85,
+   "recall": 0.13,
+   "wilson95": [
+    0.07757167427240512,
+    0.20980351440076428
+   ],
+   "boot95": [
+    0.061855670103092786,
+    0.21
+   ],
+   "corrected_upper": 0.3804560538604701,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260427",
+   "n_patches_in_batch": 9,
+   "hits": 0,
+   "n_events": 8,
+   "n_patches": 7,
+   "recall": 0.0,
+   "wilson95": [
+    0.0,
+    0.32440756488388023
+   ],
+   "boot95": [
+    0.0,
+    0.0
+   ],
+   "corrected_upper": 0.0,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "20260428",
+   "n_patches_in_batch": 23,
+   "hits": 2,
+   "n_events": 21,
+   "n_patches": 19,
+   "recall": 0.09523809523809523,
+   "wilson95": [
+    0.02651876743807452,
+    0.2891413907391826
+   ],
+   "boot95": [
+    0.0,
+    0.25
+   ],
+   "corrected_upper": 0.4529238736434168,
+   "c1_would_hold": true
+  },
+  {
+   "tool": "tifxyz-doctor (any cue)",
+   "cap": "none",
+   "radius": 1.0,
+   "batch": "legacy",
+   "n_patches_in_batch": 3,
+   "hits": 17,
+   "n_events": 90,
+   "n_patches": 3,
+   "recall": 0.18888888888888888,
+   "wilson95": [
+    0.12141259844132833,
+    0.28183623524314166
+   ],
+   "boot95": [
+    0.1506849315068493,
+    0.5
+   ],
+   "corrected_upper": 0.9058477472868336,
+   "c1_would_hold": false
+  }
+ ],
+ "batch_patch_counts": {
+  "20260420": 89,
+  "20260421": 113,
+  "20260427": 9,
+  "20260428": 23,
+  "legacy": 3
+ },
+ "ct_contradicted": {
+  "coverage": {
+   "candidate_patches": 302,
+   "cached_patches": 88,
+   "candidate_events": 566
+  },
+  "stats": {
+   "tifxyz-doctor (coherent-normal-step)": {
+    "pooled": {
+     "ct_contradicted": {
+      "hits": 40,
+      "n_events": 312,
+      "n_patches": 88,
+      "recall": 0.1282051282051282,
+      "wilson95": [
+       0.09558083689997549,
+       0.16987341705941883
+      ],
+      "boot95": [
+       0.09507833575430587,
+       0.18126420454545447
+      ]
+     },
+     "confirmed_uncapped_comparison": {
+      "hits": 40,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.1360544217687075,
+      "wilson95": [
+       0.101530207534473,
+       0.17996673097994714
+      ],
+      "boot95": [
+       0.09090909090909091,
+       0.17410328046142748
+      ]
+     }
+    },
+    "new": {
+     "ct_contradicted": {
+      "hits": 35,
+      "n_events": 255,
+      "n_patches": 60,
+      "recall": 0.13725490196078433,
+      "wilson95": [
+       0.10037267988370964,
+       0.18490410366218257
+      ],
+      "boot95": [
+       0.10307956648162833,
+       0.22369958189867184
+      ]
+     },
+     "confirmed_uncapped_comparison": {
+      "hits": 32,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.13973799126637554,
+      "wilson95": [
+       0.10075289270279383,
+       0.19061042018959476
+      ],
+      "boot95": [
+       0.08695652173913043,
+       0.18651391279403326
+      ]
+     }
+    },
+    "v0_prefix": {
+     "ct_contradicted": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 28,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.018867924528301886,
+       0.1887036434612881
+      ]
+     },
+     "confirmed_uncapped_comparison": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     }
+    }
+   },
+   "tifxyz-doctor (any cue)": {
+    "pooled": {
+     "ct_contradicted": {
+      "hits": 42,
+      "n_events": 312,
+      "n_patches": 88,
+      "recall": 0.1346153846153846,
+      "wilson95": [
+       0.10115661601862122,
+       0.17696221976905943
+      ],
+      "boot95": [
+       0.09829843801927551,
+       0.1907597290232318
+      ]
+     },
+     "confirmed_uncapped_comparison": {
+      "hits": 41,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.13945578231292516,
+      "wilson95": [
+       0.10448973619135185,
+       0.18372218420611106
+      ],
+      "boot95": [
+       0.09501672706997491,
+       0.1794091689724261
+      ]
+     }
+    },
+    "new": {
+     "ct_contradicted": {
+      "hits": 37,
+      "n_events": 255,
+      "n_patches": 60,
+      "recall": 0.1450980392156863,
+      "wilson95": [
+       0.10713684411071109,
+       0.1935934143855402
+      ],
+      "boot95": [
+       0.10637046307884856,
+       0.23424572531715382
+      ]
+     },
+     "confirmed_uncapped_comparison": {
+      "hits": 33,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.14410480349344978,
+      "wilson95": [
+       0.10448645039444944,
+       0.1954663980992436
+      ],
+      "boot95": [
+       0.09258040935672514,
+       0.19381459948320406
+      ]
+     }
+    },
+    "v0_prefix": {
+     "ct_contradicted": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 28,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.018867924528301886,
+       0.1887036434612881
+      ]
+     },
+     "confirmed_uncapped_comparison": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     }
+    }
+   }
+  }
+ },
+ "elapsed_s": 7.103823184967041
+}

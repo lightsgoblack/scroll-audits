@@ -1,0 +1,55 @@
+name: Detector submission
+description: Put a sheet-switch detector on the SwitchBench-natural leaderboard
+title: "[detector] <tool> @ <commit>"
+labels: ["leaderboard"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Tool repository and commit
+      description: Public URL and the exact commit you ran
+      placeholder: https://github.com/owner/repo @ 0123abc
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - default (the tool's own defaults)
+        - author-intended (settings the tool's author recommends for this task)
+        - tuned (say what was tuned and on which data below)
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command(s)
+      description: Everything needed to regenerate the alarms file from the fetched patches
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: alarms
+    attributes:
+      label: Alarms file
+      description: Attach alarms.json (drag and drop) or link a gist
+    validations:
+      required: true
+  - type: textarea
+    id: score
+    attributes:
+      label: Output of score
+      description: The table printed by `python -m tools.switchbench_kit score`, plus the kit version
+      render: text
+  - type: textarea
+    id: tuning
+    attributes:
+      label: Tuning notes (tuned mode only)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Terms
+      options:
+        - label: The alarms file may be published in this repository next to the leaderboard.
+          required: true

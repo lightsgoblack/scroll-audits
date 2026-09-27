@@ -1,0 +1,10 @@
+{
+ "switchbench_natural.md": {
+  "label": "A",
+  "sha256": "2710e0d5ebec2b714cc8c797735bd38686bf2ca46365a39f152e71fd4bcf46ca"
+ },
+ "switchbench_v1.md": {
+  "label": "P1",
+  "sha256": "821144c5c69b17a217fdbc12f4f11e7a95f423b09ff5749eef5e99b2d6bce592"
+ }
+}

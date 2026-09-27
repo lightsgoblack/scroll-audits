@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SwitchBench leaderboard</title>
+<meta name="description" content="Sheet-switch detector leaderboard and self-scorer for SwitchBench.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>SwitchBench leaderboard</h1>
+    <p class="tag">Recall of sheet-switch detectors on naturally occurring sheet switches, scored by
+      <a href="../../tools/switchbench_kit/README.md">the SwitchBench scorer kit</a>.</p>
+  </header>
+
+  <section class="plain" aria-labelledby="plain-h">
+    <h2 id="plain-h">In plain English</h2>
+    <dl>
+      <dt>What is a "sheet switch"?</dt>
+      <dd>A scroll is a spiral of papyrus sheet. When we trace a surface through the CT scan, the
+        trace can accidentally hop from one wind of the spiral onto the wind next to it, like a
+        needle skipping a groove on a record. A detector's job is to notice where a traced surface
+        (a "patch") does that, so the mistake can be fixed before anyone reads text off the wrong sheet.</dd>
+      <dt>What does "recall" mean here?</dt>
+      <dd>Of all the confirmed sheet switches we know about in the test set, recall is the fraction
+        a detector actually flagged (hit) within 1.0&nbsp;mm of the switch. Higher is better. The 95%
+        interval (Wilson score) shows how much that number could plausibly move with more test data.</dd>
+      <dt>What is "false alarms / 100&nbsp;mm"?</dt>
+      <dd>How often a detector cries wolf on parts of the surface we've confirmed have <em>no</em>
+        switch, per 100&nbsp;mm of that confirmed-clean surface. Lower is better.</dd>
+      <dt>What is "coverage"?</dt>
+      <dd>How many of the test patches a detector even produced a verdict for. Recall still counts an
+        event on a patch a detector never looked at as a miss &mdash; that's unavoidable if recall is
+        to mean "fraction of all known switches caught." Coverage is what tells you whether a low
+        recall means the detector looked and missed, or mostly didn't look: a detector that only
+        covers a handful of patches will show a low recall for that reason alone, not necessarily
+        because it performs badly where it does run.</dd>
+      <dt>How do I submit a detector?</dt>
+      <dd>Run your detector, score its output with the scorer kit, then open a
+        <strong>Detector submission</strong> issue with your alarms file and the exact command you
+        ran &mdash; see
+        <a href="../../CONTRIBUTING.md">CONTRIBUTING.md</a>. We re-score everyone's alarms ourselves
+        before publishing a row.</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="board-h">
+    <div class="board-head">
+      <h2 id="board-h">Leaderboard</h2>
+      <p class="meta" id="board-meta">Loading&hellip;</p>
+    </div>
+    <div class="table-wrap">
+      <table id="board-table">
+        <thead>
+          <tr>
+            <th scope="col" data-key="name"><button class="sort-btn" data-key="name">Detector<span class="arrow"></span></button></th>
+            <th scope="col" data-key="mode"><button class="sort-btn" data-key="mode">Mode<span class="arrow"></span></button></th>
+            <th scope="col" data-key="recall"><button class="sort-btn" data-key="recall">Recall<span class="arrow"></span></button></th>
+            <th scope="col">95% CI</th>
+            <th scope="col" data-key="fa"><button class="sort-btn" data-key="fa">FA / 100&nbsp;mm<span class="arrow"></span></button></th>
+            <th scope="col">FA 95% CI</th>
+            <th scope="col" data-key="coverage"><button class="sort-btn" data-key="coverage">Coverage<span class="arrow"></span></button></th>
+            <th scope="col">Tool @ commit</th>
+          </tr>
+        </thead>
+        <tbody id="board-body"></tbody>
+      </table>
+    </div>
+    <p class="note">Coverage matters: a detector with few patches with a verdict is limited in scope
+      here, not wrong &mdash; it gets a <strong>Limited scope</strong> badge (fewer than half the
+      patches got a verdict) and sorts after full-coverage detectors at the same recall, so a low
+      false-alarm rate earned on a sliver of the corpus doesn't out-rank one earned on all of it.
+      The false-alarm rate also gets its own 95% confidence interval, the same patch-block bootstrap
+      used for recall, so its rate is judged with the same rigor. Every row is reproducible with the
+      scorer kit on the same inputs.</p>
+  </section>
+
+  <section class="scorer" aria-labelledby="scorer-h">
+    <h2 id="scorer-h">Score your own detector</h2>
+    <p>Pick an <code>alarms.json</code> file from your computer. Nothing is uploaded &mdash; scoring
+      runs entirely in your browser with the same corpus data this page already loaded.</p>
+    <p class="fmt">Format: <code>{"patch_id": [[x, y, z], ...], ...}</code> (level-2 voxel coordinates,
+      one list of alarm points per patch; a patch you looked at but raised no alarm on should still
+      be a key, mapped to an empty list).</p>
+    <div class="field">
+      <label for="alarms-file">alarms.json</label>
+      <input type="file" id="alarms-file" accept="application/json,.json">
+    </div>
+    <div id="scorer-status" role="status" aria-live="polite"></div>
+    <div id="scorer-result" class="result-card" hidden></div>
+    <p class="fa-note">False alarms per 100&nbsp;mm need the confirmed-clean patch geometry, which
+      this page does not ship. Run the scorer kit for the full report, including false alarms:</p>
+    <pre class="cmd">python -m tools.switchbench_kit score --corpus results/switchbench_natural_v0_events.json \
+  --alarms alarms.json --patches-dir DIR</pre>
+  </section>
+
+  <footer>
+    <p>Data: <code id="data-src">leaderboard.json</code> + <code id="corpus-src">corpus_events.json</code>,
+      written by <code>tools/release/export_viewer_data.py</code>. Source:
+      <a href="https://github.com/">this repository</a>'s <code>tools/switchbench_kit</code>.</p>
+  </footer>
+</main>
+<script src="viewer.js"></script>
+</body>
+</html>

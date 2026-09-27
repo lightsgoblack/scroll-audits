@@ -1,4 +1,4 @@
-"""Write the corpus label file (coordinates only, no images): vault/results/switchbench_natural_events.json."""
+"""Write the corpus label file (coordinates only, no images): results/switchbench_natural_v0_events.json."""
 from __future__ import annotations
 
 import json

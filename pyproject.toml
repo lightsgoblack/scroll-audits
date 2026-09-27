@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scroll-audits"
+version = "1.0.0"
+description = "Pre-registered audits of Vesuvius Challenge data and tools (SwitchBench-natural and friends)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "scipy",
+    "tifffile",
+    "imagecodecs",  # the shipped tifxyz patches are LZW-compressed; tifffile needs this to read them
+    "huggingface_hub",
+]
+
+[project.urls]
+Repository = "https://github.com/lightsgoblack/scroll-audits"
+
+# In plain English: this file is what makes `pip install git+https://github.com/lightsgoblack/scroll-audits` (or `pip install -e .` after
+# cloning) work at all -- it tells pip the package's name, its dependencies, and that running
+# `switchbench` on the command line should call this kit's own entry point.
+[project.scripts]
+switchbench = "tools.switchbench_kit.__main__:main"
+
+[tool.setuptools.packages.find]
+# every tools.* package ships (switchbench_kit, switchbench, harness, lie_detector_v0, release), not
+# just the scorer kit, so the detector adapters and corpus/geometry helpers they import stay reachable
+include = ["tools*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.md"]

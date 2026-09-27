@@ -1,4 +1,4 @@
-"""Render vault/results/switchbench_natural.md from switchbench_natural.json (numbers never typed by hand)."""
+"""Render results/switchbench_natural_v0.md from switchbench_natural.json (numbers never typed by hand)."""
 from __future__ import annotations
 
 import json
@@ -30,7 +30,7 @@ def main():
     w = L.append
     w("# SwitchBench-natural: results v0 (2026-09-26)")
     w("")
-    w(f"Bet: IDEAS.md section 5, criteria approved 2026-09-26 and frozen. Builder run, first line of bet code "
+    w(f"Bet: protocol A (prereg/switchbench_natural.md), criteria approved 2026-09-26 and frozen. Builder run, first line of bet code "
       f"{j['start_first_code_utc']}, this file written {j['written_utc']} (well inside the 3-day corpus cap and 5-day total cap). "
       "$0, CPU only. No ink maps used, no images produced anywhere (CT read as numeric 1-D profiles only; "
       "tifxyz-doctor run with `--json` only). Nothing text-like was seen.")
@@ -39,7 +39,7 @@ def main():
     w("")
     w(f"**{j['verdict']}** under the frozen rule: {j['verdict_reason']}.")
     w("")
-    w("Rule text (IDEAS.md 5): *PASS: >= 30 confirmed natural events AND at least one of: (i) a detector's natural "
+    w("Rule text (protocol A (prereg/switchbench_natural.md)): *PASS: >= 30 confirmed natural events AND at least one of: (i) a detector's natural "
       "recall is below its published planted recall with the 95% CI excluding the planted value; (ii) gen_avg_cost "
       "AUROC >= 0.65 with CI lower bound > 0.55.* "
       f"Here: {c['events_confirmed']} confirmed events (>= 30). (i) holds for: "
@@ -120,7 +120,7 @@ def main():
       "(auto_grown_w20231031143852, 434 x 554 cells; its 326 negative runs were CT-checked only up to the per-patch cap "
       "of 20, D8). It carries no gen_avg_cost, so the gen_avg_cost windows cover fewer events than the recall table.")
     w("")
-    w("Effort: about 3.1 agent-hours of wall time from first line of code to this file, $0 (for LEDGER.md; lead integrates).")
+    w("Effort: about 3.1 agent-hours of wall time from first line of code to this file, $0.")
     w("")
     w("## Sanity checks (all pass; run before any corpus verdict)")
     w("")
@@ -201,7 +201,7 @@ def main():
     w("| sheet-topo-bench v1 | tonclap/sheet-topo-bench 9fdfeef | cloned, pure Python | **not run** (D9) |")
     w("| #1621-style check | ours, tools/switchbench/annot.py | n/a | every scored patch |")
     w("")
-    w("All clones live in /home/user/ext (outside the repo); no downloaded binary was executed.")
+    w("All clones live in $SWITCHBENCH_EXT (default ./ext) (outside the repo); no downloaded binary was executed.")
     w("")
     w("## Prior art")
     w("")
@@ -215,7 +215,7 @@ def main():
     w("## Files")
     w("")
     w("- Code: `tools/switchbench/` (pull, geom, label, confirm, ct, sanity, tune_ct, calib_onlayer, calib_negrun, corpus, detectors, annot, run_windaudit, metrics, evaluate, report, write_md, events_file).")
-    w("- `vault/results/switchbench_natural.json` (all numbers), `switchbench_sanity.json`, `switchbench_ct_calibration.json`, "
+    w("- `results/switchbench_natural_v0.json` (all numbers), `switchbench_sanity.json`, `switchbench_ct_calibration.json`, "
       "`switchbench_natural_events.json` (event and negative coordinates only, no images).")
     w(f"- Disk: data/paris4 = {j['disk']['data_paris4_gb']:.2f} GB (cap 5 GB), free {j['disk']['free_gb']:.1f} GB.")
     w("")
@@ -224,7 +224,7 @@ def main():
     w("- Verdict above is final under the frozen rule; the scout's prior-art re-check at release is still owed.")
     w("- Worth doing before any release: hand-review a seeded sample of confirmed events (numeric CT and geometry, no "
       "images) to measure label precision directly instead of the mixture estimate; the headline claim depends on it.")
-    w("- Colin decides whether the PASS should be released as a tifxyz-doctor natural-recall gap plus a coverage note "
+    w("- The authors decide whether the PASS should be released as a tifxyz-doctor natural-recall gap plus a coverage note "
       "for windaudit and windcheck, rather than as two detector gaps.")
     (RES / "switchbench_natural.md").write_text("\n".join(L) + "\n")
     print("wrote", RES / "switchbench_natural.md")

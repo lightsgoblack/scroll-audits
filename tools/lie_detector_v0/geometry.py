@@ -1,10 +1,10 @@
 """Held-out geometry for the 1667 ink segments (masks only, no preds).
 
 For each segment: pixel size, validation-mask area / bbox, overlap with every supervision-mask
-version, the eroded evaluation region per the IDEAS.md held-out rule, 5 mm and 2.5 mm tile
+version, the eroded evaluation region per the the frozen-criteria history held-out rule, 5 mm and 2.5 mm tile
 counts, and labeled ink px inside the eroded region.
 
-Held-out rule (IDEAS.md, global): erode validation_mask_v2 by E px, E = max over compared models
+Held-out rule (the frozen-criteria history, global): erode validation_mask_v2 by E px, E = max over compared models
 of (patch side x input downsample factor), never below 640 px. Erosion here uses a square
 (chessboard) structuring element, because a training patch is a square: a val pixel is exposed
 if it lies within Chebyshev distance < patch side of non-val supervision. Chessboard removes a

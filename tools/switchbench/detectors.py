@@ -9,6 +9,8 @@ Alarms are grid cells (r, c); matching to events is by 3D distance in metrics.py
 """
 from __future__ import annotations
 
+import os
+
 import json
 import subprocess
 import sys
@@ -16,7 +18,7 @@ from pathlib import Path
 
 from . import geom
 
-EXT = Path("/home/user/ext")
+EXT = Path(os.environ.get("SWITCHBENCH_EXT", "ext"))
 OUT = geom.DATA / "detect"
 TD = EXT / "tifxyz-doctor" / ".venv" / "bin" / "tifxyz-doctor"
 WC = EXT / "windcheck"

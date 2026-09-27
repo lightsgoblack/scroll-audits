@@ -1,4 +1,4 @@
-"""Assemble vault/results/switchbench_natural.json from sanity, calibration, corpus and evaluation outputs,
+"""Assemble results/switchbench_natural_v0.json from sanity, calibration, corpus and evaluation outputs,
 and apply the frozen PASS / KILL / INCONCLUSIVE rule mechanically."""
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ def main():
     summ = corpus.summary()
     v, why, ci, cii = verdict(summ["events_confirmed"], ev)
     out = dict(
-        bet="SwitchBench-natural (IDEAS.md section 5, criteria approved 2026-09-26)",
+        bet="SwitchBench-natural (protocol A (prereg/switchbench_natural.md), criteria approved 2026-09-26)",
         start_first_code_utc=corpus.T_START, written_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         verdict=v, verdict_reason=why, prior_art_recheck="not re-checked in this session (scout re-checks at release)",
         corpus=summ,

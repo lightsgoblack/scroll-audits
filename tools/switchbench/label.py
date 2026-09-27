@@ -1,4 +1,4 @@
-"""Natural sheet-switch event labeler (SwitchBench-natural, IDEAS.md section 5, frozen criteria).
+"""Natural sheet-switch event labeler (SwitchBench-natural, protocol A (prereg/switchbench_natural.md), frozen criteria).
 
 Per vertex u of a candidate surface (grid P, outward normals N):
   * "stack": all verified sheets crossed by the line u + t*n_u, |t| <= RQ, found by intersecting the

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use SwitchBench-natural or its scorer kit, please cite it as below."
+title: "scroll-audits: pre-registered audits of Vesuvius Challenge data and tools"
+type: software
+authors:
+  - name: "the authors Mark Robinson (lightsgoblack)"
+repository-code: "https://github.com/lightsgoblack/scroll-audits"
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-10-02"
+keywords:
+  - Vesuvius Challenge
+  - Herculaneum papyri
+  - benchmark
+  - pre-registration
+  - sheet switch

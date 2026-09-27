@@ -1,0 +1,471 @@
+{
+ "meta": {
+  "generated_utc": "2026-09-27T06:46:56Z",
+  "corpus": {
+   "path": "results/switchbench_natural_v0_events.json",
+   "sha256": "30d0cf0768d83aba5144deef40e7860cfdcd9c3f47193e4efac49190aeebf9e7",
+   "scroll": "PHercParis4",
+   "frame": "level-2 voxels (x, y, z) of volume 20260411134726 (9.6 um/vx)",
+   "voxel_mm": 0.0096,
+   "scored_patches": 67,
+   "confirmed_events": 54,
+   "counted_events": 54,
+   "event_patches": 39,
+   "confirmed_negative_runs": 594,
+   "negative_mm": 7896.49537373405,
+   "geometry_sha256": "5efaf7ac4b2ba34a6a018fba88e37e83d438ccc4fbee39a00a47577d714852c9",
+   "geometry_check": "match"
+  },
+  "settings": {
+   "match_mm": 1.0,
+   "per_patch_cap": null,
+   "bootstrap": 2000,
+   "seed": 20260925,
+   "fa_dedup_mm": 0.5
+  },
+  "kit": {
+   "name": "switchbench_kit",
+   "version": "1.0.0"
+  }
+ },
+ "rows": [
+  {
+   "name": "tifxyz-doctor (coherent-normal-step)",
+   "tool": "aviad12g/tifxyz-doctor@5ca0444",
+   "mode": "default",
+   "notes": "",
+   "recall": {
+    "hits": 6,
+    "events": 54,
+    "recall": 0.1111111111111111,
+    "wilson95": [
+     0.051930224969995484,
+     0.2219470102118128
+    ],
+    "bootstrap95": [
+     0.023809523809523808,
+     0.18872416891284793
+    ],
+    "bootstrap_patches": 39
+   },
+   "false_alarms": {
+    "count": 5,
+    "negative_mm": 7896.49537373405,
+    "per_100mm": 0.06331922914349317,
+    "bootstrap95": [
+     0.0,
+     0.2546487417981853
+    ],
+    "bootstrap_patches": 67
+   },
+   "coverage": {
+    "patches": [
+     67,
+     67
+    ],
+    "events": [
+     54,
+     54
+    ],
+    "negative_mm": [
+     7896.495373734045,
+     7896.49537373405
+    ],
+    "recall_where_verdict": {
+     "hits": 6,
+     "events": 54,
+     "recall": 0.1111111111111111
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 5,
+     "events": 24,
+     "recall": 0.20833333333333334,
+     "wilson95": [
+      0.20833333333333334,
+      0.09244825352851857,
+      0.40470453253188665
+     ]
+    },
+    "gradual": {
+     "hits": 1,
+     "events": 30,
+     "recall": 0.03333333333333333,
+     "wilson95": [
+      0.03333333333333333,
+      0.005908590381612455,
+      0.16670390991409173
+     ]
+    }
+   },
+   "alarms_sha256": "646668b0e259878b9e2a01b12084d524ec2cfe10d9831ffafb54d5319adae716"
+  },
+  {
+   "name": "tifxyz-doctor (any cue)",
+   "tool": "aviad12g/tifxyz-doctor@5ca0444",
+   "mode": "default",
+   "notes": "",
+   "recall": {
+    "hits": 6,
+    "events": 54,
+    "recall": 0.1111111111111111,
+    "wilson95": [
+     0.051930224969995484,
+     0.2219470102118128
+    ],
+    "bootstrap95": [
+     0.023809523809523808,
+     0.18872416891284793
+    ],
+    "bootstrap_patches": 39
+   },
+   "false_alarms": {
+    "count": 5,
+    "negative_mm": 7896.49537373405,
+    "per_100mm": 0.06331922914349317,
+    "bootstrap95": [
+     0.0,
+     0.2546487417981853
+    ],
+    "bootstrap_patches": 67
+   },
+   "coverage": {
+    "patches": [
+     67,
+     67
+    ],
+    "events": [
+     54,
+     54
+    ],
+    "negative_mm": [
+     7896.495373734045,
+     7896.49537373405
+    ],
+    "recall_where_verdict": {
+     "hits": 6,
+     "events": 54,
+     "recall": 0.1111111111111111
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 5,
+     "events": 24,
+     "recall": 0.20833333333333334,
+     "wilson95": [
+      0.20833333333333334,
+      0.09244825352851857,
+      0.40470453253188665
+     ]
+    },
+    "gradual": {
+     "hits": 1,
+     "events": 30,
+     "recall": 0.03333333333333333,
+     "wilson95": [
+      0.03333333333333333,
+      0.005908590381612455,
+      0.16670390991409173
+     ]
+    }
+   },
+   "alarms_sha256": "96996e7f24a57fe90dae314640b1b66d1b6564c57b02b2cb6d1bddf6a52f51db"
+  },
+  {
+   "name": "Random alarms",
+   "tool": "baseline",
+   "mode": "doctor alarm density",
+   "notes": "",
+   "recall": {
+    "hits": 5,
+    "events": 54,
+    "recall": 0.09259259259259259,
+    "wilson95": [
+     0.04020113475702944,
+     0.19909882590962688
+    ],
+    "bootstrap95": [
+     0.021739130434782608,
+     0.15716165413533825
+    ],
+    "bootstrap_patches": 39
+   },
+   "false_alarms": {
+    "count": 81,
+    "negative_mm": 7896.49537373405,
+    "per_100mm": 1.0257715121245892,
+    "bootstrap95": [
+     0.4367036534107238,
+     1.7076106130012918
+    ],
+    "bootstrap_patches": 67
+   },
+   "coverage": {
+    "patches": [
+     67,
+     67
+    ],
+    "events": [
+     54,
+     54
+    ],
+    "negative_mm": [
+     7896.495373734045,
+     7896.49537373405
+    ],
+    "recall_where_verdict": {
+     "hits": 5,
+     "events": 54,
+     "recall": 0.09259259259259259
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 2,
+     "events": 24,
+     "recall": 0.08333333333333333,
+     "wilson95": [
+      0.08333333333333333,
+      0.023158815297043306,
+      0.25848802193210685
+     ]
+    },
+    "gradual": {
+     "hits": 3,
+     "events": 30,
+     "recall": 0.1,
+     "wilson95": [
+      0.1,
+      0.03459988874733419,
+      0.25621082579184085
+     ]
+    }
+   },
+   "alarms_sha256": "3036db0a99ee686925d3ff5c6293caf8bdc440b930ee02f763c870b6a6720a24"
+  },
+  {
+   "name": "windcheck",
+   "tool": "joe-carr-data/windcheck@2b0fb2f",
+   "mode": "default",
+   "notes": "",
+   "recall": {
+    "hits": 0,
+    "events": 54,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.0664135880908964
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 39
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 7896.49537373405,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 67
+   },
+   "coverage": {
+    "patches": [
+     13,
+     67
+    ],
+    "events": [
+     11,
+     54
+    ],
+    "negative_mm": [
+     4111.185767439166,
+     7896.49537373405
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 11,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 24,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      1.3877787807814457e-17,
+      0.13797620467498017
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 30,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.11351339317396876
+     ]
+    }
+   },
+   "alarms_sha256": "b5b2976e5bf8ba25b988513e3e56c76dc0ff21f2e87ab9f3a12b8ffdaa45f29f"
+  },
+  {
+   "name": "windaudit",
+   "tool": "sergeievland/windaudit@aba5633",
+   "mode": "default",
+   "notes": "",
+   "recall": {
+    "hits": 0,
+    "events": 54,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.0664135880908964
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 39
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 7896.49537373405,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 67
+   },
+   "coverage": {
+    "patches": [
+     7,
+     67
+    ],
+    "events": [
+     11,
+     54
+    ],
+    "negative_mm": [
+     1151.7135609627132,
+     7896.49537373405
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 11,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 24,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      1.3877787807814457e-17,
+      0.13797620467498017
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 30,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.11351339317396876
+     ]
+    }
+   },
+   "alarms_sha256": "c20774ff59b41e3e395587fd1628ea6ca5001403c2fdde7343424f4605ff3fef"
+  },
+  {
+   "name": "#1621-style annotation check",
+   "tool": "ours (villa#1621 idea)",
+   "mode": "default",
+   "notes": "",
+   "recall": {
+    "hits": 0,
+    "events": 54,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.0664135880908964
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 39
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 7896.49537373405,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 67
+   },
+   "coverage": {
+    "patches": [
+     3,
+     67
+    ],
+    "events": [
+     10,
+     54
+    ],
+    "negative_mm": [
+     346.4939243776459,
+     7896.49537373405
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 10,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 24,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      1.3877787807814457e-17,
+      0.13797620467498017
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 30,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.11351339317396876
+     ]
+    }
+   },
+   "alarms_sha256": "37394002375f6668f416899c570d43af5589cc83a1810b4746d9b24adda50309"
+  }
+ ]
+}

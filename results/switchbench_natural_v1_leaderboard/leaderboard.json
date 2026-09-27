@@ -1,0 +1,617 @@
+{
+ "meta": {
+  "generated_utc": "2026-09-27T20:01:11Z",
+  "corpus": {
+   "path": "data/switchbench_v1/switchbench_v1_events.json",
+   "sha256": "e244a9074017924ff8ceb5a156bad9044f0e902de4f0352570da46caf8036b5a",
+   "scroll": "PHercParis4",
+   "frame": "level-2 voxels (x, y, z) of volume 20260411134726 (9.6 um/vx)",
+   "voxel_mm": 0.0096,
+   "scored_patches": 237,
+   "confirmed_events": 294,
+   "counted_events": 213,
+   "event_patches": 175,
+   "confirmed_negative_runs": 1261,
+   "negative_mm": 16414.00981220263,
+   "geometry_sha256": "e6115ded16ad4c1e87d863014b2bc086009640bb8c74b79b5a10151aabaedffa",
+   "geometry_check": "match"
+  },
+  "settings": {
+   "match_mm": 1.0,
+   "per_patch_cap": 3,
+   "bootstrap": 2000,
+   "seed": 20260925,
+   "fa_dedup_mm": 0.5
+  },
+  "kit": {
+   "name": "switchbench_kit",
+   "version": "1.0.0"
+  }
+ },
+ "rows": [
+  {
+   "name": "tifxyz-doctor (any cue)",
+   "tool": "tifxyz-doctor@5ca0444",
+   "mode": "default",
+   "notes": "any review cue, uncapped union",
+   "recall": {
+    "hits": 25,
+    "events": 213,
+    "recall": 0.11737089201877934,
+    "wilson95": [
+     0.08077672149795292,
+     0.16752200842903742
+    ],
+    "bootstrap95": [
+     0.07476286790347328,
+     0.16433748119786673
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 71,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.43255731422322313,
+    "bootstrap95": [
+     0.14619681929561607,
+     0.8358537832284604
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     237,
+     237
+    ],
+    "events": [
+     213,
+     213
+    ],
+    "negative_mm": [
+     16414.00981220265,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 25,
+     "events": 213,
+     "recall": 0.11737089201877934
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 23,
+     "events": 89,
+     "recall": 0.25842696629213485,
+     "wilson95": [
+      0.25842696629213485,
+      0.1788154348613038,
+      0.3580294128371103
+     ]
+    },
+    "gradual": {
+     "hits": 2,
+     "events": 122,
+     "recall": 0.01639344262295082,
+     "wilson95": [
+      0.01639344262295082,
+      0.004507246613595466,
+      0.05780495871348255
+     ]
+    }
+   },
+   "alarms_sha256": "4c10a8f6dba09a117c6aec08e363ab662451573d4d1c6f3f06ab6f801d9aac6c"
+  },
+  {
+   "name": "tifxyz-doctor (coherent-normal-step)",
+   "tool": "tifxyz-doctor@5ca0444",
+   "mode": "default",
+   "notes": "C1 detector: coherent-normal-step, uncapped union (API mask + CLI examples)",
+   "recall": {
+    "hits": 24,
+    "events": 213,
+    "recall": 0.11267605633802817,
+    "wilson95": [
+     0.0768963761734975,
+     0.16217902528633937
+    ],
+    "bootstrap95": [
+     0.07142010832769126,
+     0.15859751327761534
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 70,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.42646495768486786,
+    "bootstrap95": [
+     0.1448535786954164,
+     0.8259099513037343
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     237,
+     237
+    ],
+    "events": [
+     213,
+     213
+    ],
+    "negative_mm": [
+     16414.00981220265,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 24,
+     "events": 213,
+     "recall": 0.11267605633802817
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 22,
+     "events": 89,
+     "recall": 0.24719101123595505,
+     "wilson95": [
+      0.24719101123595505,
+      0.16928236444786654,
+      0.3460203831434971
+     ]
+    },
+    "gradual": {
+     "hits": 2,
+     "events": 122,
+     "recall": 0.01639344262295082,
+     "wilson95": [
+      0.01639344262295082,
+      0.004507246613595466,
+      0.05780495871348255
+     ]
+    }
+   },
+   "alarms_sha256": "283d385b1220d4771397ecc276c73c65f989842c71fc0d4f8f751fc8d2b68f38"
+  },
+  {
+   "name": "windcheck [author-intended: patch mode, no cell floor]",
+   "tool": "windcheck@2b0fb2f",
+   "mode": "author-intended",
+   "notes": "bench/patch_audit.py audit_one, no cell floor",
+   "recall": {
+    "hits": 1,
+    "events": 213,
+    "recall": 0.004694835680751174,
+    "wilson95": [
+     0.0008292350759758448,
+     0.026109611639330656
+    ],
+    "bootstrap95": [
+     0.0,
+     0.014423076923076924
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     237,
+     237
+    ],
+    "events": [
+     213,
+     213
+    ],
+    "negative_mm": [
+     16414.00981220265,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 1,
+     "events": 213,
+     "recall": 0.004694835680751174
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 1,
+     "events": 89,
+     "recall": 0.011235955056179775,
+     "wilson95": [
+      0.011235955056179775,
+      0.001986183228256385,
+      0.060932462115046646
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 122,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.030526178389012868
+     ]
+    }
+   },
+   "alarms_sha256": "7fadfbead6ede7a10c458e9233b6e1f181629b953ce4f84b7bf82db1f9d66ed7"
+  },
+  {
+   "name": "seamcheck [secondary, added after freeze]",
+   "tool": "seamcheck@6d6bc2d",
+   "mode": "author-intended",
+   "notes": "C2 only; added after the freeze",
+   "recall": {
+    "hits": 0,
+    "events": 213,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.017715518248153008
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     236,
+     237
+    ],
+    "events": [
+     210,
+     213
+    ],
+    "negative_mm": [
+     15991.717345838562,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 210,
+     "recall": 0.0
+    },
+    "limited_scope": false
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 89,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      3.469446951953614e-18,
+      0.04137654523625252
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 122,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.030526178389012868
+     ]
+    }
+   },
+   "alarms_sha256": "f4bc4286ebdc388d5dc581dd8ea5ba6ba95e7c076997301e0105f16be235111e"
+  },
+  {
+   "name": "windcheck",
+   "tool": "windcheck@2b0fb2f",
+   "mode": "default",
+   "notes": "refuses <5,000 valid cells (no verdict)",
+   "recall": {
+    "hits": 0,
+    "events": 213,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.017715518248153008
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     28,
+     237
+    ],
+    "events": [
+     24,
+     213
+    ],
+    "negative_mm": [
+     7761.929153062777,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 24,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 89,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      3.469446951953614e-18,
+      0.04137654523625252
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 122,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.030526178389012868
+     ]
+    }
+   },
+   "alarms_sha256": "b41c26ca7b467827a526d0641b736e960e8a32668dba0ec3702c4b7139f557c4"
+  },
+  {
+   "name": "windaudit",
+   "tool": "windaudit@aba5633",
+   "mode": "default",
+   "notes": "WIDE_ATTACHMENT_GAP=1, tolerance 2.5 vx",
+   "recall": {
+    "hits": 0,
+    "events": 213,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.017715518248153008
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     31,
+     237
+    ],
+    "events": [
+     26,
+     213
+    ],
+    "negative_mm": [
+     5393.274997932093,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 26,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 89,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      3.469446951953614e-18,
+      0.04137654523625252
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 122,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.030526178389012868
+     ]
+    }
+   },
+   "alarms_sha256": "0b55c4504d927f0a25665a9ad93710e337b34a8c8eeb7744ec2576b57176d2f1"
+  },
+  {
+   "name": "#1621-style annotation check",
+   "tool": "ours (annot.check_1621)",
+   "mode": "default",
+   "notes": "as v0",
+   "recall": {
+    "hits": 0,
+    "events": 213,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.017715518248153008
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 0,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.0,
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     13,
+     237
+    ],
+    "events": [
+     13,
+     213
+    ],
+    "negative_mm": [
+     2314.9509838058434,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 13,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 89,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      3.469446951953614e-18,
+      0.04137654523625252
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 122,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.030526178389012868
+     ]
+    }
+   },
+   "alarms_sha256": "1cefb9b5bf868b1bc121f27539c573571973c7806e5cb3309abd024299294001"
+  },
+  {
+   "name": "windaudit [author-intended: attachment 0.45 D]",
+   "tool": "windaudit@aba5633",
+   "mode": "author-intended",
+   "notes": "widest same-sheet tolerance in its own docs, 10.485 vx",
+   "recall": {
+    "hits": 0,
+    "events": 213,
+    "recall": 0.0,
+    "wilson95": [
+     0.0,
+     0.017715518248153008
+    ],
+    "bootstrap95": [
+     0.0,
+     0.0
+    ],
+    "bootstrap_patches": 175
+   },
+   "false_alarms": {
+    "count": 6,
+    "negative_mm": 16414.00981220263,
+    "per_100mm": 0.03655413923013153,
+    "bootstrap95": [
+     0.0,
+     0.09875339700452863
+    ],
+    "bootstrap_patches": 237
+   },
+   "coverage": {
+    "patches": [
+     48,
+     237
+    ],
+    "events": [
+     39,
+     213
+    ],
+    "negative_mm": [
+     6887.2705870377295,
+     16414.00981220263
+    ],
+    "recall_where_verdict": {
+     "hits": 0,
+     "events": 39,
+     "recall": 0.0
+    },
+    "limited_scope": true
+   },
+   "strata": {
+    "abrupt": {
+     "hits": 0,
+     "events": 89,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      3.469446951953614e-18,
+      0.04137654523625252
+     ]
+    },
+    "gradual": {
+     "hits": 0,
+     "events": 122,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.0,
+      0.030526178389012868
+     ]
+    }
+   },
+   "alarms_sha256": "1a1a06ffdedd58b7e09150ec41a23431cccd9c24bcdb34079e9e8f0fbbe1c4a1"
+  }
+ ]
+}

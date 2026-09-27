@@ -1,0 +1,6027 @@
+{
+ "bet": "SwitchBench-natural v1 (protocol P1 (prereg/switchbench_v1.md), frozen at 45934b5; prereg/switchbench_v1.md)",
+ "prereg": {
+  "file": "prereg/switchbench_v1.md",
+  "sha256": "821144c5c69b17a217fdbc12f4f11e7a95f423b09ff5749eef5e99b2d6bce592",
+  "sha256_matches_commitment": true
+ },
+ "post_freeze_calls": "protocol P1 (prereg/switchbench_v1.md) addendum (commit 52469c7, Scout Report #8): doctor uncapped = API mask UNION CLI examples (primary) and mask only; seamcheck secondary (C2 only); C4 source PHerc0500P2",
+ "v1_start_utc": "2026-09-26T13:15:26Z",
+ "written_utc": "2026-09-26T16:39:58Z",
+ "status": "PAUSED FOR BLIND REVIEW: labels not STRONG; C1 verdict waits for the authors' review",
+ "sanity": {
+  "S1": {
+   "passed": true,
+   "events": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "patches": [
+    "auto_grown_20260526104703844_flatboi_sel_20260526_113725_43",
+    "fill_0010_sel_20260512_111940_5",
+    "same_wrap001239_growpatch",
+    "auto_grown_20260526123645345_sel_20260526_124600_22",
+    "auto_grown_20260429203853823_sel_20260512_103415_35",
+    "auto_grown_20260524231001958_sel_20260524_231341_2",
+    "auto_grown_20260525095345801_sel_20260525_103425_12",
+    "auto_grown_20260526143735233_sel_20260526_154138_329",
+    "auto_grown_20260521160538047_sel_20260521_160906_19",
+    "auto_grown_20260524231452643_sel_20260524_231854_16"
+   ]
+  },
+  "S2": {
+   "passed": true,
+   "n": 5,
+   "planted_events_confirmed_l0": 3,
+   "planted_events_l0_decided": 5,
+   "cases": [
+    {
+     "n_events": 1,
+     "event_dist_mm": [
+      0.048433294719637775
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "ct_l0": [
+      true
+     ],
+     "ct_l2_v0rule": [
+      true
+     ],
+     "passed": true
+    },
+    {
+     "n_events": 1,
+     "event_dist_mm": [
+      0.0
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "ct_l0": [
+      false
+     ],
+     "ct_l2_v0rule": [
+      null
+     ],
+     "passed": true
+    },
+    {
+     "n_events": 1,
+     "event_dist_mm": [
+      3.59994501249544e-14
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "ct_l0": [
+      false
+     ],
+     "ct_l2_v0rule": [
+      false
+     ],
+     "passed": true
+    },
+    {
+     "n_events": 1,
+     "event_dist_mm": [
+      4.365574568510055e-15
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "ct_l0": [
+      true
+     ],
+     "ct_l2_v0rule": [
+      true
+     ],
+     "passed": true
+    },
+    {
+     "n_events": 1,
+     "event_dist_mm": [
+      1.9523442992065593e-14
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "ct_l0": [
+      true
+     ],
+     "ct_l2_v0rule": [
+      true
+     ],
+     "passed": true
+    }
+   ]
+  },
+  "S3": {
+   "passed": true,
+   "frac_with_confirmed_events": 0.03614457831325301,
+   "frac_with_geometry_only_events": 0.10843373493975904,
+   "n": 100,
+   "n_evaluable": 83,
+   "geometry_events": 9,
+   "confirmed_l0": 3,
+   "contradicted_l0": 6,
+   "confirmed_l2_v0rule": 0
+  },
+  "S4": {
+   "passed": true,
+   "rule": "union (mask + CLI examples) reproduces every v0 hit; tool output identical to v0",
+   "n_patches": 69,
+   "failures": [],
+   "totals": {
+    "hits_prim_capped": 6,
+    "hits_prim_union": 7,
+    "hits_prim_mask": 7,
+    "hits_prim_alledges": 9,
+    "hits_any_capped": 6,
+    "hits_any_union": 7,
+    "hits_any_mask": 7,
+    "hits_any_allflagged": 9,
+    "fa_prim_capped": 5,
+    "fa_prim_union": 29,
+    "fa_prim_mask": 29,
+    "fa_prim_alledges": 65,
+    "fa_any_capped": 5,
+    "fa_any_union": 29,
+    "fa_any_mask": 29,
+    "fa_any_allflagged": 65,
+    "n_events": 54,
+    "neg_mm": 7896.495373734045,
+    "hits_prim_capped_v0match": 6,
+    "hits_prim_union_v0match": 6,
+    "hits_prim_mask_v0match": 6,
+    "hits_prim_alledges_v0match": 9,
+    "hits_any_capped_v0match": 6,
+    "hits_any_union_v0match": 6,
+    "hits_any_mask_v0match": 6,
+    "hits_any_allflagged_v0match": 9
+   },
+   "v0_primary_hits_in_mask": 6,
+   "v0_primary_hits_subcomponent_only": 0,
+   "patches_with_capped_emitted_cue": 4,
+   "patches_capped_primary": 4,
+   "elapsed_s": 0.869469404220581
+  }
+ },
+ "labels": {
+  "rule": {
+   "sigma": 1.5,
+   "end_zone": 0.15,
+   "min_dark": 3.0,
+   "q": 30,
+   "mid_bias": 0.15
+  },
+  "objective": "no variant met the 5% false-pass limits on the tune half: max margin (v0 objective)",
+  "grid": {
+   "sigma": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+   ],
+   "end_zone": [
+    0.1,
+    0.15,
+    0.2,
+    0.3
+   ],
+   "min_dark": [
+    1.0,
+    2.0,
+    3.0
+   ],
+   "q": [
+    10,
+    20,
+    30
+   ],
+   "mid_bias": [
+    0.0,
+    0.15,
+    0.3
+   ]
+  },
+  "grid_size": 540,
+  "n_controls": {
+   "tune": {
+    "adjacent": 976,
+    "two_apart": 847,
+    "same_sheet": 976
+   },
+   "test": {
+    "adjacent": 943,
+    "two_apart": 818,
+    "same_sheet": 943
+   }
+  },
+  "rates": {
+   "tune": {
+    "adjacent": {
+     "n": 976,
+     "decided": 925,
+     "passed": 547,
+     "rate": 0.5913513513513513,
+     "ci95": [
+      0.5593576020023906,
+      0.6225894874552346
+     ]
+    },
+    "two_apart": {
+     "n": 847,
+     "decided": 795,
+     "passed": 116,
+     "rate": 0.1459119496855346,
+     "ci95": [
+      0.12307536137165534,
+      0.17215400637906184
+     ]
+    },
+    "same_sheet": {
+     "n": 976,
+     "decided": 914,
+     "passed": 188,
+     "rate": 0.20568927789934355,
+     "ci95": [
+      0.18074245159029328,
+      0.23309967241741997
+     ]
+    }
+   },
+   "test": {
+    "adjacent": {
+     "n": 943,
+     "decided": 904,
+     "passed": 535,
+     "rate": 0.5918141592920354,
+     "ci95": [
+      0.5594516682746334,
+      0.6233996417058972
+     ]
+    },
+    "two_apart": {
+     "n": 818,
+     "decided": 781,
+     "passed": 83,
+     "rate": 0.10627400768245839,
+     "ci95": [
+      0.08655397921209365,
+      0.12984827236607677
+     ]
+    },
+    "same_sheet": {
+     "n": 943,
+     "decided": 896,
+     "passed": 181,
+     "rate": 0.20200892857142858,
+     "ci95": [
+      0.17701715073380872,
+      0.22954497777731284
+     ]
+    }
+   },
+   "all": {
+    "adjacent": {
+     "n": 1919,
+     "decided": 1829,
+     "passed": 1082,
+     "rate": 0.5915800984144342,
+     "ci95": [
+      0.5688840545662237,
+      0.6138922561658291
+     ]
+    },
+    "two_apart": {
+     "n": 1665,
+     "decided": 1576,
+     "passed": 199,
+     "rate": 0.12626903553299493,
+     "ci95": [
+      0.11077391920071313,
+      0.1435816407050619
+     ]
+    },
+    "same_sheet": {
+     "n": 1919,
+     "decided": 1810,
+     "passed": 369,
+     "rate": 0.20386740331491712,
+     "ci95": [
+      0.18594373930935137,
+      0.2230454009559822
+     ]
+    }
+   }
+  },
+  "strong": false,
+  "strong_rule": "test-half two-apart <= 5% and same-sheet <= 5% and adjacent >= 70%",
+  "strong_if_judged_on_all_ladders": false,
+  "v0_rule_level2_same_controls": {
+   "tune": {
+    "adjacent": {
+     "n": 976,
+     "decided": 920,
+     "passed": 447,
+     "rate": 0.48586956521739133,
+     "ci95": [
+      0.4536993390890978,
+      0.5181573038968215
+     ]
+    },
+    "two_apart": {
+     "n": 847,
+     "decided": 801,
+     "passed": 117,
+     "rate": 0.14606741573033707,
+     "ci95": [
+      0.12329877906942,
+      0.17221464933820058
+     ]
+    },
+    "same_sheet": {
+     "n": 976,
+     "decided": 906,
+     "passed": 113,
+     "rate": 0.12472406181015452,
+     "ci95": [
+      0.10478108167753533,
+      0.14783596120662482
+     ]
+    }
+   },
+   "test": {
+    "adjacent": {
+     "n": 943,
+     "decided": 907,
+     "passed": 474,
+     "rate": 0.5226019845644984,
+     "ci95": [
+      0.4900686361502219,
+      0.5549446859849875
+     ]
+    },
+    "two_apart": {
+     "n": 818,
+     "decided": 797,
+     "passed": 79,
+     "rate": 0.09912170639899624,
+     "ci95": [
+      0.08025921295869975,
+      0.12183004832782154
+     ]
+    },
+    "same_sheet": {
+     "n": 943,
+     "decided": 911,
+     "passed": 125,
+     "rate": 0.13721185510428102,
+     "ci95": [
+      0.11638743606502001,
+      0.16108300034034
+     ]
+    }
+   },
+   "all": {
+    "adjacent": {
+     "n": 1919,
+     "decided": 1827,
+     "passed": 921,
+     "rate": 0.5041050903119869,
+     "ci95": [
+      0.48119422872457834,
+      0.5269987253554884
+     ]
+    },
+    "two_apart": {
+     "n": 1665,
+     "decided": 1598,
+     "passed": 196,
+     "rate": 0.12265331664580725,
+     "ci95": [
+      0.10746841700616412,
+      0.13964808546725796
+     ]
+    },
+    "same_sheet": {
+     "n": 1919,
+     "decided": 1817,
+     "passed": 238,
+     "rate": 0.1309851403412218,
+     "ci95": [
+      0.11624750604068718,
+      0.14727980793615592
+     ]
+    }
+   }
+  },
+  "v0_rule_level0_same_controls": {
+   "tune": {
+    "adjacent": {
+     "n": 976,
+     "decided": 922,
+     "passed": 460,
+     "rate": 0.49891540130151846,
+     "ci95": [
+      0.466713013275808,
+      0.5311267896613521
+     ]
+    },
+    "two_apart": {
+     "n": 847,
+     "decided": 798,
+     "passed": 119,
+     "rate": 0.14912280701754385,
+     "ci95": [
+      0.12609130580800681,
+      0.17551627030358719
+     ]
+    },
+    "same_sheet": {
+     "n": 976,
+     "decided": 913,
+     "passed": 133,
+     "rate": 0.1456736035049288,
+     "ci95": [
+      0.12427486095702771,
+      0.1700415186357791
+     ]
+    }
+   },
+   "test": {
+    "adjacent": {
+     "n": 943,
+     "decided": 910,
+     "passed": 483,
+     "rate": 0.5307692307692308,
+     "ci95": [
+      0.49828333552666904,
+      0.5629964405870865
+     ]
+    },
+    "two_apart": {
+     "n": 818,
+     "decided": 791,
+     "passed": 82,
+     "rate": 0.10366624525916561,
+     "ci95": [
+      0.08430384329095783,
+      0.12685959937812538
+     ]
+    },
+    "same_sheet": {
+     "n": 943,
+     "decided": 913,
+     "passed": 132,
+     "rate": 0.14457831325301204,
+     "ci95": [
+      0.12325513997549539,
+      0.16887983739039583
+     ]
+    }
+   },
+   "all": {
+    "adjacent": {
+     "n": 1919,
+     "decided": 1832,
+     "passed": 943,
+     "rate": 0.5147379912663755,
+     "ci95": [
+      0.4918452609571756,
+      0.537569043715238
+     ]
+    },
+    "two_apart": {
+     "n": 1665,
+     "decided": 1589,
+     "passed": 201,
+     "rate": 0.12649465072372562,
+     "ci95": [
+      0.11104644622326079,
+      0.1437444223677479
+     ]
+    },
+    "same_sheet": {
+     "n": 1919,
+     "decided": 1826,
+     "passed": 265,
+     "rate": 0.14512595837897044,
+     "ci95": [
+      0.12971520583983273,
+      0.16202671324683346
+     ]
+    }
+   }
+  },
+  "frontier_on_tune": {
+   "0.15": {
+    "params": {
+     "sigma": 1.5,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 30,
+     "mid_bias": 0.3
+    },
+    "tune": {
+     "adjacent": 0.5005405405405405,
+     "two_apart": 0.14968553459119496,
+     "same_sheet": 0.13129102844638948
+    },
+    "test": {
+     "adjacent": 0.5298672566371682,
+     "two_apart": 0.11139564660691421,
+     "same_sheet": 0.12165178571428571
+    }
+   }
+  }
+ },
+ "corpus": {
+  "counts": {
+   "pooled": {
+    "in_sample": 2636,
+    "candidates": 892,
+    "confirmed": 294,
+    "contradicted": 566,
+    "unconfirmed": 32,
+    "confirmed_l2_v0rule": 206,
+    "confirmed_both_rules": 167,
+    "multi_wrap": 41,
+    "negatives_confirmed": 1261,
+    "negatives_other": 3836,
+    "neg_mm_confirmed": 16414.00981220265,
+    "scored_patches": 237,
+    "event_patches": 175,
+    "max_events_per_patch": 73
+   },
+   "new": {
+    "in_sample": 1833,
+    "candidates": 708,
+    "confirmed": 229,
+    "contradicted": 452,
+    "unconfirmed": 27,
+    "confirmed_l2_v0rule": 152,
+    "confirmed_both_rules": 122,
+    "multi_wrap": 34,
+    "negatives_confirmed": 667,
+    "negatives_other": 3133,
+    "neg_mm_confirmed": 8517.514438468614,
+    "scored_patches": 162,
+    "event_patches": 126,
+    "max_events_per_patch": 73
+   },
+   "v0_prefix": {
+    "in_sample": 803,
+    "candidates": 184,
+    "confirmed": 65,
+    "contradicted": 114,
+    "unconfirmed": 5,
+    "confirmed_l2_v0rule": 54,
+    "confirmed_both_rules": 45,
+    "multi_wrap": 7,
+    "negatives_confirmed": 594,
+    "negatives_other": 703,
+    "neg_mm_confirmed": 7896.49537373405,
+    "scored_patches": 75,
+    "event_patches": 49,
+    "max_events_per_patch": 11
+   }
+  },
+  "new_patches_processed": {
+   "processed": 7000,
+   "in_sample": 1833,
+   "candidates": 708,
+   "events_confirmed_l2": 152,
+   "events_contradicted_l2": 492,
+   "negatives_confirmed": 667,
+   "neg_mm_confirmed": 8517.514438468614,
+   "errors": 0,
+   "finished": true,
+   "finished_utc": "2026-09-26T15:41:06Z",
+   "wall_s_pool": 6529.973901510239,
+   "note": "Pool run 13:20-15:08Z (3 workers). One legacy full-size trace (#5,072 of the seeded order; 783,586 valid vertices, 3.9x v0's largest) was OOM-killed inside the pool (7 GB, memory cgroup shared with other jobs); it was re-run alone with the verified-surface speed cache trimmed to 40 entries under a hard address-space cap: MemoryError at 6 GB (after all stacks were built), done at 9 GB (1,332 s). The cache does not affect results."
+  },
+  "close_utc": "2026-09-30T23:59:00Z",
+  "random_density_per_mm2": 0.020501883665439754
+ },
+ "C1": {
+  "pooled": {
+   "hits": 24,
+   "n_events": 213,
+   "n_patches": 175,
+   "recall": 0.11267605633802817,
+   "boot95": [
+    0.07142010832769126,
+    0.15859751327761534
+   ],
+   "wilson95": [
+    0.0768963761734975,
+    0.16217902528633937
+   ]
+  },
+  "new": {
+   "hits": 19,
+   "n_events": 156,
+   "n_patches": 126,
+   "recall": 0.12179487179487179,
+   "boot95": [
+    0.07236842105263158,
+    0.17791411042944785
+   ],
+   "wilson95": [
+    0.07937502422173531,
+    0.1823934751988734
+   ]
+  },
+  "detector": "tifxyz-doctor (coherent-normal-step), uncapped union (API coherent_normal_step_cells mask + CLI examples), per-patch cap 3, 1 mm",
+  "rule": "corrected upper = boot95 upper / precision lower bound; SUPPORTED if < 0.60 on pooled AND new; FAILS if boot95 lower > 0.85; else INCONCLUSIVE",
+  "precision_source": "blind review round 2 (measured)",
+  "fails_branch_met": {
+   "pooled": false,
+   "new": false
+  },
+  "precision_lower_bound_needed_for_supported": 0.2965235173824131,
+  "blind_review_switch_marks_needed_of_15": 8,
+  "ladder_mixture_precision_info_only": {
+   "sens_test": 0.5918141592920354,
+   "false_pass_test": 0.20200892857142858,
+   "pass_fraction_candidates": 0.34186046511627904,
+   "est_true_switch_fraction": 0.3587728576302486,
+   "est_precision": 0.62109216707181
+  },
+  "verdict": "SUPPORTED"
+ },
+ "C2": {
+  "tifxyz-doctor (coherent-normal-step)": {
+   "default": {
+    "name": "tifxyz-doctor (coherent-normal-step)",
+    "pooled": {
+     "recall": {
+      "hits": 24,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.11267605633802817,
+      "wilson95": [
+       0.0768963761734975,
+       0.16217902528633937
+      ],
+      "boot95": [
+       0.07142010832769126,
+       0.15859751327761534
+      ]
+     },
+     "fa": {
+      "false_alarms": 70,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4264649576848673,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 19,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.12179487179487179,
+      "wilson95": [
+       0.07937502422173531,
+       0.1823934751988734
+      ],
+      "boot95": [
+       0.07236842105263158,
+       0.17791411042944785
+      ]
+     },
+     "fa": {
+      "false_alarms": 41,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4813610859856848,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    }
+   },
+   "intended": {
+    "name": "tifxyz-doctor (coherent-normal-step)",
+    "pooled": {
+     "recall": {
+      "hits": 24,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.11267605633802817,
+      "wilson95": [
+       0.0768963761734975,
+       0.16217902528633937
+      ],
+      "boot95": [
+       0.07142010832769126,
+       0.15859751327761534
+      ]
+     },
+     "fa": {
+      "false_alarms": 70,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4264649576848673,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 19,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.12179487179487179,
+      "wilson95": [
+       0.07937502422173531,
+       0.1823934751988734
+      ],
+      "boot95": [
+       0.07236842105263158,
+       0.17791411042944785
+      ]
+     },
+     "fa": {
+      "false_alarms": 41,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4813610859856848,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    }
+   },
+   "handles_natural_switches": false
+  },
+  "tifxyz-doctor (any cue)": {
+   "default": {
+    "name": "tifxyz-doctor (any cue)",
+    "pooled": {
+     "recall": {
+      "hits": 25,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.11737089201877934,
+      "wilson95": [
+       0.08077672149795292,
+       0.16752200842903742
+      ],
+      "boot95": [
+       0.07476286790347328,
+       0.16433748119786673
+      ]
+     },
+     "fa": {
+      "false_alarms": 71,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4325573142232226,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 20,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.1282051282051282,
+      "wilson95": [
+       0.08454799299726479,
+       0.18973290473824883
+      ],
+      "boot95": [
+       0.07692307692307693,
+       0.18471882907250672
+      ]
+     },
+     "fa": {
+      "false_alarms": 42,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4931016002780185,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    }
+   },
+   "intended": {
+    "name": "tifxyz-doctor (any cue)",
+    "pooled": {
+     "recall": {
+      "hits": 25,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.11737089201877934,
+      "wilson95": [
+       0.08077672149795292,
+       0.16752200842903742
+      ],
+      "boot95": [
+       0.07476286790347328,
+       0.16433748119786673
+      ]
+     },
+     "fa": {
+      "false_alarms": 71,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4325573142232226,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 20,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.1282051282051282,
+      "wilson95": [
+       0.08454799299726479,
+       0.18973290473824883
+      ],
+      "boot95": [
+       0.07692307692307693,
+       0.18471882907250672
+      ]
+     },
+     "fa": {
+      "false_alarms": 42,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4931016002780185,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    }
+   },
+   "handles_natural_switches": false
+  },
+  "windcheck": {
+   "default": {
+    "name": "windcheck",
+    "pooled": {
+     "recall": {
+      "hits": 0,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.017715518248153008
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 28,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 0,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.024032931437414938
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 15,
+      "n_patches": 162
+     }
+    }
+   },
+   "intended": {
+    "name": "windcheck [intended: patch mode, no cell floor]",
+    "pooled": {
+     "recall": {
+      "hits": 1,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.004694835680751174,
+      "wilson95": [
+       0.0008292350759758448,
+       0.026109611639330656
+      ],
+      "boot95": [
+       0.0,
+       0.014423076923076924
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 1,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.00641025641025641,
+      "wilson95": [
+       0.0011324653171247909,
+       0.035412864435195084
+      ],
+      "boot95": [
+       0.0,
+       0.01935483870967742
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    }
+   },
+   "handles_natural_switches": false
+  },
+  "windaudit": {
+   "default": {
+    "name": "windaudit",
+    "pooled": {
+     "recall": {
+      "hits": 0,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.017715518248153008
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 31,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 0,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.024032931437414938
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 23,
+      "n_patches": 162
+     }
+    }
+   },
+   "intended": {
+    "name": "windaudit [intended: attachment 0.45 D]",
+    "pooled": {
+     "recall": {
+      "hits": 0,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.017715518248153008
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 6,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.03655413923013148,
+      "patches_with_verdict": 48,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 0,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.024032931437414938
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 5,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.05870257146166887,
+      "patches_with_verdict": 33,
+      "n_patches": 162
+     }
+    }
+   },
+   "handles_natural_switches": false
+  },
+  "#1621-style annotation check": {
+   "default": {
+    "name": "#1621-style annotation check",
+    "pooled": {
+     "recall": {
+      "hits": 0,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.017715518248153008
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 13,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 0,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.024032931437414938
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 10,
+      "n_patches": 162
+     }
+    }
+   },
+   "intended": {
+    "name": "#1621-style annotation check",
+    "pooled": {
+     "recall": {
+      "hits": 0,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.017715518248153008
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 13,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 0,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.024032931437414938
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 10,
+      "n_patches": 162
+     }
+    }
+   },
+   "handles_natural_switches": false
+  },
+  "seamcheck [secondary, added after freeze]": {
+   "intended": {
+    "name": "seamcheck [secondary, added after freeze]",
+    "pooled": {
+     "recall": {
+      "hits": 0,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.017715518248153008
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 236,
+      "n_patches": 237
+     }
+    },
+    "new": {
+     "recall": {
+      "hits": 0,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.024032931437414938
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "fa": {
+      "false_alarms": 0,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.0,
+      "patches_with_verdict": 161,
+      "n_patches": 162
+     }
+    }
+   },
+   "handles_natural_switches": false
+  },
+  "random": {
+   "pooled": {
+    "recall": {
+     "hits": 13,
+     "n_events": 213,
+     "n_patches": 175,
+     "recall": 0.06103286384976526,
+     "wilson95": [
+      0.03601133406562526,
+      0.10160745425552317
+     ],
+     "boot95": [
+      0.024749426913134663,
+      0.1
+     ]
+    },
+    "fa": {
+     "false_alarms": 791,
+     "negative_mm": 16414.00981220265,
+     "fa_per_100mm": 4.819054021839,
+     "patches_with_verdict": 237,
+     "n_patches": 237
+    }
+   },
+   "new": {
+    "recall": {
+     "hits": 9,
+     "n_events": 156,
+     "n_patches": 126,
+     "recall": 0.057692307692307696,
+     "wilson95": [
+      0.03064574216379553,
+      0.10599877410776384
+     ],
+     "boot95": [
+      0.019230769230769232,
+      0.10429447852760736
+     ]
+    },
+    "fa": {
+     "false_alarms": 367,
+     "negative_mm": 8517.51443846861,
+     "fa_per_100mm": 4.308768745286495,
+     "patches_with_verdict": 162,
+     "n_patches": 162
+    }
+   }
+  },
+  "random_fa_matched": {
+   "pooled": {
+    "recall": {
+     "hits": 3,
+     "n_events": 213,
+     "n_patches": 175,
+     "recall": 0.014084507042253521,
+     "wilson95": [
+      0.00480135911045081,
+      0.040584144539162675
+     ],
+     "boot95": [
+      0.0,
+      0.0325619430558574
+     ]
+    },
+    "fa": {
+     "false_alarms": 52,
+     "negative_mm": 16414.00981220265,
+     "fa_per_100mm": 0.31680253999447283,
+     "patches_with_verdict": 237,
+     "n_patches": 237
+    }
+   },
+   "new": {
+    "recall": {
+     "hits": 3,
+     "n_events": 156,
+     "n_patches": 126,
+     "recall": 0.019230769230769232,
+     "wilson95": [
+      0.00656140638822535,
+      0.0550087199939044
+     ],
+     "boot95": [
+      0.0,
+      0.04516129032258064
+     ]
+    },
+    "fa": {
+     "false_alarms": 41,
+     "negative_mm": 8517.51443846861,
+     "fa_per_100mm": 0.4813610859856848,
+     "patches_with_verdict": 162,
+     "n_patches": 162
+    }
+   },
+   "density_per_mm2": 0.0018143259880920135
+  }
+ },
+ "planted_comparison_caveat": {
+  "note": "Framing correction (lead, 2026-09-26; results/switchbench_explore.md, commits 039db99 / 1c479e8): tifxyz-doctor's published 124/128 planted recall was measured on 12.5-voxel-grid traces and its score is divided by grid step; on 20-voxel traces like ours its defaults catch the planted 8-voxel step only 6/128. Natural recall vs 0.969 planted is not like-for-like and is not a headline. C1 is an absolute bound and is unaffected.",
+  "exploratory_v0_matched_spacing": "EXPLORATORY (v0 data): at the threshold that catches the planted 8-voxel step 124/128 on 20-voxel traces (ratio 0.17), natural recall 14/54 = 0.26 [0.16-0.39] at 1.9 FA/100 mm; all default hits are abrupt events (6/24 abrupt vs 0/30 gradual)",
+  "published_planted_recall": {
+   "doctor": 0.96875,
+   "windaudit": 0.5729166666666666,
+   "sheet_topo_bench": 0.667
+  }
+ },
+ "C3": {
+  "uncapped_as_v0": {
+   "pooled": {
+    "n_event_windows": 175,
+    "n_negative_windows": 14311,
+    "n_patches": 202,
+    "auroc": {
+     "point": 0.364168022599998,
+     "lo": 0.27267043985291334,
+     "hi": 0.4626138005011279,
+     "n_boot": 2000
+    },
+    "random_score_auroc": {
+     "point": 0.48534254369765517,
+     "lo": 0.44377732881577586,
+     "hi": 0.5276374841980936,
+     "n_boot": 2000
+    }
+   },
+   "new": {
+    "n_event_windows": 127,
+    "n_negative_windows": 6957,
+    "n_patches": 137,
+    "auroc": {
+     "point": 0.44395097443349985,
+     "lo": 0.3526373821790154,
+     "hi": 0.53830374481489,
+     "n_boot": 2000
+    },
+    "random_score_auroc": {
+     "point": 0.46941447972302297,
+     "lo": 0.4175576546197289,
+     "hi": 0.5221398822528054,
+     "n_boot": 2000
+    }
+   },
+   "v0_prefix": {
+    "n_event_windows": 48,
+    "n_negative_windows": 7354,
+    "n_patches": 65,
+    "auroc": {
+     "point": 0.29087769694497323,
+     "lo": 0.14493119594949047,
+     "hi": 0.4525622871481128,
+     "n_boot": 2000
+    },
+    "random_score_auroc": {
+     "point": 0.5349837956667574,
+     "lo": 0.4528519169809697,
+     "hi": 0.6167788592533187,
+     "n_boot": 2000
+    }
+   }
+  },
+  "capped": {
+   "pooled": {
+    "n_event_windows": 175,
+    "n_negative_windows": 14311,
+    "n_patches": 202,
+    "auroc": {
+     "point": 0.364168022599998,
+     "lo": 0.27267043985291334,
+     "hi": 0.4626138005011279,
+     "n_boot": 2000
+    },
+    "random_score_auroc": {
+     "point": 0.48534254369765517,
+     "lo": 0.44377732881577586,
+     "hi": 0.5276374841980936,
+     "n_boot": 2000
+    }
+   },
+   "new": {
+    "n_event_windows": 127,
+    "n_negative_windows": 6957,
+    "n_patches": 137,
+    "auroc": {
+     "point": 0.44395097443349985,
+     "lo": 0.3526373821790154,
+     "hi": 0.53830374481489,
+     "n_boot": 2000
+    },
+    "random_score_auroc": {
+     "point": 0.46941447972302297,
+     "lo": 0.4175576546197289,
+     "hi": 0.5221398822528054,
+     "n_boot": 2000
+    }
+   },
+   "v0_prefix": {
+    "n_event_windows": 48,
+    "n_negative_windows": 7354,
+    "n_patches": 65,
+    "auroc": {
+     "point": 0.29087769694497323,
+     "lo": 0.14493119594949047,
+     "hi": 0.4525622871481128,
+     "n_boot": 2000
+    },
+    "random_score_auroc": {
+     "point": 0.5349837956667574,
+     "lo": 0.4528519169809697,
+     "hi": 0.6167788592533187,
+     "n_boot": 2000
+    }
+   }
+  }
+ },
+ "C4": {
+  "status": "evaluated (report-only replication)",
+  "counts": {
+   "traces": 25,
+   "in_sample": 8,
+   "candidates": 276,
+   "confirmed": 92,
+   "contradicted": 181,
+   "unconfirmed": 3,
+   "multi_wrap": 10,
+   "negatives_confirmed": 42,
+   "neg_mm": 524.3644203553438
+  },
+  "layer_sanity": {
+   "layers": 7,
+   "in_sample": 2,
+   "candidates": 28,
+   "confirmed": 6
+  },
+  "independence_dependent_pairings": 0,
+  "ct_controls": {
+   "adjacent": {
+    "n": 150,
+    "decided": 145,
+    "rate": 0.42758620689655175,
+    "ci95": [
+     0.3499540537882163,
+     0.5089562245281349
+    ]
+   },
+   "two_apart": {
+    "n": 150,
+    "decided": 149,
+    "rate": 0.2348993288590604,
+    "ci95": [
+     0.1740237630171549,
+     0.3091007726320448
+    ]
+   },
+   "same_layer": {
+    "n": 150,
+    "decided": 144,
+    "rate": 0.05555555555555555,
+    "ci95": [
+     0.028416607888748453,
+     0.10579106957172865
+    ]
+   },
+   "rule_0500p2_voxels": {
+    "sigma": 3.3356497567755388,
+    "end_zone": 0.15,
+    "min_dark": 6.6712995135510775,
+    "q": 30,
+    "mid_bias": 0.15
+   },
+   "step": 0.5559416261292565
+  },
+  "constants": {
+   "min_spacing_cap": 7.622479836583974,
+   "layer_spacing": {
+    "p10": 15.244959673167948,
+    "p50": 27.580362946896802,
+    "p90": 46.164480099258135,
+    "n": 17053
+   }
+  },
+  "not_applicable": {
+   "windaudit": "no human winding annotations on PHerc0500P2",
+   "#1621-style check": "no human winding annotations",
+   "C3": "no gen_avg_cost or generations in trace meta.json",
+   "sheet-topo-bench": "not run (as on Paris4, V10)"
+  },
+  "random_density_per_mm2": 0.2059311390811829,
+  "tools": {
+   "tifxyz-doctor (coherent-normal-step)": {
+    "r0.5_capped": {
+     "hits": 2,
+     "n_events": 23,
+     "recall": 0.08695652173913043,
+     "wilson95": [
+      0.024180004484220363,
+      0.26795981075743663
+     ],
+     "boot95": [
+      0.0,
+      0.20833333333333334
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 10,
+     "n_events": 92,
+     "recall": 0.10869565217391304,
+     "wilson95": [
+      0.06012152356953175,
+      0.18863782456704176
+     ],
+     "boot95": [
+      0.02629080612924717,
+      0.1857225913621262
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 6,
+     "n_events": 23,
+     "recall": 0.2608695652173913,
+     "wilson95": [
+      0.12548616044986347,
+      0.4647000483742537
+     ],
+     "boot95": [
+      0.09523809523809523,
+      0.4166666666666667
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 18,
+     "n_events": 92,
+     "recall": 0.1956521739130435,
+     "wilson95": [
+      0.12749843174966963,
+      0.2882032834676653
+     ],
+     "boot95": [
+      0.08693778110944528,
+      0.2898550724637681
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 17,
+     "n_events": 23,
+     "recall": 0.7391304347826086,
+     "wilson95": [
+      0.5352999516257462,
+      0.8745138395501366
+     ],
+     "boot95": [
+      0.5416666666666666,
+      0.913134057971014
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 53,
+     "n_events": 92,
+     "recall": 0.5760869565217391,
+     "wilson95": [
+      0.4740544202364147,
+      0.6720201509592516
+     ],
+     "boot95": [
+      0.4183450564691896,
+      0.75
+     ]
+    },
+    "fa": {
+     "false_alarms": 126,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 24.029090286982882
+    }
+   },
+   "tifxyz-doctor (any cue)": {
+    "r0.5_capped": {
+     "hits": 3,
+     "n_events": 23,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.3181818181818182
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 12,
+     "n_events": 92,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.07621480370697037,
+      0.21428013619979347
+     ],
+     "boot95": [
+      0.02629080612924717,
+      0.2235534213685473
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 7,
+     "n_events": 23,
+     "recall": 0.30434782608695654,
+     "wilson95": [
+      0.15604024453214022,
+      0.508657562687592
+     ],
+     "boot95": [
+      0.13043478260869565,
+      0.5
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 19,
+     "n_events": 92,
+     "recall": 0.20652173913043478,
+     "wilson95": [
+      0.13639137196639645,
+      0.30017813913603364
+     ],
+     "boot95": [
+      0.09522556390977444,
+      0.3134673852957433
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 17,
+     "n_events": 23,
+     "recall": 0.7391304347826086,
+     "wilson95": [
+      0.5352999516257462,
+      0.8745138395501366
+     ],
+     "boot95": [
+      0.5416666666666666,
+      0.913134057971014
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 55,
+     "n_events": 92,
+     "recall": 0.5978260869565217,
+     "wilson95": [
+      0.49565975089204156,
+      0.6921504120738151
+     ],
+     "boot95": [
+      0.42252738654147104,
+      0.779078317373461
+     ]
+    },
+    "fa": {
+     "false_alarms": 202,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 38.522827285480496
+    }
+   },
+   "tifxyz-doctor (cns) capped examples (v0 D10)": {
+    "r0.5_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 0,
+     "n_events": 92,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.04008138928562172
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 1,
+     "n_events": 92,
+     "recall": 0.010869565217391304,
+     "wilson95": [
+      0.001921329040091721,
+      0.05902785613062518
+     ],
+     "boot95": [
+      0.0,
+      0.03296703296703297
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 3,
+     "n_events": 23,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.3333333333333333
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 15,
+     "n_events": 92,
+     "recall": 0.16304347826086957,
+     "wilson95": [
+      0.10136989771516887,
+      0.25172842984688054
+     ],
+     "boot95": [
+      0.09433155942589906,
+      0.2923275862068965
+     ]
+    },
+    "fa": {
+     "false_alarms": 18,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 3.4327271838546976
+    }
+   },
+   "windcheck": {
+    "r0.5_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 0,
+     "n_events": 92,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.04008138928562172
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 1,
+     "n_events": 92,
+     "recall": 0.010869565217391304,
+     "wilson95": [
+      0.001921329040091721,
+      0.05902785613062518
+     ],
+     "boot95": [
+      0.0,
+      0.030080884028252416
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 3,
+     "n_events": 92,
+     "recall": 0.03260869565217391,
+     "wilson95": [
+      0.011151177410971533,
+      0.09153359952993573
+     ],
+     "boot95": [
+      0.0,
+      0.0673076923076923
+     ]
+    },
+    "fa": {
+     "false_alarms": 3,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 0.5721211973091163
+    }
+   },
+   "windcheck [patch mode]": {
+    "r0.5_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 1,
+     "n_events": 92,
+     "recall": 0.010869565217391304,
+     "wilson95": [
+      0.001921329040091721,
+      0.05902785613062518
+     ],
+     "boot95": [
+      0.0,
+      0.030080884028252416
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 1,
+     "n_events": 92,
+     "recall": 0.010869565217391304,
+     "wilson95": [
+      0.001921329040091721,
+      0.05902785613062518
+     ],
+     "boot95": [
+      0.0,
+      0.030080884028252416
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 3,
+     "n_events": 92,
+     "recall": 0.03260869565217391,
+     "wilson95": [
+      0.011151177410971533,
+      0.09153359952993573
+     ],
+     "boot95": [
+      0.0,
+      0.0673076923076923
+     ]
+    },
+    "fa": {
+     "false_alarms": 3,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 0.5721211973091163
+    }
+   },
+   "seamcheck": {
+    "r0.5_capped": {
+     "hits": 0,
+     "n_events": 23,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 1,
+     "n_events": 92,
+     "recall": 0.010869565217391304,
+     "wilson95": [
+      0.001921329040091721,
+      0.05902785613062518
+     ],
+     "boot95": [
+      0.0,
+      0.030080884028252416
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 1,
+     "n_events": 23,
+     "recall": 0.043478260869565216,
+     "wilson95": [
+      0.007716666143453149,
+      0.20991155070258877
+     ],
+     "boot95": [
+      0.0,
+      0.13043478260869565
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 8,
+     "n_events": 92,
+     "recall": 0.08695652173913043,
+     "wilson95": [
+      0.044721188963793644,
+      0.16230256740258947
+     ],
+     "boot95": [
+      0.0,
+      0.19230769230769232
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 4,
+     "n_events": 23,
+     "recall": 0.17391304347826086,
+     "wilson95": [
+      0.06978653563062565,
+      0.3713764764022614
+     ],
+     "boot95": [
+      0.045454545454545456,
+      0.2916666666666667
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 21,
+     "n_events": 92,
+     "recall": 0.22826086956521738,
+     "wilson95": [
+      0.15442192005212033,
+      0.3238831828205001
+     ],
+     "boot95": [
+      0.061224489795918366,
+      0.4062585851648351
+     ]
+    },
+    "fa": {
+     "false_alarms": 23,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 4.386262512703224
+    }
+   },
+   "random": {
+    "r0.5_capped": {
+     "hits": 3,
+     "n_events": 23,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.041666666666666664,
+      0.2727272727272727
+     ]
+    },
+    "r0.5_uncapped": {
+     "hits": 15,
+     "n_events": 92,
+     "recall": 0.16304347826086957,
+     "wilson95": [
+      0.10136989771516887,
+      0.25172842984688054
+     ],
+     "boot95": [
+      0.05434048178613396,
+      0.2894736842105263
+     ]
+    },
+    "r1.0_capped": {
+     "hits": 9,
+     "n_events": 23,
+     "recall": 0.391304347826087,
+     "wilson95": [
+      0.22157622792477952,
+      0.592144776086183
+     ],
+     "boot95": [
+      0.20833333333333334,
+      0.6086956521739131
+     ]
+    },
+    "r1.0_uncapped": {
+     "hits": 50,
+     "n_events": 92,
+     "recall": 0.5434782608695652,
+     "wilson95": [
+      0.44199785570563255,
+      0.6414733278347482
+     ],
+     "boot95": [
+      0.4578313253012048,
+      0.6129032258064516
+     ]
+    },
+    "r2.0_capped": {
+     "hits": 20,
+     "n_events": 23,
+     "recall": 0.8695652173913043,
+     "wilson95": [
+      0.6787251772990404,
+      0.9546234090636876
+     ],
+     "boot95": [
+      0.6956521739130435,
+      1.0
+     ]
+    },
+    "r2.0_uncapped": {
+     "hits": 88,
+     "n_events": 92,
+     "recall": 0.9565217391304348,
+     "wilson95": [
+      0.8934831434470112,
+      0.9829642837269863
+     ],
+     "boot95": [
+      0.8958255597014926,
+      1.0
+     ]
+    },
+    "fa": {
+     "false_alarms": 116,
+     "negative_mm": 524.3644203553438,
+     "fa_per_100mm": 22.122019629285827
+    }
+   }
+  }
+ },
+ "sensitivity": {
+  "tifxyz-doctor (coherent-normal-step)": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 21,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.09859154929577464,
+      "wilson95": [
+       0.06539180465703949,
+       0.14601361140133684
+      ],
+      "boot95": [
+       0.061611374407582936,
+       0.14018691588785046
+      ]
+     },
+     "uncapped": {
+      "hits": 35,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.11904761904761904,
+      "wilson95": [
+       0.08685592677859254,
+       0.16106610232061358
+      ],
+      "boot95": [
+       0.07943564988266293,
+       0.15313765712290497
+      ]
+     },
+     "fa": {
+      "false_alarms": 37,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.22541719191914414,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 24,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.11267605633802817,
+      "wilson95": [
+       0.0768963761734975,
+       0.16217902528633937
+      ],
+      "boot95": [
+       0.07142010832769126,
+       0.15859751327761534
+      ]
+     },
+     "uncapped": {
+      "hits": 40,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.1360544217687075,
+      "wilson95": [
+       0.101530207534473,
+       0.17996673097994714
+      ],
+      "boot95": [
+       0.09090909090909091,
+       0.17410328046142748
+      ]
+     },
+     "fa": {
+      "false_alarms": 70,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4264649576848673,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 30,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.14084507042253522,
+      "wilson95": [
+       0.10047228580295067,
+       0.19394308645980715
+      ],
+      "boot95": [
+       0.09004739336492891,
+       0.1964490498034075
+      ]
+     },
+     "uncapped": {
+      "hits": 59,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.20068027210884354,
+      "wilson95": [
+       0.15889226871346268,
+       0.2501893255787707
+      ],
+      "boot95": [
+       0.1111111111111111,
+       0.26052724240177905
+      ]
+     },
+     "fa": {
+      "false_alarms": 177,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 1.0783471072888788,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 10,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.14285714285714285,
+     "wilson95": [
+      0.07948941717066599,
+      0.2433841988366675
+     ],
+     "boot95": [
+      0.05970149253731343,
+      0.24
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 15,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.1171875,
+     "wilson95": [
+      0.07231682349355734,
+      0.18436615865334754
+     ],
+     "boot95": [
+      0.06557377049180328,
+      0.1769354838709677
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 17,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.10897435897435898,
+      "wilson95": [
+       0.06915919829493856,
+       0.16758450449586026
+      ],
+      "boot95": [
+       0.061224489795918366,
+       0.16049382716049382
+      ]
+     },
+     "uncapped": {
+      "hits": 29,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.12663755458515283,
+      "wilson95": [
+       0.0896389342389558,
+       0.17595577184951966
+      ],
+      "boot95": [
+       0.0763888888888889,
+       0.1724137931034483
+      ]
+     },
+     "fa": {
+      "false_alarms": 23,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.2700318287236768,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 19,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.12179487179487179,
+      "wilson95": [
+       0.07937502422173531,
+       0.1823934751988734
+      ],
+      "boot95": [
+       0.07236842105263158,
+       0.17791411042944785
+      ]
+     },
+     "uncapped": {
+      "hits": 32,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.13973799126637554,
+      "wilson95": [
+       0.10075289270279383,
+       0.19061042018959476
+      ],
+      "boot95": [
+       0.08695652173913043,
+       0.18651391279403326
+      ]
+     },
+     "fa": {
+      "false_alarms": 41,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4813610859856848,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 25,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.16025641025641027,
+      "wilson95": [
+       0.11096813709904885,
+       0.22587475221098946
+      ],
+      "boot95": [
+       0.09721102150537635,
+       0.22932345792826
+      ]
+     },
+     "uncapped": {
+      "hits": 50,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.2183406113537118,
+      "wilson95": [
+       0.16972113218668974,
+       0.27625382152917777
+      ],
+      "boot95": [
+       0.11319192802698988,
+       0.27849177645741835
+      ]
+     },
+     "fa": {
+      "false_alarms": 91,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 1.0683868006023736,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 7,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.14893617021276595,
+     "wilson95": [
+      0.07406719996431721,
+      0.2768562242359355
+     ],
+     "boot95": [
+      0.044444444444444446,
+      0.2653061224489796
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 11,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.12359550561797752,
+     "wilson95": [
+      0.07043517008332338,
+      0.20790447633048464
+     ],
+     "boot95": [
+      0.06312533912099838,
+      0.20224719101123595
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 6,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.09230769230769231,
+      "wilson95": [
+       0.042995089611340964,
+       0.1871200051596039
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.15518920734437966
+      ]
+     },
+     "fa": {
+      "false_alarms": 14,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.17729384160178097,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     },
+     "fa": {
+      "false_alarms": 29,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.3672515290322606,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 9,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.13846153846153847,
+      "wilson95": [
+       0.07459090403153719,
+       0.24268097246345166
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.22728711162255458
+      ]
+     },
+     "fa": {
+      "false_alarms": 86,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 1.0890907412680833,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  },
+  "tifxyz-doctor (any cue)": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 22,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.10328638497652583,
+      "wilson95": [
+       0.06920264735768633,
+       0.15142609716784353
+      ],
+      "boot95": [
+       0.06510874246339363,
+       0.14623742138364773
+      ]
+     },
+     "uncapped": {
+      "hits": 36,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.12244897959183673,
+      "wilson95": [
+       0.08977341781669253,
+       0.16486359316555638
+      ],
+      "boot95": [
+       0.08251430514516206,
+       0.15833539603960395
+      ]
+     },
+     "fa": {
+      "false_alarms": 37,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.22541719191914414,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 25,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.11737089201877934,
+      "wilson95": [
+       0.08077672149795292,
+       0.16752200842903742
+      ],
+      "boot95": [
+       0.07476286790347328,
+       0.16433748119786673
+      ]
+     },
+     "uncapped": {
+      "hits": 41,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.13945578231292516,
+      "wilson95": [
+       0.10448973619135185,
+       0.18372218420611106
+      ],
+      "boot95": [
+       0.09501672706997491,
+       0.1794091689724261
+      ]
+     },
+     "fa": {
+      "false_alarms": 71,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4325573142232226,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 31,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.14553990610328638,
+      "wilson95": [
+       0.10446432339143151,
+       0.19917437733847976
+      ],
+      "boot95": [
+       0.09389304577464788,
+       0.2037914691943128
+      ]
+     },
+     "uncapped": {
+      "hits": 60,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.20408163265306123,
+      "wilson95": [
+       0.16196829557775974,
+       0.2538282805975165
+      ],
+      "boot95": [
+       0.11555128205128205,
+       0.262798824843984
+      ]
+     },
+     "fa": {
+      "false_alarms": 176,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 1.0722547507505236,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 10,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.14285714285714285,
+     "wilson95": [
+      0.07948941717066599,
+      0.2433841988366675
+     ],
+     "boot95": [
+      0.05970149253731343,
+      0.24
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 16,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.125,
+     "wilson95": [
+      0.07842644638761664,
+      0.19342627081751468
+     ],
+     "boot95": [
+      0.07142857142857142,
+      0.185497936984246
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 18,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.11538461538461539,
+      "wilson95": [
+       0.07424445619253985,
+       0.1750116449131639
+      ],
+      "boot95": [
+       0.06756756756756757,
+       0.16875202922077923
+      ]
+     },
+     "uncapped": {
+      "hits": 30,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.13100436681222707,
+      "wilson95": [
+       0.09332855714344457,
+       0.18085568454633533
+      ],
+      "boot95": [
+       0.08274661719773024,
+       0.17749639249639246
+      ]
+     },
+     "fa": {
+      "false_alarms": 23,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.2700318287236768,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 20,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.1282051282051282,
+      "wilson95": [
+       0.08454799299726479,
+       0.18973290473824883
+      ],
+      "boot95": [
+       0.07692307692307693,
+       0.18471882907250672
+      ]
+     },
+     "uncapped": {
+      "hits": 33,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.14410480349344978,
+      "wilson95": [
+       0.10448645039444944,
+       0.1954663980992436
+      ],
+      "boot95": [
+       0.09258040935672514,
+       0.19381459948320406
+      ]
+     },
+     "fa": {
+      "false_alarms": 42,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4931016002780185,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 26,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.16666666666666666,
+      "wilson95": [
+       0.11635026688777168,
+       0.23300502073717155
+      ],
+      "boot95": [
+       0.10189470289446102,
+       0.23567769118170664
+      ]
+     },
+     "uncapped": {
+      "hits": 51,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.22270742358078602,
+      "wilson95": [
+       0.1736454244952323,
+       0.28091906482193957
+      ],
+      "boot95": [
+       0.11842105263157894,
+       0.28149749636877913
+      ]
+     },
+     "fa": {
+      "false_alarms": 91,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 1.0683868006023736,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 7,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.14893617021276595,
+     "wilson95": [
+      0.07406719996431721,
+      0.2768562242359355
+     ],
+     "boot95": [
+      0.044444444444444446,
+      0.2653061224489796
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 12,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.1348314606741573,
+     "wilson95": [
+      0.07884271200737804,
+      0.22103903451348056
+     ],
+     "boot95": [
+      0.06976744186046512,
+      0.2159090909090909
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 6,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.09230769230769231,
+      "wilson95": [
+       0.042995089611340964,
+       0.1871200051596039
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.15518920734437966
+      ]
+     },
+     "fa": {
+      "false_alarms": 14,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.17729384160178097,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     },
+     "fa": {
+      "false_alarms": 29,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.3672515290322606,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 9,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.13846153846153847,
+      "wilson95": [
+       0.07459090403153719,
+       0.24268097246345166
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.22728711162255458
+      ]
+     },
+     "fa": {
+      "false_alarms": 85,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 1.0764268954393845,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  },
+  "random": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 5,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.023474178403755867,
+      "wilson95": [
+       0.010067486826548115,
+       0.053764673757372365
+      ],
+      "boot95": [
+       0.0047169811320754715,
+       0.04695948201054663
+      ]
+     },
+     "uncapped": {
+      "hits": 19,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.06462585034013606,
+      "wilson95": [
+       0.04175981382118689,
+       0.09872250514933438
+      ],
+      "boot95": [
+       0.008927579365079364,
+       0.1139631782945736
+      ]
+     },
+     "fa": {
+      "false_alarms": 366,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 2.2298024930380205,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 13,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.06103286384976526,
+      "wilson95": [
+       0.03601133406562526,
+       0.10160745425552317
+      ],
+      "boot95": [
+       0.024749426913134663,
+       0.1
+      ]
+     },
+     "uncapped": {
+      "hits": 42,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.14285714285714285,
+      "wilson95": [
+       0.10745690451266533,
+       0.1874699977678404
+      ],
+      "boot95": [
+       0.03286384976525822,
+       0.2353009102024181
+      ]
+     },
+     "fa": {
+      "false_alarms": 791,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 4.819054021839,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 41,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.19248826291079812,
+      "wilson95": [
+       0.14517884654013308,
+       0.25069313886131317
+      ],
+      "boot95": [
+       0.13927327647476903,
+       0.25
+      ]
+     },
+     "uncapped": {
+      "hits": 101,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.3435374149659864,
+      "wilson95": [
+       0.29158555136879677,
+       0.39952528201123433
+      ],
+      "boot95": [
+       0.1569484744570474,
+       0.5028747439086159
+      ]
+     },
+     "fa": {
+      "false_alarms": 1539,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 9.376136712528725,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 5,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.07142857142857142,
+     "wilson95": [
+      0.03089421703784702,
+      0.1565541221709532
+     ],
+     "boot95": [
+      0.0,
+      0.16176470588235295
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 7,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.0546875,
+     "wilson95": [
+      0.026740201381346355,
+      0.10858490029974707
+     ],
+     "boot95": [
+      0.015621971899224806,
+      0.10296023965141601
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 3,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.019230769230769232,
+      "wilson95": [
+       0.00656140638822535,
+       0.0550087199939044
+      ],
+      "boot95": [
+       0.0,
+       0.0440251572327044
+      ]
+     },
+     "uncapped": {
+      "hits": 17,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.07423580786026202,
+      "wilson95": [
+       0.04686281704188661,
+       0.11565746183093634
+      ],
+      "boot95": [
+       0.006097560975609756,
+       0.12773967961885188
+      ]
+     },
+     "fa": {
+      "false_alarms": 168,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 1.972406401112074,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 9,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.057692307692307696,
+      "wilson95": [
+       0.03064574216379553,
+       0.10599877410776384
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.10429447852760736
+      ]
+     },
+     "uncapped": {
+      "hits": 37,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.1615720524017467,
+      "wilson95": [
+       0.11955166075348374,
+       0.2147593301454268
+      ],
+      "boot95": [
+       0.026139546727782022,
+       0.2627451672075631
+      ]
+     },
+     "fa": {
+      "false_alarms": 367,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 4.308768745286495,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 29,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.1858974358974359,
+      "wilson95": [
+       0.13266698335879779,
+       0.2542254992108603
+      ],
+      "boot95": [
+       0.12101910828025478,
+       0.25149792439660557
+      ]
+     },
+     "uncapped": {
+      "hits": 84,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.36681222707423583,
+      "wilson95": [
+       0.30706839253611795,
+       0.43095077162409845
+      ],
+      "boot95": [
+       0.13636363636363635,
+       0.5374484131597302
+      ]
+     },
+     "fa": {
+      "false_alarms": 714,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 8.382727204726315,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 5,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.10638297872340426,
+     "wilson95": [
+      0.04630478218108157,
+      0.22594269343738355
+     ],
+     "boot95": [
+      0.0,
+      0.22448979591836735
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.0449438202247191,
+     "wilson95": [
+      0.017614486067325956,
+      0.10993045959712858
+     ],
+     "boot95": [
+      0.010752688172043012,
+      0.09195402298850575
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 2,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.03508771929824561,
+      "wilson95": [
+       0.009675664344932881,
+       0.11920781367625805
+      ],
+      "boot95": [
+       0.0,
+       0.09259259259259259
+      ]
+     },
+     "uncapped": {
+      "hits": 2,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.03076923076923077,
+      "wilson95": [
+       0.008478997236440126,
+       0.10542705523577942
+      ],
+      "boot95": [
+       0.0,
+       0.0882615546218486
+      ]
+     },
+     "fa": {
+      "false_alarms": 198,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 2.5074414740823308,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.0,
+       0.15254237288135594
+      ]
+     },
+     "uncapped": {
+      "hits": 5,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.07692307692307693,
+      "wilson95": [
+       0.03330350149516352,
+       0.1677593327011
+      ],
+      "boot95": [
+       0.0,
+       0.14547671840354753
+      ]
+     },
+     "fa": {
+      "false_alarms": 424,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 5.369470631368224,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 12,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.21052631578947367,
+      "wilson95": [
+       0.12474548303034583,
+       0.33286121083190506
+      ],
+      "boot95": [
+       0.11315513626834382,
+       0.3157894736842105
+      ]
+     },
+     "uncapped": {
+      "hits": 17,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.26153846153846155,
+      "wilson95": [
+       0.17018193413221397,
+       0.37950802696022556
+      ],
+      "boot95": [
+       0.11762254901960785,
+       0.39285714285714285
+      ]
+     },
+     "fa": {
+      "false_alarms": 825,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 10.447672808676378,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 0,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 3,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.07692307692307693,
+     "wilson95": [
+      0.02650739530377974,
+      0.20321071167954996
+     ],
+     "boot95": [
+      0.0,
+      0.18604651162790697
+     ]
+    }
+   }
+  },
+  "random (FA-matched to the C1 doctor alarms)": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 1,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.004694835680751174,
+      "wilson95": [
+       0.0008292350759758448,
+       0.026109611639330656
+      ],
+      "boot95": [
+       0.0,
+       0.014564882784750169
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.027210884353741496,
+      "wilson95": [
+       0.013851342731317596,
+       0.05276617552573283
+      ],
+      "boot95": [
+       0.0,
+       0.04918208305542878
+      ]
+     },
+     "fa": {
+      "false_alarms": 26,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.15840126999723642,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 3,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.014084507042253521,
+      "wilson95": [
+       0.00480135911045081,
+       0.040584144539162675
+      ],
+      "boot95": [
+       0.0,
+       0.0325619430558574
+      ]
+     },
+     "uncapped": {
+      "hits": 12,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.04081632653061224,
+      "wilson95": [
+       0.023500330981513766,
+       0.06997711480770788
+      ],
+      "boot95": [
+       0.004739336492890996,
+       0.06896743721680361
+      ]
+     },
+     "fa": {
+      "false_alarms": 52,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.31680253999447283,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 3,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.014084507042253521,
+      "wilson95": [
+       0.00480135911045081,
+       0.040584144539162675
+      ],
+      "boot95": [
+       0.0,
+       0.0325619430558574
+      ]
+     },
+     "uncapped": {
+      "hits": 25,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.08503401360544217,
+      "wilson95": [
+       0.05825940687067329,
+       0.12251280339810477
+      ],
+      "boot95": [
+       0.004739336492890996,
+       0.16230499113222827
+      ]
+     },
+     "fa": {
+      "false_alarms": 97,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.590958584220459,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 1,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.014285714285714285,
+     "wilson95": [
+      0.002526246457890312,
+      0.07658187131208327
+     ],
+     "boot95": [
+      0.0,
+      0.046171874999999904
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 1,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.0078125,
+     "wilson95": [
+      0.0013804318928742412,
+      0.04292625943886061
+     ],
+     "boot95": [
+      0.0,
+      0.024198465774980304
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 1,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.00641025641025641,
+      "wilson95": [
+       0.0011324653171247909,
+       0.035412864435195084
+      ],
+      "boot95": [
+       0.0,
+       0.02040816326530612
+      ]
+     },
+     "uncapped": {
+      "hits": 7,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.03056768558951965,
+      "wilson95": [
+       0.014884339052189884,
+       0.06174058380758925
+      ],
+      "boot95": [
+       0.0,
+       0.0547945205479452
+      ]
+     },
+     "fa": {
+      "false_alarms": 19,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.2230697715543417,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 3,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.019230769230769232,
+      "wilson95": [
+       0.00656140638822535,
+       0.0550087199939044
+      ],
+      "boot95": [
+       0.0,
+       0.04516129032258064
+      ]
+     },
+     "uncapped": {
+      "hits": 11,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.048034934497816595,
+      "wilson95": [
+       0.02703064009485347,
+       0.08395242517014319
+      ],
+      "boot95": [
+       0.006172839506172839,
+       0.078168720318316
+      ]
+     },
+     "fa": {
+      "false_alarms": 41,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.4813610859856848,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 3,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.019230769230769232,
+      "wilson95": [
+       0.00656140638822535,
+       0.0550087199939044
+      ],
+      "boot95": [
+       0.0,
+       0.04516129032258064
+      ]
+     },
+     "uncapped": {
+      "hits": 24,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.10480349344978165,
+      "wilson95": [
+       0.071444136903214,
+       0.15120289117873958
+      ],
+      "boot95": [
+       0.006172839506172839,
+       0.18559459040255802
+      ]
+     },
+     "fa": {
+      "false_alarms": 71,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.8335765147556979,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 1,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.02127659574468085,
+     "wilson95": [
+      0.0037657680385967812,
+      0.11112981041629329
+     ],
+     "boot95": [
+      0.0,
+      0.06818181818181818
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 1,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.011235955056179775,
+     "wilson95": [
+      0.001986183228256385,
+      0.060932462115046646
+     ],
+     "boot95": [
+      0.0,
+      0.03529411764705882
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 0,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.06313883485297894
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "uncapped": {
+      "hits": 1,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.015384615384615385,
+      "wilson95": [
+       0.0027209446020234687,
+       0.08213284729551473
+      ],
+      "boot95": [
+       0.0,
+       0.036585365853658534
+      ]
+     },
+     "fa": {
+      "false_alarms": 7,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.08864692080089048,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 0,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.06313883485297894
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "uncapped": {
+      "hits": 1,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.015384615384615385,
+      "wilson95": [
+       0.0027209446020234687,
+       0.08213284729551473
+      ],
+      "boot95": [
+       0.0,
+       0.036585365853658534
+      ]
+     },
+     "fa": {
+      "false_alarms": 11,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.13930230411568506,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 0,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.0,
+      "wilson95": [
+       0.0,
+       0.06313883485297894
+      ],
+      "boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "uncapped": {
+      "hits": 1,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.015384615384615385,
+      "wilson95": [
+       0.0027209446020234687,
+       0.08213284729551473
+      ],
+      "boot95": [
+       0.0,
+       0.036585365853658534
+      ]
+     },
+     "fa": {
+      "false_alarms": 26,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.32925999154616464,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 0,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.14311661845042686
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 0,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.0,
+     "wilson95": [
+      0.0,
+      0.08966685370757144
+     ],
+     "boot95": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "tifxyz-doctor (any cue) capped examples (v0 D10)": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 21,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.09859154929577464,
+      "wilson95": [
+       0.06539180465703949,
+       0.14601361140133684
+      ],
+      "boot95": [
+       0.06046511627906977,
+       0.14218063828862124
+      ]
+     },
+     "uncapped": {
+      "hits": 23,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.0782312925170068,
+      "wilson95": [
+       0.05269278922824775,
+       0.11464945727444475
+      ],
+      "boot95": [
+       0.044270833333333336,
+       0.13274990191377128
+      ]
+     },
+     "fa": {
+      "false_alarms": 20,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.12184713076710495,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 23,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.107981220657277,
+      "wilson95": [
+       0.07303794987154306,
+       0.1568141231211403
+      ],
+      "boot95": [
+       0.0673076923076923,
+       0.15384615384615385
+      ]
+     },
+     "uncapped": {
+      "hits": 28,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.09523809523809523,
+      "wilson95": [
+       0.06671518292904136,
+       0.13420197298886513
+      ],
+      "boot95": [
+       0.05416827464435058,
+       0.15612465489399383
+      ]
+     },
+     "fa": {
+      "false_alarms": 30,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.1827706961506574,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 30,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.14084507042253522,
+      "wilson95": [
+       0.10047228580295067,
+       0.19394308645980715
+      ],
+      "boot95": [
+       0.08865908432338453,
+       0.19907407407407407
+      ]
+     },
+     "uncapped": {
+      "hits": 36,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.12244897959183673,
+      "wilson95": [
+       0.08977341781669253,
+       0.16486359316555638
+      ],
+      "boot95": [
+       0.06821836010792007,
+       0.20006072874493894
+      ]
+     },
+     "fa": {
+      "false_alarms": 82,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4995732361451303,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 10,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.14285714285714285,
+     "wilson95": [
+      0.07948941717066599,
+      0.2433841988366675
+     ],
+     "boot95": [
+      0.05970149253731343,
+      0.24
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 15,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.1171875,
+     "wilson95": [
+      0.07231682349355734,
+      0.18436615865334754
+     ],
+     "boot95": [
+      0.064,
+      0.17602307692307678
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 17,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.10897435897435898,
+      "wilson95": [
+       0.06915919829493856,
+       0.16758450449586026
+      ],
+      "boot95": [
+       0.06134656316514336,
+       0.16216654966654964
+      ]
+     },
+     "uncapped": {
+      "hits": 19,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.08296943231441048,
+      "wilson95": [
+       0.053757991454388365,
+       0.12594135862104333
+      ],
+      "boot95": [
+       0.044083133430335444,
+       0.15584415584415584
+      ]
+     },
+     "fa": {
+      "false_alarms": 17,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.19958874296967416,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 19,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.12179487179487179,
+      "wilson95": [
+       0.07937502422173531,
+       0.1823934751988734
+      ],
+      "boot95": [
+       0.0718954248366013,
+       0.17857734153263952
+      ]
+     },
+     "uncapped": {
+      "hits": 22,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.09606986899563319,
+      "wilson95": [
+       0.06430067040372467,
+       0.14116728647562016
+      ],
+      "boot95": [
+       0.05084632466237651,
+       0.17683891633220122
+      ]
+     },
+     "fa": {
+      "false_alarms": 25,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.29351285730834437,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 25,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.16025641025641027,
+      "wilson95": [
+       0.11096813709904885,
+       0.22587475221098946
+      ],
+      "boot95": [
+       0.09433012536406231,
+       0.2298249019287348
+      ]
+     },
+     "uncapped": {
+      "hits": 28,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.1222707423580786,
+      "wilson95": [
+       0.08596519120577303,
+       0.1710399792813981
+      ],
+      "boot95": [
+       0.062143085568093566,
+       0.23031468531468527
+      ]
+     },
+     "fa": {
+      "false_alarms": 63,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.7396524004170278,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 7,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.14893617021276595,
+     "wilson95": [
+      0.07406719996431721,
+      0.2768562242359355
+     ],
+     "boot95": [
+      0.044444444444444446,
+      0.2653061224489796
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 11,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.12359550561797752,
+     "wilson95": [
+      0.07043517008332338,
+      0.20790447633048464
+     ],
+     "boot95": [
+      0.06449897048730267,
+      0.20213064786038726
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 4,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.06153846153846154,
+      "wilson95": [
+       0.024189054966350286,
+       0.1478215186552319
+      ],
+      "boot95": [
+       0.013157894736842105,
+       0.13433553386911593
+      ]
+     },
+     "fa": {
+      "false_alarms": 3,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.037991537486095926,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 6,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.09230769230769231,
+      "wilson95": [
+       0.042995089611340964,
+       0.1871200051596039
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.15518920734437966
+      ]
+     },
+     "fa": {
+      "false_alarms": 5,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.06331922914349321,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     },
+     "fa": {
+      "false_alarms": 19,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.2406130707452742,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  },
+  "tifxyz-doctor (any cue) mask only": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 20,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.09389671361502347,
+      "wilson95": [
+       0.06160691003139952,
+       0.14057517755982335
+      ],
+      "boot95": [
+       0.05687203791469194,
+       0.13574660633484162
+      ]
+     },
+     "uncapped": {
+      "hits": 34,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.11564625850340136,
+      "wilson95": [
+       0.08394773436653502,
+       0.1572593128496283
+      ],
+      "boot95": [
+       0.07582938388625593,
+       0.14978524229074885
+      ]
+     },
+     "fa": {
+      "false_alarms": 27,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.16449362653559169,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 23,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.107981220657277,
+      "wilson95": [
+       0.07303794987154306,
+       0.1568141231211403
+      ],
+      "boot95": [
+       0.06862409347300565,
+       0.15166631818604215
+      ]
+     },
+     "uncapped": {
+      "hits": 39,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.1326530612244898,
+      "wilson95": [
+       0.09857855354067614,
+       0.1762034030907012
+      ],
+      "boot95": [
+       0.08878504672897196,
+       0.1684232334981099
+      ]
+     },
+     "fa": {
+      "false_alarms": 52,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.31680253999447283,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 28,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.13145539906103287,
+      "wilson95": [
+       0.09253884722018021,
+       0.18342986810827064
+      ],
+      "boot95": [
+       0.08530805687203792,
+       0.18266934774412455
+      ]
+     },
+     "uncapped": {
+      "hits": 57,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.19387755102040816,
+      "wilson95": [
+       0.1527552897555592,
+       0.24289634077058858
+      ],
+      "boot95": [
+       0.10665700483091788,
+       0.254363338109349
+      ]
+     },
+     "fa": {
+      "false_alarms": 131,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.7980987065245374,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 9,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.12857142857142856,
+     "wilson95": [
+      0.06914100115337508,
+      0.22664755949425175
+     ],
+     "boot95": [
+      0.05553652968036529,
+      0.21430831826401434
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 14,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.109375,
+     "wilson95": [
+      0.06627879570700111,
+      0.17523445138167731
+     ],
+     "boot95": [
+      0.061068702290076333,
+      0.168
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 16,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.10256410256410256,
+      "wilson95": [
+       0.06412256686101218,
+       0.1601087376148817
+      ],
+      "boot95": [
+       0.05660377358490566,
+       0.15483870967741936
+      ]
+     },
+     "uncapped": {
+      "hits": 28,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.1222707423580786,
+      "wilson95": [
+       0.08596519120577303,
+       0.1710399792813981
+      ],
+      "boot95": [
+       0.06992232451093211,
+       0.1652960976410705
+      ]
+     },
+     "fa": {
+      "false_alarms": 13,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.15262668580033906,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 18,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.11538461538461539,
+      "wilson95": [
+       0.07424445619253985,
+       0.1750116449131639
+      ],
+      "boot95": [
+       0.06711409395973154,
+       0.16883116883116883
+      ]
+     },
+     "uncapped": {
+      "hits": 31,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.13537117903930132,
+      "wilson95": [
+       0.09703340993458648,
+       0.1857403673564978
+      ],
+      "boot95": [
+       0.08332006369426752,
+       0.1794871794871795
+      ]
+     },
+     "fa": {
+      "false_alarms": 23,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.2700318287236768,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 23,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.14743589743589744,
+      "wilson95": [
+       0.10029700652498463,
+       0.2115210861552438
+      ],
+      "boot95": [
+       0.0890302583665684,
+       0.2085889570552147
+      ]
+     },
+     "uncapped": {
+      "hits": 48,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.2096069868995633,
+      "wilson95": [
+       0.161898065209742,
+       0.2668978173035167
+      ],
+      "boot95": [
+       0.10416666666666667,
+       0.27041070862934974
+      ]
+     },
+     "fa": {
+      "false_alarms": 50,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.5870257146166887,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 6,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.1276595744680851,
+     "wilson95": [
+      0.05984604198143388,
+      0.25173940792792504
+     ],
+     "boot95": [
+      0.024984756097560977,
+      0.23404255319148937
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 10,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.11235955056179775,
+     "wilson95": [
+      0.06218743336655998,
+      0.1946101129401976
+     ],
+     "boot95": [
+      0.05554029304029304,
+      0.18604651162790697
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 6,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.09230769230769231,
+      "wilson95": [
+       0.042995089611340964,
+       0.1871200051596039
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.15518920734437966
+      ]
+     },
+     "fa": {
+      "false_alarms": 14,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.17729384160178097,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     },
+     "fa": {
+      "false_alarms": 29,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.3672515290322606,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 9,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.13846153846153847,
+      "wilson95": [
+       0.07459090403153719,
+       0.24268097246345166
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.22728711162255458
+      ]
+     },
+     "fa": {
+      "false_alarms": 81,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 1.0257715121245898,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  },
+  "tifxyz-doctor (cns) all candidate edges": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 23,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.107981220657277,
+      "wilson95": [
+       0.07303794987154306,
+       0.1568141231211403
+      ],
+      "boot95": [
+       0.06697767145135566,
+       0.15208354859374673
+      ]
+     },
+     "uncapped": {
+      "hits": 54,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.1836734693877551,
+      "wilson95": [
+       0.14358900077236814,
+       0.23191768410465124
+      ],
+      "boot95": [
+       0.08570412999322952,
+       0.2606592218901472
+      ]
+     },
+     "fa": {
+      "false_alarms": 78,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4752038099917093,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 26,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.12206572769953052,
+      "wilson95": [
+       0.08467789495192457,
+       0.17284416344221926
+      ],
+      "boot95": [
+       0.07804710226001342,
+       0.17129960317460316
+      ]
+     },
+     "uncapped": {
+      "hits": 69,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.23469387755102042,
+      "wilson95": [
+       0.18986332293581484,
+       0.2863680901868466
+      ],
+      "boot95": [
+       0.09344707672245164,
+       0.3538709677419354
+      ]
+     },
+     "fa": {
+      "false_alarms": 162,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.98696175921355,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 35,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.1643192488262911,
+      "wilson95": [
+       0.12058672442281199,
+       0.2199452901757133
+      ],
+      "boot95": [
+       0.10426540284360189,
+       0.22643653516295015
+      ]
+     },
+     "uncapped": {
+      "hits": 93,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.3163265306122449,
+      "wilson95": [
+       0.26582855310267134,
+       0.37156242521301736
+      ],
+      "boot95": [
+       0.11736344898660254,
+       0.4703674616871187
+      ]
+     },
+     "fa": {
+      "false_alarms": 350,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 2.1323247884243366,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 10,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.14285714285714285,
+     "wilson95": [
+      0.07948941717066599,
+      0.2433841988366675
+     ],
+     "boot95": [
+      0.05970149253731343,
+      0.24
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 16,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.125,
+     "wilson95": [
+      0.07842644638761664,
+      0.19342627081751468
+     ],
+     "boot95": [
+      0.072,
+      0.18461538461538463
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 19,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.12179487179487179,
+      "wilson95": [
+       0.07937502422173531,
+       0.1823934751988734
+      ],
+      "boot95": [
+       0.07235659614723082,
+       0.17682926829268292
+      ]
+     },
+     "uncapped": {
+      "hits": 47,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.2052401746724891,
+      "wilson95": [
+       0.15799966591721856,
+       0.2622066809947358
+      ],
+      "boot95": [
+       0.08226554414457447,
+       0.28147398808084184
+      ]
+     },
+     "fa": {
+      "false_alarms": 46,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.5400636574473536,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 21,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.1346153846153846,
+      "wilson95": [
+       0.08976079347961011,
+       0.19703250257080843
+      ],
+      "boot95": [
+       0.0807401308933261,
+       0.19480519480519481
+      ]
+     },
+     "uncapped": {
+      "hits": 60,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.26200873362445415,
+      "wilson95": [
+       0.2093179646022724,
+       0.32255234512663883
+      ],
+      "boot95": [
+       0.08860328941703263,
+       0.3836613395642799
+      ]
+     },
+     "fa": {
+      "false_alarms": 97,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 1.1388298863563762,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 27,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.17307692307692307,
+      "wilson95": [
+       0.12176158914263831,
+       0.2401060967972099
+      ],
+      "boot95": [
+       0.10429128323108385,
+       0.24844904259619977
+      ]
+     },
+     "uncapped": {
+      "hits": 79,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.34497816593886466,
+      "wilson95": [
+       0.28642433403732376,
+       0.40864715211637076
+      ],
+      "boot95": [
+       0.11510183744895976,
+       0.5066379056047197
+      ]
+     },
+     "fa": {
+      "false_alarms": 182,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 2.136773601204747,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 7,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.14893617021276595,
+     "wilson95": [
+      0.07406719996431721,
+      0.2768562242359355
+     ],
+     "boot95": [
+      0.044444444444444446,
+      0.2653061224489796
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 12,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.1348314606741573,
+     "wilson95": [
+      0.07884271200737804,
+      0.22103903451348056
+     ],
+     "boot95": [
+      0.06896551724137931,
+      0.21505376344086022
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 7,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.1076923076923077,
+      "wilson95": [
+       0.053154219531127755,
+       0.20601313581449843
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.17857142857142858
+      ]
+     },
+     "fa": {
+      "false_alarms": 32,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.4052430665183565,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 9,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.13846153846153847,
+      "wilson95": [
+       0.07459090403153719,
+       0.24268097246345166
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.22728711162255458
+      ]
+     },
+     "fa": {
+      "false_alarms": 65,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.8231499788654116,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 8,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.14035087719298245,
+      "wilson95": [
+       0.07287276143238601,
+       0.2532446460934409
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2666964285714284
+      ]
+     },
+     "uncapped": {
+      "hits": 14,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.2153846153846154,
+      "wilson95": [
+       0.1328675769115102,
+       0.3296656024568853
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.409104600219058
+      ]
+     },
+     "fa": {
+      "false_alarms": 168,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 2.1275260992213716,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  },
+  "tifxyz-doctor (cns) capped examples (v0 D10)": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 20,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.09389671361502347,
+      "wilson95": [
+       0.06160691003139952,
+       0.14057517755982335
+      ],
+      "boot95": [
+       0.05580749354005168,
+       0.13551983338267007
+      ]
+     },
+     "uncapped": {
+      "hits": 22,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.07482993197278912,
+      "wilson95": [
+       0.049933021351104924,
+       0.11069424326854477
+      ],
+      "boot95": [
+       0.04201680672268908,
+       0.12560447163352997
+      ]
+     },
+     "fa": {
+      "false_alarms": 20,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.12184713076710495,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 22,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.10328638497652583,
+      "wilson95": [
+       0.06920264735768633,
+       0.15142609716784353
+      ],
+      "boot95": [
+       0.06334237578526555,
+       0.1493212669683258
+      ]
+     },
+     "uncapped": {
+      "hits": 27,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.09183673469387756,
+      "wilson95": [
+       0.06388341145968515,
+       0.13031876257517855
+      ],
+      "boot95": [
+       0.05191873589164785,
+       0.1521761495795312
+      ]
+     },
+     "fa": {
+      "false_alarms": 30,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.1827706961506574,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 29,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.13615023474178403,
+      "wilson95": [
+       0.0964968940266881,
+       0.18869514976891621
+      ],
+      "boot95": [
+       0.085288031506575,
+       0.19340003043213633
+      ]
+     },
+     "uncapped": {
+      "hits": 35,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.11904761904761904,
+      "wilson95": [
+       0.08685592677859254,
+       0.16106610232061358
+      ],
+      "boot95": [
+       0.06569043915280603,
+       0.1971862565527695
+      ]
+     },
+     "fa": {
+      "false_alarms": 82,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.4995732361451303,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 10,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.14285714285714285,
+     "wilson95": [
+      0.07948941717066599,
+      0.2433841988366675
+     ],
+     "boot95": [
+      0.05970149253731343,
+      0.24
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 14,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.109375,
+     "wilson95": [
+      0.06627879570700111,
+      0.17523445138167731
+     ],
+     "boot95": [
+      0.05970149253731343,
+      0.168
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 16,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.10256410256410256,
+      "wilson95": [
+       0.06412256686101218,
+       0.1601087376148817
+      ],
+      "boot95": [
+       0.05732484076433121,
+       0.15338603114676727
+      ]
+     },
+     "uncapped": {
+      "hits": 18,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.07860262008733625,
+      "wilson95": [
+       0.050295835780504144,
+       0.12081397869362318
+      ],
+      "boot95": [
+       0.04040200391006843,
+       0.14766940896297892
+      ]
+     },
+     "fa": {
+      "false_alarms": 17,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.19958874296967416,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 18,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.11538461538461539,
+      "wilson95": [
+       0.07424445619253985,
+       0.1750116449131639
+      ],
+      "boot95": [
+       0.06577872377020984,
+       0.16883116883116883
+      ]
+     },
+     "uncapped": {
+      "hits": 21,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.09170305676855896,
+      "wilson95": [
+       0.06076205380384132,
+       0.13611636747419914
+      ],
+      "boot95": [
+       0.047773471394689654,
+       0.17178402563401193
+      ]
+     },
+     "fa": {
+      "false_alarms": 25,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.29351285730834437,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 24,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.15384615384615385,
+      "wilson95": [
+       0.10561655343828537,
+       0.21871393755684804
+      ],
+      "boot95": [
+       0.08974137931034483,
+       0.22369816586921842
+      ]
+     },
+     "uncapped": {
+      "hits": 27,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.11790393013100436,
+      "wilson95": [
+       0.08230803413659016,
+       0.16610760074927658
+      ],
+      "boot95": [
+       0.05841827324441338,
+       0.22437130177514786
+      ]
+     },
+     "fa": {
+      "false_alarms": 63,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.7396524004170278,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 7,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.14893617021276595,
+     "wilson95": [
+      0.07406719996431721,
+      0.2768562242359355
+     ],
+     "boot95": [
+      0.044444444444444446,
+      0.2653061224489796
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 10,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.11235955056179775,
+     "wilson95": [
+      0.06218743336655998,
+      0.1946101129401976
+     ],
+     "boot95": [
+      0.05434782608695652,
+      0.18888888888888888
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 4,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.06153846153846154,
+      "wilson95": [
+       0.024189054966350286,
+       0.1478215186552319
+      ],
+      "boot95": [
+       0.013157894736842105,
+       0.13433553386911593
+      ]
+     },
+     "fa": {
+      "false_alarms": 3,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.037991537486095926,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 6,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.09230769230769231,
+      "wilson95": [
+       0.042995089611340964,
+       0.1871200051596039
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.15518920734437966
+      ]
+     },
+     "fa": {
+      "false_alarms": 5,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.06331922914349321,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     },
+     "fa": {
+      "false_alarms": 19,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.2406130707452742,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  },
+  "tifxyz-doctor (cns) mask only": {
+   "pooled": {
+    "r0.5": {
+     "capped": {
+      "hits": 19,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.0892018779342723,
+      "wilson95": [
+       0.057849629498576194,
+       0.13510912962549318
+      ],
+      "boot95": [
+       0.0528840859030837,
+       0.12903611668467355
+      ]
+     },
+     "uncapped": {
+      "hits": 33,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.11224489795918367,
+      "wilson95": [
+       0.08104918684044361,
+       0.1534428784926769
+      ],
+      "boot95": [
+       0.07110324483775811,
+       0.14468451944240643
+      ]
+     },
+     "fa": {
+      "false_alarms": 27,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.16449362653559169,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 22,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.10328638497652583,
+      "wilson95": [
+       0.06920264735768633,
+       0.15142609716784353
+      ],
+      "boot95": [
+       0.06467260471834377,
+       0.14647275507367247
+      ]
+     },
+     "uncapped": {
+      "hits": 38,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.1292517006802721,
+      "wilson95": [
+       0.09563502389329884,
+       0.17243195085503568
+      ],
+      "boot95": [
+       0.08332317073170731,
+       0.1647070092404778
+      ]
+     },
+     "fa": {
+      "false_alarms": 50,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.30461782691776235,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 27,
+      "n_events": 213,
+      "n_patches": 175,
+      "recall": 0.1267605633802817,
+      "wilson95": [
+       0.08859890499381946,
+       0.1781464818674779
+      ],
+      "boot95": [
+       0.0813300296195033,
+       0.17788955479452054
+      ]
+     },
+     "uncapped": {
+      "hits": 56,
+      "n_events": 294,
+      "n_patches": 175,
+      "recall": 0.19047619047619047,
+      "wilson95": [
+       0.1496945322678197,
+       0.23924211637528525
+      ],
+      "boot95": [
+       0.1014382960035134,
+       0.25287525354969576
+      ]
+     },
+     "fa": {
+      "false_alarms": 127,
+      "negative_mm": 16414.00981220265,
+      "fa_per_100mm": 0.7737292803711164,
+      "patches_with_verdict": 237,
+      "n_patches": 237
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 9,
+     "n_events": 70,
+     "n_patches": 59,
+     "recall": 0.12857142857142856,
+     "wilson95": [
+      0.06914100115337508,
+      0.22664755949425175
+     ],
+     "boot95": [
+      0.05553652968036529,
+      0.21430831826401434
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 13,
+     "n_events": 128,
+     "n_patches": 111,
+     "recall": 0.1015625,
+     "wilson95": [
+      0.060318648726840854,
+      0.16602486330361116
+     ],
+     "boot95": [
+      0.05426356589147287,
+      0.1570361814277347
+     ]
+    }
+   },
+   "new": {
+    "r0.5": {
+     "capped": {
+      "hits": 15,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.09615384615384616,
+      "wilson95": [
+       0.05913836964807807,
+       0.15258053651291092
+      ],
+      "boot95": [
+       0.05194805194805195,
+       0.14765795639569515
+      ]
+     },
+     "uncapped": {
+      "hits": 27,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.11790393013100436,
+      "wilson95": [
+       0.08230803413659016,
+       0.16610760074927658
+      ],
+      "boot95": [
+       0.06621427326594632,
+       0.15896049764086062
+      ]
+     },
+     "fa": {
+      "false_alarms": 13,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.15262668580033906,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 17,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.10897435897435898,
+      "wilson95": [
+       0.06915919829493856,
+       0.16758450449586026
+      ],
+      "boot95": [
+       0.061224489795918366,
+       0.16233766233766234
+      ]
+     },
+     "uncapped": {
+      "hits": 30,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.13100436681222707,
+      "wilson95": [
+       0.09332855714344457,
+       0.18085568454633533
+      ],
+      "boot95": [
+       0.07913195759182128,
+       0.17532752335383914
+      ]
+     },
+     "fa": {
+      "false_alarms": 21,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.24655080013900926,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 22,
+      "n_events": 156,
+      "n_patches": 126,
+      "recall": 0.14102564102564102,
+      "wilson95": [
+       0.09501114382823378,
+       0.20429455053708973
+      ],
+      "boot95": [
+       0.08283929446349829,
+       0.2051324503311258
+      ]
+     },
+     "uncapped": {
+      "hits": 47,
+      "n_events": 229,
+      "n_patches": 126,
+      "recall": 0.2052401746724891,
+      "wilson95": [
+       0.15799966591721856,
+       0.2622066809947358
+      ],
+      "boot95": [
+       0.09740259740259741,
+       0.26703174786320993
+      ]
+     },
+     "fa": {
+      "false_alarms": 46,
+      "negative_mm": 8517.51443846861,
+      "fa_per_100mm": 0.5400636574473536,
+      "patches_with_verdict": 162,
+      "n_patches": 162
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 6,
+     "n_events": 47,
+     "n_patches": 40,
+     "recall": 0.1276595744680851,
+     "wilson95": [
+      0.05984604198143388,
+      0.25173940792792504
+     ],
+     "boot95": [
+      0.024984756097560977,
+      0.23404255319148937
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 9,
+     "n_events": 89,
+     "n_patches": 78,
+     "recall": 0.10112359550561797,
+     "wilson95": [
+      0.054118546891964145,
+      0.1811368993077429
+     ],
+     "boot95": [
+      0.0449438202247191,
+      0.1724137931034483
+     ]
+    }
+   },
+   "v0_prefix": {
+    "r0.5": {
+     "capped": {
+      "hits": 4,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.07017543859649122,
+      "wilson95": [
+       0.027626420229066015,
+       0.1670017009603369
+      ],
+      "boot95": [
+       0.01639344262295082,
+       0.14285714285714285
+      ]
+     },
+     "uncapped": {
+      "hits": 6,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.09230769230769231,
+      "wilson95": [
+       0.042995089611340964,
+       0.1871200051596039
+      ],
+      "boot95": [
+       0.019230769230769232,
+       0.15518920734437966
+      ]
+     },
+     "fa": {
+      "false_alarms": 14,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.17729384160178097,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r1.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 8,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.12307692307692308,
+      "wilson95": [
+       0.06370467509869226,
+       0.22451494082161527
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.2
+      ]
+     },
+     "fa": {
+      "false_alarms": 29,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 0.3672515290322606,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "r2.0": {
+     "capped": {
+      "hits": 5,
+      "n_events": 57,
+      "n_patches": 49,
+      "recall": 0.08771929824561403,
+      "wilson95": [
+       0.03805167177792225,
+       0.18944877099558666
+      ],
+      "boot95": [
+       0.01818181818181818,
+       0.16981132075471697
+      ]
+     },
+     "uncapped": {
+      "hits": 9,
+      "n_events": 65,
+      "n_patches": 49,
+      "recall": 0.13846153846153847,
+      "wilson95": [
+       0.07459090403153719,
+       0.24268097246345166
+      ],
+      "boot95": [
+       0.03636363636363636,
+       0.22728711162255458
+      ]
+     },
+     "fa": {
+      "false_alarms": 81,
+      "negative_mm": 7896.495373734045,
+      "fa_per_100mm": 1.0257715121245898,
+      "patches_with_verdict": 75,
+      "n_patches": 75
+     }
+    },
+    "both_sides_1mm": {
+     "hits": 3,
+     "n_events": 23,
+     "n_patches": 19,
+     "recall": 0.13043478260869565,
+     "wilson95": [
+      0.04537659093631238,
+      0.32127482270095964
+     ],
+     "boot95": [
+      0.0,
+      0.28
+     ]
+    },
+    "also_confirmed_by_v0_rule": {
+     "hits": 4,
+     "n_events": 39,
+     "n_patches": 33,
+     "recall": 0.10256410256410256,
+     "wilson95": [
+      0.04061331344668381,
+      0.23578854462856527
+     ],
+     "boot95": [
+      0.023809523809523808,
+      0.21052631578947367
+     ]
+    }
+   }
+  }
+ },
+ "seamcheck_winding_patch_verdicts": {
+  "SKIP": 176,
+  "WATCH": 30,
+  "REVIEW": 16,
+  "OK": 15
+ },
+ "doctor_patches_with_capped_cue": 10,
+ "blind_review": {
+  "triggered": true,
+  "packet": "results/switchbench_natural_v1_blind_review.md",
+  "answer_key": "data/switchbench_v1/blind_key.json (gitignored)",
+  "answer_key_sha256": "835f1836c7758e6548b3f1c716ba12bf3610611e5f9205a8877f5804b1857f7a",
+  "composition": "15 confirmed (capped set) + 10 CT-contradicted + 5 negative runs, seeded 20260925, shuffled",
+  "verdict": "SUPPORTED",
+  "precision": {
+   "switch": 10,
+   "no_switch": 2,
+   "cant_tell": 3,
+   "point": 0.8333333333333334,
+   "wilson95": [
+    0.5519691377470266,
+    0.9530348578161463
+   ]
+  },
+  "answers_by_kind": {
+   "ct_contradicted_candidate": {
+    "switch": 7,
+    "can't tell": 3
+   },
+   "confirmed_event": {
+    "switch": 10,
+    "no switch": 2,
+    "can't tell": 3
+   },
+   "negative_run": {
+    "no switch": 4,
+    "switch": 1
+   }
+  },
+  "corrected": {
+   "pooled": {
+    "ci_upper": 0.15859751327761534,
+    "ci_lower": 0.07142010832769126,
+    "corrected_upper": 0.2873304002556431
+   },
+   "new": {
+    "ci_upper": 0.17791411042944785,
+    "ci_lower": 0.07236842105263158,
+    "corrected_upper": 0.3223261922861126
+   }
+  },
+  "answers_file": "internal/review/answers_round2_2026-09-27.json",
+  "round": 2,
+  "scored": "2026-09-27",
+  "disclosure": "Round 1 (all 30 marked switch) was not scored: an all-switch sheet cannot discriminate. the authors were told the packet mixes switches and non-switches (not which) and re-reviewed the same 30 views with clearer instructions (kinks where layers move together = no switch). Only round 2 is scored."
+ },
+ "events_file": {
+  "path_after_review": "results/switchbench_natural_v1_events.json",
+  "withheld_until_review_at": "data/switchbench_v1/switchbench_v1_events.json",
+  "sha256": "e244a9074017924ff8ceb5a156bad9044f0e902de4f0352570da46caf8036b5a",
+  "bytes": 1601604
+ },
+ "disk": {
+  "v1_data_gb": 1.8149529723450541,
+  "free_gb": 22.76015853881836
+ }
+}

@@ -1,0 +1,1920 @@
+{
+ "bet": "SwitchBench-natural (protocol A (prereg/switchbench_natural.md), criteria approved 2026-09-26)",
+ "start_first_code_utc": "2026-09-26T03:47:00Z",
+ "written_utc": "2026-09-26T06:44:25Z",
+ "verdict": "PASS",
+ "verdict_reason": "(i) natural recall below published planted recall with CI excluding it: tifxyz-doctor (coherent-normal-step), windaudit",
+ "prior_art_recheck": "not re-checked in this session (scout re-checks at release)",
+ "corpus": {
+  "processed": 3000,
+  "in_sample": 803,
+  "events_confirmed": 54,
+  "events_contradicted": 115,
+  "events_unconfirmed": 15,
+  "negatives_confirmed": 594,
+  "negatives_other": 703,
+  "neg_mm_confirmed": 7896.49537373405,
+  "multi_wrap": 7
+ },
+ "sanity": {
+  "S1": {
+   "passed": true,
+   "events": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "S2": {
+   "passed": true,
+   "cases": [
+    {
+     "patch": "same_wrap001987_growpatch",
+     "rows": [
+      30,
+      33
+     ],
+     "cstar": 27,
+     "n_events": 1,
+     "event_dist_mm": [
+      0.048433294719637775
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "multi": 0,
+     "passed": true
+    },
+    {
+     "patch": "0004_fill_sel_20260512_105437_19",
+     "rows": [
+      51,
+      53
+     ],
+     "cstar": 17,
+     "n_events": 1,
+     "event_dist_mm": [
+      0.0
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "multi": 0,
+     "passed": true
+    },
+    {
+     "patch": "same_wrap002675_growpatch",
+     "rows": [
+      45,
+      53
+     ],
+     "cstar": 27,
+     "n_events": 1,
+     "event_dist_mm": [
+      3.59994501249544e-14
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "multi": 0,
+     "passed": true
+    },
+    {
+     "patch": "fill_0006_sel_20260512_111110_19",
+     "rows": [
+      53,
+      58
+     ],
+     "cstar": 72,
+     "n_events": 1,
+     "event_dist_mm": [
+      4.365574568510055e-15
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "multi": 0,
+     "passed": true
+    },
+    {
+     "patch": "auto_grown_20260415194640307",
+     "rows": [
+      46,
+      49
+     ],
+     "cstar": 56,
+     "n_events": 1,
+     "event_dist_mm": [
+      1.9523442992065593e-14
+     ],
+     "at_planted_column": [
+      true
+     ],
+     "delta_signs": [
+      [
+       1
+      ]
+     ],
+     "multi": 0,
+     "passed": true
+    }
+   ]
+  },
+  "S3": {
+   "passed": true,
+   "frac_with_confirmed_events": 0.0,
+   "frac_with_geometry_only_events": 0.10843373493975904,
+   "n": 100,
+   "n_evaluable": 83
+  }
+ },
+ "ct_calibration": {
+  "source": "relative_windings.json ladders (human), seed 20260925",
+  "n": {
+   "adjacent": 150,
+   "two_apart": 150,
+   "same_wrap": 150
+  },
+  "best": {
+   "sigma": 2.0,
+   "end_zone": 0.1,
+   "min_dark": 2.0,
+   "q": 30,
+   "adjacent": 0.5793103448275863,
+   "two_apart": 0.15753424657534246,
+   "same_wrap": 0.15172413793103448,
+   "margin": 0.4217760982522438
+  },
+  "top10": [
+   {
+    "sigma": 2.0,
+    "end_zone": 0.1,
+    "min_dark": 2.0,
+    "q": 30,
+    "adjacent": 0.5793103448275863,
+    "two_apart": 0.15753424657534246,
+    "same_wrap": 0.15172413793103448,
+    "margin": 0.4217760982522438
+   },
+   {
+    "sigma": 2.0,
+    "end_zone": 0.1,
+    "min_dark": 3.0,
+    "q": 30,
+    "adjacent": 0.5724137931034483,
+    "two_apart": 0.15753424657534246,
+    "same_wrap": 0.1103448275862069,
+    "margin": 0.4148795465281059
+   },
+   {
+    "sigma": 1.5,
+    "end_zone": 0.1,
+    "min_dark": 3.0,
+    "q": 20,
+    "adjacent": 0.54,
+    "two_apart": 0.13333333333333333,
+    "same_wrap": 0.1,
+    "margin": 0.40666666666666673
+   },
+   {
+    "sigma": 1.5,
+    "end_zone": 0.1,
+    "min_dark": 2.0,
+    "q": 20,
+    "adjacent": 0.5333333333333333,
+    "two_apart": 0.14,
+    "same_wrap": 0.14,
+    "margin": 0.3933333333333333
+   },
+   {
+    "sigma": 2.0,
+    "end_zone": 0.1,
+    "min_dark": 3.0,
+    "q": 20,
+    "adjacent": 0.56,
+    "two_apart": 0.18,
+    "same_wrap": 0.12666666666666668,
+    "margin": 0.38000000000000006
+   },
+   {
+    "sigma": 1.5,
+    "end_zone": 0.1,
+    "min_dark": 3.0,
+    "q": 30,
+    "adjacent": 0.524822695035461,
+    "two_apart": 0.14583333333333334,
+    "same_wrap": 0.1276595744680851,
+    "margin": 0.3789893617021276
+   },
+   {
+    "sigma": 1.5,
+    "end_zone": 0.1,
+    "min_dark": 2.0,
+    "q": 30,
+    "adjacent": 0.5460992907801419,
+    "two_apart": 0.14583333333333334,
+    "same_wrap": 0.1702127659574468,
+    "margin": 0.375886524822695
+   },
+   {
+    "sigma": 2.0,
+    "end_zone": 0.1,
+    "min_dark": 2.0,
+    "q": 20,
+    "adjacent": 0.5533333333333333,
+    "two_apart": 0.18,
+    "same_wrap": 0.14666666666666667,
+    "margin": 0.37333333333333335
+   },
+   {
+    "sigma": 1.0,
+    "end_zone": 0.1,
+    "min_dark": 3.0,
+    "q": 20,
+    "adjacent": 0.4866666666666667,
+    "two_apart": 0.11333333333333333,
+    "same_wrap": 0.12666666666666668,
+    "margin": 0.36
+   },
+   {
+    "sigma": 1.5,
+    "end_zone": 0.1,
+    "min_dark": 2.0,
+    "q": 10,
+    "adjacent": 0.5,
+    "two_apart": 0.14,
+    "same_wrap": 0.14,
+    "margin": 0.36
+   }
+  ],
+  "initial_rule": [
+   {
+    "sigma": 1.5,
+    "end_zone": 0.3,
+    "min_dark": 2.0,
+    "q": 10,
+    "adjacent": 0.62,
+    "two_apart": 0.16666666666666666,
+    "same_wrap": 0.5866666666666667,
+    "margin": 0.033333333333333326
+   }
+  ],
+  "on_layer_controls": {
+   "by_window": {
+    "0.0": {
+     "click_on_layer": 0.65,
+     "midpoint_on_layer": 0.38461538461538464
+    },
+    "0.05": {
+     "click_on_layer": 0.7571428571428571,
+     "midpoint_on_layer": 0.4405594405594406
+    },
+    "0.1": {
+     "click_on_layer": 0.85,
+     "midpoint_on_layer": 0.5244755244755245
+    },
+    "0.15": {
+     "click_on_layer": 0.8857142857142857,
+     "midpoint_on_layer": 0.6293706293706294
+    },
+    "0.25": {
+     "click_on_layer": 0.9571428571428572,
+     "midpoint_on_layer": 0.7902097902097902
+    }
+   },
+   "chosen_window": 0.1,
+   "n": 150
+  },
+  "negative_run_controls_verified": {
+   "n_runs": 30,
+   "on_fraction_pct": [
+    0.7069852941176471,
+    0.7218971631205674,
+    0.8434601113172542,
+    0.8846153846153846
+   ],
+   "max_off_streak_pct": [
+    2.0,
+    3.75,
+    4.0,
+    4.0
+   ],
+   "fr": [
+    0.8653846153846154,
+    0.9534883720930233,
+    0.94,
+    0.8723404255319149,
+    0.9183673469387755,
+    0.8367346938775511,
+    0.9047619047619048,
+    0.7058823529411765,
+    0.9807692307692307,
+    0.7083333333333334,
+    0.8846153846153846,
+    0.8636363636363636,
+    1.0,
+    0.8653846153846154,
+    0.8846153846153846,
+    0.7884615384615384,
+    0.8695652173913043,
+    0.76,
+    0.9803921568627451,
+    0.9038461538461539,
+    0.9019607843137255,
+    0.8846153846153846,
+    0.9166666666666666,
+    0.68,
+    0.9423076923076923,
+    0.8269230769230769,
+    1.0,
+    0.9038461538461539,
+    0.9038461538461539,
+    0.723404255319149
+   ],
+   "streak": [
+    3,
+    2,
+    1,
+    4,
+    1,
+    4,
+    1,
+    4,
+    1,
+    4,
+    2,
+    3,
+    0,
+    2,
+    3,
+    4,
+    2,
+    2,
+    1,
+    2,
+    2,
+    4,
+    2,
+    4,
+    1,
+    5,
+    0,
+    1,
+    2,
+    2
+   ]
+  },
+  "level1_trial": {
+   "source": "relative_windings.json ladders (human), seed 20260925",
+   "n": {
+    "adjacent": 150,
+    "two_apart": 150,
+    "same_wrap": 150
+   },
+   "best": {
+    "sigma": 1.5,
+    "end_zone": 0.1,
+    "min_dark": 2.0,
+    "q": 20,
+    "adjacent": 0.5333333333333333,
+    "two_apart": 0.12666666666666668,
+    "same_wrap": 0.13333333333333333,
+    "margin": 0.4
+   },
+   "top10": [
+    {
+     "sigma": 1.5,
+     "end_zone": 0.1,
+     "min_dark": 2.0,
+     "q": 20,
+     "adjacent": 0.5333333333333333,
+     "two_apart": 0.12666666666666668,
+     "same_wrap": 0.13333333333333333,
+     "margin": 0.4
+    },
+    {
+     "sigma": 1.5,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 20,
+     "adjacent": 0.52,
+     "two_apart": 0.12666666666666668,
+     "same_wrap": 0.10666666666666667,
+     "margin": 0.3933333333333333
+    },
+    {
+     "sigma": 1.5,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 30,
+     "adjacent": 0.5177304964539007,
+     "two_apart": 0.1258741258741259,
+     "same_wrap": 0.11347517730496454,
+     "margin": 0.3918563705797748
+    },
+    {
+     "sigma": 2.0,
+     "end_zone": 0.1,
+     "min_dark": 2.0,
+     "q": 30,
+     "adjacent": 0.5694444444444444,
+     "two_apart": 0.18181818181818182,
+     "same_wrap": 0.1736111111111111,
+     "margin": 0.3876262626262626
+    },
+    {
+     "sigma": 2.0,
+     "end_zone": 0.1,
+     "min_dark": 2.0,
+     "q": 20,
+     "adjacent": 0.56,
+     "two_apart": 0.18666666666666668,
+     "same_wrap": 0.1,
+     "margin": 0.3733333333333334
+    },
+    {
+     "sigma": 2.0,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 20,
+     "adjacent": 0.56,
+     "two_apart": 0.18666666666666668,
+     "same_wrap": 0.1,
+     "margin": 0.3733333333333334
+    },
+    {
+     "sigma": 2.0,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 30,
+     "adjacent": 0.5486111111111112,
+     "two_apart": 0.18181818181818182,
+     "same_wrap": 0.125,
+     "margin": 0.36679292929292934
+    },
+    {
+     "sigma": 1.5,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 10,
+     "adjacent": 0.48,
+     "two_apart": 0.12,
+     "same_wrap": 0.08666666666666667,
+     "margin": 0.36
+    },
+    {
+     "sigma": 2.0,
+     "end_zone": 0.15,
+     "min_dark": 3.0,
+     "q": 20,
+     "adjacent": 0.6333333333333333,
+     "two_apart": 0.2,
+     "same_wrap": 0.28,
+     "margin": 0.3533333333333333
+    },
+    {
+     "sigma": 1.0,
+     "end_zone": 0.1,
+     "min_dark": 3.0,
+     "q": 20,
+     "adjacent": 0.4563758389261745,
+     "two_apart": 0.08666666666666667,
+     "same_wrap": 0.10738255033557047,
+     "margin": 0.348993288590604
+    }
+   ],
+   "initial_rule": [
+    {
+     "sigma": 1.5,
+     "end_zone": 0.3,
+     "min_dark": 2.0,
+     "q": 10,
+     "adjacent": 0.6133333333333333,
+     "two_apart": 0.13333333333333333,
+     "same_wrap": 0.5933333333333334,
+     "margin": 0.019999999999999907
+    }
+   ],
+   "level": 1,
+   "grid_size": 144
+  }
+ },
+ "evaluation": {
+  "generated": "2026-09-26T06:42:05Z",
+  "match_mm": 1.0,
+  "random_density_per_mm2": 0.012586039061712757,
+  "detectors": {
+   "tifxyz-doctor (coherent-normal-step)": {
+    "hits": 6,
+    "n_events": 54,
+    "recall": 0.1111111111111111,
+    "recall_ci95": [
+     0.051930224969995484,
+     0.2219470102118128
+    ],
+    "false_alarms": 5,
+    "negative_mm": 7896.49537373405,
+    "fa_per_100mm": 0.06331922914349317,
+    "patches_with_verdict": 67,
+    "n_patches": 67,
+    "published_planted_recall": 0.96875,
+    "published_text": "124/128 abrupt 8-voxel normal-offset proxies (sealed holdout)",
+    "published_source": "https://github.com/aviad12g/tifxyz-doctor/blob/main/docs/reviewed-same-wrap-benchmark.md",
+    "gap": -0.8576388888888888,
+    "ci_excludes_published": true
+   },
+   "tifxyz-doctor (any cue)": {
+    "hits": 6,
+    "n_events": 54,
+    "recall": 0.1111111111111111,
+    "recall_ci95": [
+     0.051930224969995484,
+     0.2219470102118128
+    ],
+    "false_alarms": 5,
+    "negative_mm": 7896.49537373405,
+    "fa_per_100mm": 0.06331922914349317,
+    "patches_with_verdict": 67,
+    "n_patches": 67,
+    "published_planted_recall": null,
+    "published_text": null,
+    "published_source": null,
+    "gap": null,
+    "ci_excludes_published": null
+   },
+   "windcheck": {
+    "hits": 0,
+    "n_events": 54,
+    "recall": 0.0,
+    "recall_ci95": [
+     0.0,
+     0.0664135880908964
+    ],
+    "false_alarms": 0,
+    "negative_mm": 7896.49537373405,
+    "fa_per_100mm": 0.0,
+    "patches_with_verdict": 13,
+    "n_patches": 67,
+    "published_planted_recall": null,
+    "published_text": "none published for the released self-crossing census",
+    "published_source": "https://github.com/joe-carr-data/windcheck/blob/main/docs/HISTORY.md (sec. 3.4: planted-defect precision/recall belong to the retired proximity-era detector and are not release claims)",
+    "gap": null,
+    "ci_excludes_published": null
+   },
+   "windaudit": {
+    "hits": 0,
+    "n_events": 54,
+    "recall": 0.0,
+    "recall_ci95": [
+     0.0,
+     0.0664135880908964
+    ],
+    "false_alarms": 0,
+    "negative_mm": 7896.49537373405,
+    "fa_per_100mm": 0.0,
+    "patches_with_verdict": 7,
+    "n_patches": 67,
+    "published_planted_recall": 0.5729166666666666,
+    "published_text": "55/96 planted sheet switches raise an alarm (annotation corpus)",
+    "published_source": "https://github.com/sergeievland/windaudit/blob/main/README.md (sec. 4)",
+    "gap": -0.5729166666666666,
+    "ci_excludes_published": true
+   },
+   "#1621-style annotation check": {
+    "hits": 0,
+    "n_events": 54,
+    "recall": 0.0,
+    "recall_ci95": [
+     0.0,
+     0.0664135880908964
+    ],
+    "false_alarms": 0,
+    "negative_mm": 7896.49537373405,
+    "fa_per_100mm": 0.0,
+    "patches_with_verdict": 3,
+    "n_patches": 67,
+    "published_planted_recall": null,
+    "published_text": null,
+    "published_source": null,
+    "gap": null,
+    "ci_excludes_published": null
+   },
+   "random": {
+    "hits": 5,
+    "n_events": 54,
+    "recall": 0.09259259259259259,
+    "recall_ci95": [
+     0.04020113475702944,
+     0.19909882590962688
+    ],
+    "false_alarms": 82,
+    "negative_mm": 7896.49537373405,
+    "fa_per_100mm": 1.038435357953288,
+    "patches_with_verdict": 67,
+    "n_patches": 67,
+    "published_planted_recall": null,
+    "published_text": null,
+    "published_source": null,
+    "gap": null,
+    "ci_excludes_published": null
+   }
+  },
+  "gen_avg_cost": {
+   "n_event_windows": 38,
+   "n_negative_windows": 7354,
+   "n_patches": 57,
+   "auroc": {
+    "point": 0.32201952392539684,
+    "lo": 0.15988024162168785,
+    "hi": 0.5047051317247905,
+    "n_boot": 2000
+   }
+  },
+  "random_score_auroc": {
+   "point": 0.48060847658989736,
+   "lo": 0.39285343978803233,
+   "hi": 0.5571499091330645,
+   "n_boot": 2000
+  },
+  "elapsed_s": 346.29469561576843
+ },
+ "scored_events": [
+  {
+   "patch": "auto_grown_20260420141348215_region_000",
+   "xyz": [
+    3966.1732177734375,
+    2242.732666015625,
+    7444.177978515625
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420144817585_region_000",
+   "xyz": [
+    5151.5673828125,
+    4266.3154296875,
+    16522.1025390625
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420145726015_region_001",
+   "xyz": [
+    4115.298767089844,
+    3125.2560424804688,
+    15883.464599609375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 2,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420150005291_region_003",
+   "xyz": [
+    5207.054296875,
+    5085.2275390625,
+    15226.765673828126
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 10,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420150005291_region_003",
+   "xyz": [
+    5253.287928989956,
+    5035.144827706473,
+    15672.328194754464
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 28,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420150005291_region_003",
+   "xyz": [
+    5099.8907470703125,
+    5193.4798583984375,
+    15175.40966796875
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 2,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420150509376_region_001",
+   "xyz": [
+    4581.02490234375,
+    4053.00048828125,
+    16411.36328125
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420151203359_region_004",
+   "xyz": [
+    4333.514404296875,
+    3386.0540771484375,
+    15170.42431640625
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420171615170_region_000",
+   "xyz": [
+    2981.688720703125,
+    2058.55078125,
+    6995.7177734375
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420194548261_region_001",
+   "xyz": [
+    3965.324178059896,
+    3119.3070475260415,
+    13734.343098958334
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 3,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420213733248_region_001",
+   "xyz": [
+    3387.762451171875,
+    2953.92236328125,
+    11289.45068359375
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420215809610_region_000",
+   "xyz": [
+    3397.055026584201,
+    1766.9910685221355,
+    12806.768663194445
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 9,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420215809610_region_000",
+   "xyz": [
+    4116.348257211538,
+    1886.6641376201924,
+    13039.079139122596
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 13,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420222607275_region_001",
+   "xyz": [
+    3397.9271240234375,
+    2177.442138671875,
+    8374.11865234375
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420230357173_region_003",
+   "xyz": [
+    4308.516322544643,
+    3975.094395228795,
+    14610.451450892857
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 7,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260420234715759_region_004",
+   "xyz": [
+    4213.283447265625,
+    3777.795654296875,
+    16149.23046875
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "clean",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421011944328_region_003",
+   "xyz": [
+    4857.967310855263,
+    4480.580296566612,
+    17184.816354851973
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 19,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": true,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421011944328_region_003",
+   "xyz": [
+    5317.3814697265625,
+    4657.2679443359375,
+    16638.95361328125
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 2,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421043042077_region_000",
+   "xyz": [
+    5659.520751953125,
+    3416.7435302734375,
+    7657.860107421875
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421043600994_region_002",
+   "xyz": [
+    6283.150830078125,
+    4182.8734375,
+    9103.93271484375
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 5,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421062408308_region_003",
+   "xyz": [
+    4230.199951171875,
+    4638.828125,
+    8298.35498046875
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421063213617_region_000",
+   "xyz": [
+    4503.6484375,
+    4304.615673828125,
+    16648.5232421875
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 5,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": true,
+   "tifxyz-doctor (any cue)": true,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421065245223_region_001",
+   "xyz": [
+    3198.63818359375,
+    2254.9302978515625,
+    12104.010009765625
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 2,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421084108291_region_000",
+   "xyz": [
+    3072.7027452256943,
+    4616.568250868056,
+    2974.3193630642363
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 9,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": true,
+   "tifxyz-doctor (any cue)": true,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421091151732_region_000",
+   "xyz": [
+    4147.826246473524,
+    5636.62981499566,
+    11070.021701388889
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 36,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421091151732_region_000",
+   "xyz": [
+    3725.5408935546875,
+    5586.844970703125,
+    10652.97705078125
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421091208816_region_000",
+   "xyz": [
+    3572.038818359375,
+    2567.9263916015625,
+    13247.45458984375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421093023684_region_001",
+   "xyz": [
+    3558.9656982421875,
+    4163.502685546875,
+    8745.14599609375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421103402976_region_003",
+   "xyz": [
+    3834.992724609375,
+    6092.357958984375,
+    16039.5505859375
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 5,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421103833712_region_003",
+   "xyz": [
+    6255.532366071428,
+    5521.353515625,
+    8895.797154017857
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 7,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421111001561_region_001",
+   "xyz": [
+    6272.529465895433,
+    4120.811589167668,
+    8844.035419170674
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 13,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421113458041_region_001",
+   "xyz": [
+    3569.0020751953125,
+    2606.5899658203125,
+    12675.57421875
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421130721538_region_000",
+   "xyz": [
+    3872.634521484375,
+    2692.3529052734375,
+    12771.16552734375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421153840650_region_000",
+   "xyz": [
+    3296.460205078125,
+    3654.4117431640625,
+    7486.809814453125
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421155214889_region_003",
+   "xyz": [
+    4782.651123046875,
+    2587.9095458984375,
+    8464.04833984375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421163622357_region_000",
+   "xyz": [
+    3482.0488209443934,
+    3820.813340130974,
+    8729.638241038603
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 17,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": true,
+   "tifxyz-doctor (any cue)": true,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421163622357_region_000",
+   "xyz": [
+    3684.722859700521,
+    3950.035441080729,
+    8586.052571614584
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 3,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": true,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260421165403705_region_002",
+   "xyz": [
+    4444.389873798077,
+    1695.515352689303,
+    7660.8251953125
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 52,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260427200728478_region_002",
+   "xyz": [
+    4106.2724609375,
+    3261.9481201171875,
+    10179.2275390625
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260427201837440_region_003",
+   "xyz": [
+    4610.94873046875,
+    2973.071533203125,
+    10795.94873046875
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260427223741524_region_003",
+   "xyz": [
+    5586.757533482143,
+    4160.269513811384,
+    9887.452357700893
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 7,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260428020410554_region_000",
+   "xyz": [
+    3420.3938598632812,
+    3970.553153483073,
+    7431.87333984375
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 30,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": true,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260428021730072_region_003",
+   "xyz": [
+    3560.750147769326,
+    4012.6353310032896,
+    12038.908794202303
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 19,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_20260428164704856_region_003",
+   "xyz": [
+    5158.024658203125,
+    4265.5636800130205,
+    14479.819091796875
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 6,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": true,
+   "tifxyz-doctor (any cue)": true,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": false,
+   "verdict_windaudit": "silent: fewer than 2 annotation points attach",
+   "verdict_1621": false
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4786.406982421875,
+    4306.866162109375,
+    12753.78310546875
+   ],
+   "delta_signs": [
+    -1,
+    1
+   ],
+   "n_members": 5,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": true,
+   "tifxyz-doctor (any cue)": true,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4031.5862630208335,
+    3775.3307291666665,
+    11951.233072916666
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 3,
+   "both_sides_1mm": true,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4285.870849609375,
+    3436.882080078125,
+    8515.7607421875
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": true,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4542.982177734375,
+    3607.9652099609375,
+    9118.23193359375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4384.872314453125,
+    3339.2235107421875,
+    11760.201171875
+   ],
+   "delta_signs": [
+    -1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": true,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4424.412109375,
+    2980.94970703125,
+    10276.6748046875
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4236.25146484375,
+    3301.380859375,
+    7820.142822265625
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4412.447998046875,
+    3578.363525390625,
+    8365.314453125
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4745.348388671875,
+    4203.44091796875,
+    12945.065185546875
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 2,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": false,
+   "tifxyz-doctor (any cue)": false,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  },
+  {
+   "patch": "auto_grown_w20231031143852",
+   "xyz": [
+    4459.647216796875,
+    3006.5677490234375,
+    9824.6865234375
+   ],
+   "delta_signs": [
+    1
+   ],
+   "n_members": 1,
+   "both_sides_1mm": false,
+   "tifxyz-doctor (coherent-normal-step)": true,
+   "tifxyz-doctor (any cue)": true,
+   "windcheck": false,
+   "windaudit": false,
+   "#1621-style annotation check": false,
+   "random": false,
+   "verdict_windcheck": true,
+   "verdict_windaudit": "clean",
+   "verdict_1621": true
+  }
+ ],
+ "disk": {
+  "data_paris4_gb": 1.139397582039237,
+  "free_gb": 24.416366577148438
+ },
+ "label_noise": {
+  "ct_sensitivity_ladder": 0.5793103448275863,
+  "ct_false_pass_ladder": 0.15753424657534246,
+  "pass_fraction_among_decided_geometry_events": 0.31952662721893493,
+  "est_true_switch_fraction_among_geometry_events": 0.38407197874620363,
+  "est_precision_of_confirmed_events": 0.6963327982479064,
+  "verified_S3_geometry_events": 9,
+  "verified_S3_confirmed": 0,
+  "verified_S3_contradicted": 8,
+  "min_precision_to_explain_gap": {
+   "tifxyz-doctor (coherent-normal-step)": 0.2291065911863874,
+   "windaudit": 0.115921899213201
+  }
+ },
+ "recall_patch_block_bootstrap_ci95": {
+  "tifxyz-doctor (coherent-normal-step)": [
+   0.023809523809523808,
+   0.18872416891284793
+  ],
+  "tifxyz-doctor (any cue)": [
+   0.037718378756114605,
+   0.19149664820751963
+  ],
+  "windcheck": [
+   0.0,
+   0.0
+  ],
+  "windaudit": [
+   0.0,
+   0.0
+  ],
+  "#1621-style annotation check": [
+   0.0,
+   0.0
+  ],
+  "random": [
+   0.022222222222222223,
+   0.16071428571428573
+  ]
+ },
+ "events_per_patch_max": 10,
+ "n_event_patches": 39
+}

@@ -1,4 +1,4 @@
-"""Metrics for SwitchBench-natural (criteria: IDEAS.md section 5).
+"""Metrics for SwitchBench-natural (criteria: protocol A (prereg/switchbench_natural.md)).
 
 Recall on confirmed natural events with 95% Wilson CI; false alarms per 100 mm on confirmed negative
 runs; gap vs each tool's published planted recall; gen_avg_cost AUROC (event vs negative windows)

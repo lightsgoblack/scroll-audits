@@ -1,6 +1,0 @@
-numpy
-scipy
-tifffile
-imagecodecs
-zarr>=3
-huggingface_hub>=2.0

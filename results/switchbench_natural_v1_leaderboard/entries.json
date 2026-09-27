@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {"name": "tifxyz-doctor (coherent-normal-step)", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/tifxyz-doctor_coherent-normal-step__default.json", "tool": "tifxyz-doctor@5ca0444", "mode": "default", "notes": "C1 detector: coherent-normal-step, uncapped union (API mask + CLI examples)"},
+    {"name": "tifxyz-doctor (any cue)", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/tifxyz-doctor_any-cue__default.json", "tool": "tifxyz-doctor@5ca0444", "mode": "default", "notes": "any review cue, uncapped union"},
+    {"name": "windcheck", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/windcheck__default.json", "tool": "windcheck@2b0fb2f", "mode": "default", "notes": "refuses <5,000 valid cells (no verdict)"},
+    {"name": "windaudit", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/windaudit__default.json", "tool": "windaudit@aba5633", "mode": "default", "notes": "WIDE_ATTACHMENT_GAP=1, tolerance 2.5 vx"},
+    {"name": "#1621-style annotation check", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/annot1621__default.json", "tool": "ours (annot.check_1621)", "mode": "default", "notes": "as v0"},
+    {"name": "windcheck [author-intended: patch mode, no cell floor]", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/windcheck__author-intended.json", "tool": "windcheck@2b0fb2f", "mode": "author-intended", "notes": "bench/patch_audit.py audit_one, no cell floor"},
+    {"name": "windaudit [author-intended: attachment 0.45 D]", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/windaudit__author-intended.json", "tool": "windaudit@aba5633", "mode": "author-intended", "notes": "widest same-sheet tolerance in its own docs, 10.485 vx"},
+    {"name": "seamcheck [secondary, added after freeze]", "alarms": "results/switchbench_natural_v1_leaderboard/alarms/seamcheck__author-intended.json", "tool": "seamcheck@6d6bc2d", "mode": "author-intended", "notes": "C2 only; added after the freeze"}
+  ]
+}

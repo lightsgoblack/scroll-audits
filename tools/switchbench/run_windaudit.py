@@ -22,7 +22,7 @@ import numpy as np
 
 from . import annot, geom
 
-WA = "/home/user/ext/windaudit"
+WA = os.environ.get("SWITCHBENCH_EXT", "ext") + "/windaudit"
 OUT = geom.DATA / "detect" / "windaudit"
 
 
