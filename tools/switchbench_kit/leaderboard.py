@@ -57,8 +57,9 @@ def run(entries: list[dict], corpus: str, patches_dir: str | None = None, strata
     # full-coverage rows sort before "limited scope" ones at equal recall (red-team SHOULD FIX 5): a
     # detector that only ever saw a sliver of the corpus shouldn't rank above one that covered it all
     # just because its near-zero coverage also kept its false-alarm rate down.
-    rows.sort(key=lambda r: (-r["recall"]["recall"], bool(r["coverage"]["limited_scope"]),
-                             r["false_alarms"]["per_100mm"]))
+    rows.sort(key=lambda r: (-(r["recall"]["recall"] or 0.0), bool(r["coverage"]["limited_scope"]),
+                             r["false_alarms"]["per_100mm"] if r["false_alarms"]["per_100mm"] is not None
+                             else float("inf")))
     meta = {"generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "corpus": {k: v for k, v in res["corpus"].items() if k != "patches_dir"},
             "settings": {k: v for k, v in res["settings"].items() if k != "settings_source"}, "kit": res["kit"]}
@@ -78,10 +79,14 @@ def _scope_badge(cv: dict) -> str:
     return "Limited scope" if cv.get("limited_scope") else "Full"
 
 
+def _fa_rate(fa: dict) -> str:
+    return "n/a" if fa["per_100mm"] is None else f"{fa['per_100mm']:.2f}"
+
+
 def _cells(r: dict, strata_names: list) -> list[str]:
     rc, fa, cv = r["recall"], r["false_alarms"], r["coverage"]
     cells = [r["name"], r["mode"], f"{_pct(rc['recall'])} ({rc['hits']}/{rc['events']})",
-             f"[{_pct(rc['wilson95'][0])}, {_pct(rc['wilson95'][1])}]", f"{fa['per_100mm']:.2f}",
+             f"[{_pct(rc['wilson95'][0])}, {_pct(rc['wilson95'][1])}]", _fa_rate(fa),
              _fa_ci(fa), f"{cv['patches'][0]}/{cv['patches'][1]}", _scope_badge(cv)]
     for s in strata_names:
         v = r["strata"].get(s)
