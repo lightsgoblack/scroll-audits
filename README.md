@@ -16,6 +16,9 @@ A *sheet switch* is where an automatically grown surface trace jumps from one wr
 
 *In plain English:* the most-used slip checker misses most real slips in this scroll, and it almost never notices a slow drift from one layer to the next. Its high published score came from a different setup, so there is no contradiction; it is why a test on real slips was needed.
 
+**Why this matters.** The Vesuvius Challenge lists sheet switches as a named pipeline bottleneck, with "conservative failure detection" as what would help ([2026 Open Problems](https://scrollprize.org/2026_open_problems)). A detector can only be trusted on real scroll data once it has been measured on real, naturally occurring switches; this benchmark provides that measurement.
+In plain English: the organisers have said slips between layers are one of the main things holding the pipeline back; this is the first test that shows how well the slip-catchers actually work on real slips.
+
 # SwitchBench-natural leaderboard (PHercParis4)
 
 Generated 2026-09-27T20:01:11Z with switchbench_kit 1.0.0. Corpus sha256 `e244a9074017924f...`; matching 1.0 mm; per-patch cap 3; false alarms deduplicated at 0.5 mm.
