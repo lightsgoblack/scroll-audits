@@ -126,6 +126,14 @@ Each protocol file in `prereg/` must match the SHA-256 posted in the Vesuvius Ch
 
 ## Citation and license
 
+**Data.** This work uses scans from *Vesuvius Challenge – CT Scans of Herculaneum Papyri* (PHercParis4, 2026 ESRF scan 20260411134726). Please cite:
+Giorgio Angelotti, Stephen Parsons, Sean Johnson, Elian Rafael Dal Prà, Johannes Rudolph, Paul Tafforeau, Alessandro Mirone,
+Paul Henderson, Hendrik Schilling, Forrest McDonald, David Josey, Youssef Nader, C. Seth Parker, W. Brent Seales.
+*Vesuvius Challenge – CT Scans of Herculaneum Papyri.* Vesuvius Challenge. Data are licensed CC BY-NC 4.0 and hosted at
+`s3://vesuvius-challenge-open-data/` (see https://scrollprize.org/data).
+In plain English: the scans belong to the Vesuvius Challenge dataset; if you use this work, credit the people who made the scans too.
+
+
 Code: MIT. Derived label files: CC BY-NC 4.0 (Vesuvius Challenge data terms). To cite this work, use [CITATION.cff](CITATION.cff).
 
 Analysis built with Claude; I directed it and checked the results.
