@@ -110,6 +110,31 @@ sh prereg/verify_prereg.sh
 
 Each protocol file in `prereg/` must match the SHA-256 posted in the Vesuvius Challenge Discord (#robots) on Sep 26, 2026, before any score or verdict existed: [#robots hash log](https://discord.com/channels/1079907749569237093/1553425799162372096/1553425799162372096). Discord message IDs encode their creation time, so the post's time can be checked independently: its ID decodes to 2026-09-26 15:19:31 UTC.
 
+## Related work (and what is new here)
+
+**In plain English:** plenty of people are building sheet-switch detectors or checking traces for them. What
+was missing was a set of switches that happened for real, each one confirmed, against which any detector's hit
+rate can be measured. That set is the new part here. The closest projects are listed below so you can judge
+the difference yourself.
+
+- [tifxyz-doctor](https://github.com/aviad12g/tifxyz-doctor), [windcheck](https://github.com/joe-carr-data/windcheck),
+  [windaudit](https://github.com/sergeievland/windaudit): switch detectors, validated by their authors on planted
+  switches. tifxyz-doctor's draft PR #2 ran its cue on natural collections and says itself that this is not natural
+  sheet-switch recall. All are scored on the leaderboard above.
+- [sheet-topo-bench](https://github.com/tonclap/sheet-topo-bench): a benchmark for topological errors. Its natural
+  corpus compares 2026 PHercParis4 production meshes against the human-verified 2023 banner; its own census of those
+  zones found no confirmed real errors, so it reports no hit rate on confirmed natural switches.
+- [vc-segqa](https://github.com/Wadoekeani/vc-segqa): label-free segment QA; found one natural switch between official
+  PHerc0139 wraps, with no detector hit rate.
+- [growpatch-sheet-switch-detection](https://github.com/slade870/growpatch-sheet-switch-detection): PHercParis4
+  cross-run disagreement with CT spot checks, no precision or recall.
+- [seamcheck](https://github.com/hwkim3330/seamcheck): winding-number / neighbour-step continuity checks; on the
+  leaderboard as a secondary entry, added after the freeze.
+- [villa#1641](https://github.com/ScrollPrize/villa/issues/1641): a conservative seam-darkening detector, tested on one
+  planted displacement.
+
+If we have missed or misdescribed your work, open an issue and we will fix it.
+
 ## What's here
 
 | Path | What it is |
