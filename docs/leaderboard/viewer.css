@@ -44,7 +44,7 @@ body {
   padding: 24px 16px 48px;
 }
 
-main { max-width: 980px; margin: 0 auto; }
+main { max-width: 1200px; margin: 0 auto; }
 
 h1 { font-size: 1.7rem; margin: 0 0 4px; }
 h2 { font-size: 1.2rem; margin: 0 0 10px; }
@@ -202,3 +202,7 @@ footer { color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--gr
   body { padding: 16px 12px 40px; }
   h1 { font-size: 1.4rem; }
 }
+
+/* Let long detector names and tool@commit wrap, so the table fits without sideways scrolling on a laptop. */
+tbody td:first-child, tbody td:last-child { white-space: normal; overflow-wrap: anywhere; }
+tbody td:first-child { min-width: 11em; }
