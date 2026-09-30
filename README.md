@@ -44,6 +44,28 @@ blind-review scoring behind the verdict above (measured precision, the reviewer'
 including a 7/10 split on CT-contradicted candidates and the one-reviewer/one-round limit):
 [results/switchbench_natural_v1_blind_review_score.md](results/switchbench_natural_v1_blind_review_score.md). Limits: Small, single-scroll corpus (PHercParis4), CPU-only detectors, and a held-out label rule whose false-pass ceiling is reported alongside every recall number.
 
+### Known limits of the answer key (added Sep 30, 2026, after review feedback)
+
+> **In plain English:** a benchmark is only as trustworthy as its answer key. Ours was built with automated
+> rules plus a small human spot-check, not by a person checking every switch. That is enough for the headline
+> recall number, but not yet for the false-alarm column.
+
+The pre-registered results above are unchanged; this section adds context on how far to trust each number.
+
+- **Recall (the headline)** depends only on the labelled events being real switches (label precision), not on
+  having found every switch. A blind human spot-check found 10 of 12 real (one reviewer, 12 events, so a small
+  sample). Allowing for label errors, tifxyz-doctor's natural recall stays at or below 29% (upper 95% bound).
+- **False alarms / 100 mm are provisional.** They are counted only on surface our rules marked clean, but those
+  rules are automated, not an exhaustive human annotation. A real switch the rules missed would count against a
+  detector as a false alarm, so these rates may be too high. Treat them as rough estimates, not ground truth.
+- **Fix in progress:** SwitchBench v1.1 will add a fully human-verified subset: segments where every switch is
+  annotated and every annotation is checked. Pointers to segments that are already exhaustively annotated are very
+  welcome (please open an issue).
+
+Thanks to Paul (pmh47) on the Vesuvius Challenge Discord for pointing out that a trustworthy signal needs a
+close to 100% human-verified answer key.
+
+
 ## Score your detector in three commands
 
 **Download size:** `switchbench fetch` pulls about 30 MB of small patch files, typically under a minute
