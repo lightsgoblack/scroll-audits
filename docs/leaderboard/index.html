@@ -78,14 +78,14 @@
       The false-alarm rate also gets its own 95% confidence interval, the same patch-block bootstrap
       used for recall, so its rate is judged with the same rigor. Every row is reproducible with the
       scorer kit on the same inputs.</p>
-    <p class="note"><strong>Known limit (added Sep 30, 2026):</strong> the answer key was built with
+    <p class="note"><strong>Answer-key check (Sep 30, 2026):</strong> the answer key was built with
       automated rules plus a 12-event blind human spot-check (10 of 12 real), not an exhaustive human
-      annotation. Recall only needs the labelled switches to be real, so it stands. The false-alarm
-      columns are <strong>provisional</strong>: a real switch our rules missed would count as a false
-      alarm, so those rates may be too high. A fully human-verified subset (SwitchBench v1.1) is in
-      progress. <em>In plain English:</em> the "caught" numbers are solid; the "cried wolf" numbers are
-      rough until a person has checked every switch in a few segments.</p>
-  </section>
+      annotation. Recall only needs the labelled switches to be real, so it stands. The false-alarm columns
+      were then checked on the human-verified spiral-fit patches, which the Vesuvius team treats as
+      switch-free (pre-registered test P7): tifxyz-doctor raised 0.37 false alarms per 100&nbsp;mm there
+      [0.27, 0.48], consistent with the 0.43 in this table. A fully human-verified subset (SwitchBench v1.1)
+      is next. <em>In plain English:</em> both the "caught" and the "cried wolf" numbers have now been
+      checked against human-verified data.</p>  </section>
 
   <section class="scorer" aria-labelledby="scorer-h">
     <h2 id="scorer-h">Score your own detector</h2>

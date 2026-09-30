@@ -6,5 +6,9 @@
  "switchbench_v1.md": {
   "label": "P1",
   "sha256": "821144c5c69b17a217fdbc12f4f11e7a95f423b09ff5749eef5e99b2d6bce592"
+ },
+ "fa_verified.md": {
+  "label": "P7",
+  "sha256": "bc55e3aae49391345c51345deaa8c0c5f5130534096683f3b0d23d04e2f08fc9"
  }
 }

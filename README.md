@@ -48,17 +48,20 @@ including a 7/10 split on CT-contradicted candidates and the one-reviewer/one-ro
 
 > **In plain English:** a benchmark is only as trustworthy as its answer key. Ours was built with automated
 > rules plus a small human spot-check, not by a person checking every switch. That is enough for the headline
-> recall number, but not yet for the false-alarm column.
+> recall number, and a follow-up test on organiser-verified surface now backs the false-alarm column too.
 
 The pre-registered results above are unchanged; this section adds context on how far to trust each number.
 
 - **Recall (the headline)** depends only on the labelled events being real switches (label precision), not on
   having found every switch. A blind human spot-check found 10 of 12 real (one reviewer, 12 events, so a small
   sample). Allowing for label errors, tifxyz-doctor's natural recall stays at or below 29% (upper 95% bound).
-- **False alarms / 100 mm are provisional.** They are counted only on surface our rules marked clean, but those
-  rules are automated, not an exhaustive human annotation. A real switch the rules missed would count against a
-  detector as a false alarm, so these rates may be too high. Treat them as rough estimates, not ground truth.
-- **Fix in progress:** SwitchBench v1.1 will add a fully human-verified subset: segments where every switch is
+- **False alarms / 100 mm: checked, no longer provisional (pre-registered test P7, Sep 30, 2026).** The Vesuvius
+  team treats the human-verified spiral-fit patches as switch-free, so every alarm on them is a false alarm.
+  tifxyz-doctor raised 0.37 false alarms per 100 mm there [95% CI 0.27, 0.48], consistent with v1's 0.43
+  [0.14, 0.83], so there is no sign that v1's rate was inflated by switches our rules missed. Full result, deviations and limits:
+  [results/fa_verified.md](results/fa_verified.md); protocol: [prereg/fa_verified.md](prereg/fa_verified.md).
+  *In plain English:* we checked the "cries wolf" number against surface a Vesuvius admin called clean, and it held.
+- **Next:** SwitchBench v1.1 will add a fully human-verified subset: segments where every switch is
   annotated and every annotation is checked. Pointers to segments that are already exhaustively annotated are very
   welcome (please open an issue).
 
