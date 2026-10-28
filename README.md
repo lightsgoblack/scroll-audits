@@ -171,6 +171,34 @@ If we have missed or misdescribed your work, open an issue and we will fix it.
 | `results/` | Result reports (md) and all numbers (json): v0, v1 and the exploratory analysis |
 | `prereg/` | The frozen protocol texts, their hashes and the verify script |
 
+## Replies from tool authors
+
+Every measured tool's author got the results on release day, with a right of reply. Replies are quoted in full,
+with permission, as they arrive.
+
+**windaudit** (sergeievland, [windaudit#1](https://github.com/sergeievland/windaudit/issues/1)):
+> Your numbers match what windaudit is designed to see: it checks winding constraints for consistency, so it only
+> gives a verdict where independent annotations overlap a patch, and a switch inside a single auto-grown surface
+> produces no contradiction for it to find. The low false-alarm rate is the other side of that design: when it
+> flags something, the flag is a proof.
+
+*In plain English:* windaudit's author agrees with the numbers and explains them. The tool only checks places
+where human annotations overlap a trace, so it rarely gets a chance to speak; when it does flag something, it is
+certain. A low score here reflects that design choice, not a bug.
+
+**seamcheck** (hwkim3330, [seamcheck#1](https://github.com/hwkim3330/seamcheck/issues/1)):
+> 0/213 is a useful result. seamcheck flags abrupt jumps: neighbour steps far above the patch's own median
+> spacing, plus winding-number changes. [...] My guess is that natural switches in auto-grown traces move smoothly
+> onto the adjacent wrap without a large step, so they fall below that threshold by design.
+
+He then tested that guess on SwitchBench's own events (the largest neighbour-step ratio near a confirmed switch
+had a median of 1.07x, against seamcheck's 5x threshold), and built and scored a new CT-reading detector against
+the benchmark, with code in his repo ([seamcheck/switchbench](https://github.com/hwkim3330/seamcheck/tree/main/switchbench)).
+At tifxyz-doctor's false-alarm rate it did no better than the doctor, which he reported as a negative result.
+
+*In plain English:* seamcheck's author agrees the 0/213 is expected: his tool looks for big jumps, and real
+slips are gentle. He then used SwitchBench to try a new detector of his own, which is exactly what it is for.
+
 ## Rules we follow
 
 - No scan data and no images of PHerc.1667 in this repo.
